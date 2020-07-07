@@ -1,0 +1,19 @@
+{
+  "name": "unittestingexcersice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^8.0.1",
+    "chai": "*" 
+  },
+  "author": "Tsvetislav Todorov",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1"
+  }
+}
