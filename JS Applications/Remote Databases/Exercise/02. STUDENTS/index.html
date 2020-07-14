@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <button id="load-btn">LOAD ALL STUDENTS</button>
     <table id="results">
         <thead>
             <tr>
@@ -18,9 +19,28 @@
                 <th>Grade</th>
             </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+
+        </tbody>
     </table>
-    <script src="./app.js"></script>
+
+    <form>
+        <h3>FORM</h3>
+        <label>First Name</label> 
+        <input type="firstName" id="first-name" placeholder="First Name...">
+        </br>
+        <label>Last Name</label>
+        <input type="lastName" id="last-name" placeholder="Last Name...">
+        </br>
+        <label>Faculty Number</label>
+        <input type="facNum" id="faculty-number" placeholder="Faculty Number...">
+        </br>
+        <label>Grade</label>
+        <input type="grade" id="grade" placeholder="Grade...">
+        <button id='submit-btn' type="button">Submit</button>
+    </form>
+
+    <script type="module" src="./app.js"></script>
 </body>
 
 </html>
