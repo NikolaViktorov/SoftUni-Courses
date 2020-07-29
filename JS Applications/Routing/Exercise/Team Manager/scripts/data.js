@@ -138,7 +138,11 @@ export async function leaveTeam(username, userId) {
 
     const team = await getTeamByMemberName(username);
     
+    const currLength = team[0].members.length;
     team[0].members = team[0].members.replace(` ${username}`, '');
+    if (currLength === team[0].members.length) {
+        team[0].members = team[0].members.replace(`${username}`, '');
+    }
     team[0].ownerId = '';
 
     const result = await editTeam(team[0], team[0].objectId);

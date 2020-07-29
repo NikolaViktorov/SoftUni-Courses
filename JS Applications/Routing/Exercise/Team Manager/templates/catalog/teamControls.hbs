@@ -4,5 +4,7 @@
 {{#if isOnTeam}}
     <a href="#/leave" class="btn btn-default">Leave Team</a>
 {{else}}
+    {{#unless hasTeam}}
     <a href="#/join/{{objectId}}" class="btn btn-default">Join Team</a>
+    {{/unless}}
 {{/if}}
