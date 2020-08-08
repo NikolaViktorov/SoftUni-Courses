@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes\01. Car\bin\Debug\netcoreapp2.1\01. Car.deps.json
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes\01. Car\bin\Debug\netcoreapp2.1\01. Car.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes\01. Car\bin\Debug\netcoreapp2.1\01. Car.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes\01. Car\bin\Debug\netcoreapp2.1\01. Car.dll
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes\01. Car\bin\Debug\netcoreapp2.1\01. Car.pdb
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes\01. Car\obj\Debug\netcoreapp2.1\01. Car.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes\01. Car\obj\Debug\netcoreapp2.1\01. Car.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes\01. Car\obj\Debug\netcoreapp2.1\01. Car.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes\01. Car\obj\Debug\netcoreapp2.1\01. Car.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes\01. Car\obj\Debug\netcoreapp2.1\01. Car.dll
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes\01. Car\obj\Debug\netcoreapp2.1\01. Car.pdb

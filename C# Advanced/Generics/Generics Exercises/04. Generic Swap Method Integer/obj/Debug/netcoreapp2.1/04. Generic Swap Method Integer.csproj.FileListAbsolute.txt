@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\04. Generic Swap Method Integer\bin\Debug\netcoreapp2.1\04. Generic Swap Method Integer.deps.json
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\04. Generic Swap Method Integer\bin\Debug\netcoreapp2.1\04. Generic Swap Method Integer.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\04. Generic Swap Method Integer\bin\Debug\netcoreapp2.1\04. Generic Swap Method Integer.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\04. Generic Swap Method Integer\bin\Debug\netcoreapp2.1\04. Generic Swap Method Integer.dll
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\04. Generic Swap Method Integer\bin\Debug\netcoreapp2.1\04. Generic Swap Method Integer.pdb
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\04. Generic Swap Method Integer\obj\Debug\netcoreapp2.1\04. Generic Swap Method Integer.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\04. Generic Swap Method Integer\obj\Debug\netcoreapp2.1\04. Generic Swap Method Integer.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\04. Generic Swap Method Integer\obj\Debug\netcoreapp2.1\04. Generic Swap Method Integer.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\04. Generic Swap Method Integer\obj\Debug\netcoreapp2.1\04. Generic Swap Method Integer.dll
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\04. Generic Swap Method Integer\obj\Debug\netcoreapp2.1\04. Generic Swap Method Integer.pdb

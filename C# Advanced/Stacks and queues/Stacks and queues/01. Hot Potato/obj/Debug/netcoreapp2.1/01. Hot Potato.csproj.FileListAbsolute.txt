@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\01. Hot Potato\bin\Debug\netcoreapp2.1\01. Hot Potato.deps.json
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\01. Hot Potato\bin\Debug\netcoreapp2.1\01. Hot Potato.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\01. Hot Potato\bin\Debug\netcoreapp2.1\01. Hot Potato.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\01. Hot Potato\bin\Debug\netcoreapp2.1\01. Hot Potato.dll
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\01. Hot Potato\bin\Debug\netcoreapp2.1\01. Hot Potato.pdb
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\01. Hot Potato\obj\Debug\netcoreapp2.1\01. Hot Potato.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\01. Hot Potato\obj\Debug\netcoreapp2.1\01. Hot Potato.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\01. Hot Potato\obj\Debug\netcoreapp2.1\01. Hot Potato.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\01. Hot Potato\obj\Debug\netcoreapp2.1\01. Hot Potato.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\01. Hot Potato\obj\Debug\netcoreapp2.1\01. Hot Potato.dll
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\01. Hot Potato\obj\Debug\netcoreapp2.1\01. Hot Potato.pdb

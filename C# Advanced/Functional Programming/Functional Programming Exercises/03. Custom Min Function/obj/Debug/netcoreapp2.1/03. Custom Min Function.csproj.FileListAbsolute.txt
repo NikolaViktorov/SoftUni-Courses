@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\03. Custom Min Function\bin\Debug\netcoreapp2.1\03. Custom Min Function.deps.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\03. Custom Min Function\bin\Debug\netcoreapp2.1\03. Custom Min Function.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\03. Custom Min Function\bin\Debug\netcoreapp2.1\03. Custom Min Function.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\03. Custom Min Function\bin\Debug\netcoreapp2.1\03. Custom Min Function.dll
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\03. Custom Min Function\bin\Debug\netcoreapp2.1\03. Custom Min Function.pdb
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\03. Custom Min Function\obj\Debug\netcoreapp2.1\03. Custom Min Function.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\03. Custom Min Function\obj\Debug\netcoreapp2.1\03. Custom Min Function.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\03. Custom Min Function\obj\Debug\netcoreapp2.1\03. Custom Min Function.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\03. Custom Min Function\obj\Debug\netcoreapp2.1\03. Custom Min Function.dll
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\03. Custom Min Function\obj\Debug\netcoreapp2.1\03. Custom Min Function.pdb
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\03. Custom Min Function\obj\Debug\netcoreapp2.1\03. Custom Min Function.csprojAssemblyReference.cache

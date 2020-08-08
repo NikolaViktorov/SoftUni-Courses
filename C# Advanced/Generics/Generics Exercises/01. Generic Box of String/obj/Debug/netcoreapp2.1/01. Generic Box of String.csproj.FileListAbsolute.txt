@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\01. Generic Box of String\bin\Debug\netcoreapp2.1\01. Generic Box of String.deps.json
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\01. Generic Box of String\bin\Debug\netcoreapp2.1\01. Generic Box of String.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\01. Generic Box of String\bin\Debug\netcoreapp2.1\01. Generic Box of String.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\01. Generic Box of String\bin\Debug\netcoreapp2.1\01. Generic Box of String.dll
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\01. Generic Box of String\bin\Debug\netcoreapp2.1\01. Generic Box of String.pdb
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\01. Generic Box of String\obj\Debug\netcoreapp2.1\01. Generic Box of String.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\01. Generic Box of String\obj\Debug\netcoreapp2.1\01. Generic Box of String.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\01. Generic Box of String\obj\Debug\netcoreapp2.1\01. Generic Box of String.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\01. Generic Box of String\obj\Debug\netcoreapp2.1\01. Generic Box of String.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\01. Generic Box of String\obj\Debug\netcoreapp2.1\01. Generic Box of String.dll
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\01. Generic Box of String\obj\Debug\netcoreapp2.1\01. Generic Box of String.pdb

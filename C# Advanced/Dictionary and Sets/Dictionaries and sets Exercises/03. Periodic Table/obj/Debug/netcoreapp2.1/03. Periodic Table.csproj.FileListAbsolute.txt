@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\03. Periodic Table\bin\Debug\netcoreapp2.1\03. Periodic Table.deps.json
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\03. Periodic Table\bin\Debug\netcoreapp2.1\03. Periodic Table.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\03. Periodic Table\bin\Debug\netcoreapp2.1\03. Periodic Table.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\03. Periodic Table\bin\Debug\netcoreapp2.1\03. Periodic Table.dll
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\03. Periodic Table\bin\Debug\netcoreapp2.1\03. Periodic Table.pdb
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\03. Periodic Table\obj\Debug\netcoreapp2.1\03. Periodic Table.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\03. Periodic Table\obj\Debug\netcoreapp2.1\03. Periodic Table.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\03. Periodic Table\obj\Debug\netcoreapp2.1\03. Periodic Table.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\03. Periodic Table\obj\Debug\netcoreapp2.1\03. Periodic Table.dll
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\03. Periodic Table\obj\Debug\netcoreapp2.1\03. Periodic Table.pdb

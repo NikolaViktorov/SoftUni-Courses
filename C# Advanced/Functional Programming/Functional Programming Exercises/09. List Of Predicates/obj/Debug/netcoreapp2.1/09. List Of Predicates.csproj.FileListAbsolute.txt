@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\09. List Of Predicates\bin\Debug\netcoreapp2.1\09. List Of Predicates.deps.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\09. List Of Predicates\bin\Debug\netcoreapp2.1\09. List Of Predicates.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\09. List Of Predicates\bin\Debug\netcoreapp2.1\09. List Of Predicates.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\09. List Of Predicates\bin\Debug\netcoreapp2.1\09. List Of Predicates.dll
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\09. List Of Predicates\bin\Debug\netcoreapp2.1\09. List Of Predicates.pdb
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\09. List Of Predicates\obj\Debug\netcoreapp2.1\09. List Of Predicates.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\09. List Of Predicates\obj\Debug\netcoreapp2.1\09. List Of Predicates.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\09. List Of Predicates\obj\Debug\netcoreapp2.1\09. List Of Predicates.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\09. List Of Predicates\obj\Debug\netcoreapp2.1\09. List Of Predicates.dll
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\09. List Of Predicates\obj\Debug\netcoreapp2.1\09. List Of Predicates.pdb

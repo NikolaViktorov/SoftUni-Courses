@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming\05. Filter By Age\bin\Debug\netcoreapp2.1\05. Filter By Age.deps.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming\05. Filter By Age\bin\Debug\netcoreapp2.1\05. Filter By Age.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming\05. Filter By Age\bin\Debug\netcoreapp2.1\05. Filter By Age.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming\05. Filter By Age\bin\Debug\netcoreapp2.1\05. Filter By Age.dll
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming\05. Filter By Age\bin\Debug\netcoreapp2.1\05. Filter By Age.pdb
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming\05. Filter By Age\obj\Debug\netcoreapp2.1\05. Filter By Age.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming\05. Filter By Age\obj\Debug\netcoreapp2.1\05. Filter By Age.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming\05. Filter By Age\obj\Debug\netcoreapp2.1\05. Filter By Age.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming\05. Filter By Age\obj\Debug\netcoreapp2.1\05. Filter By Age.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming\05. Filter By Age\obj\Debug\netcoreapp2.1\05. Filter By Age.dll
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming\05. Filter By Age\obj\Debug\netcoreapp2.1\05. Filter By Age.pdb

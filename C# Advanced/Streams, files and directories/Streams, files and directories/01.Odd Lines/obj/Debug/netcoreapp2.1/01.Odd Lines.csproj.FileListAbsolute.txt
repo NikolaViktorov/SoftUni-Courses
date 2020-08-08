@@ -1,0 +1,12 @@
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\01.Odd Lines\bin\Debug\netcoreapp2.1\files\input.txt
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\01.Odd Lines\bin\Debug\netcoreapp2.1\01.Odd Lines.deps.json
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\01.Odd Lines\bin\Debug\netcoreapp2.1\01.Odd Lines.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\01.Odd Lines\bin\Debug\netcoreapp2.1\01.Odd Lines.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\01.Odd Lines\bin\Debug\netcoreapp2.1\01.Odd Lines.dll
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\01.Odd Lines\bin\Debug\netcoreapp2.1\01.Odd Lines.pdb
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\01.Odd Lines\obj\Debug\netcoreapp2.1\01.Odd Lines.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\01.Odd Lines\obj\Debug\netcoreapp2.1\01.Odd Lines.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\01.Odd Lines\obj\Debug\netcoreapp2.1\01.Odd Lines.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\01.Odd Lines\obj\Debug\netcoreapp2.1\01.Odd Lines.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\01.Odd Lines\obj\Debug\netcoreapp2.1\01.Odd Lines.dll
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\01.Odd Lines\obj\Debug\netcoreapp2.1\01.Odd Lines.pdb

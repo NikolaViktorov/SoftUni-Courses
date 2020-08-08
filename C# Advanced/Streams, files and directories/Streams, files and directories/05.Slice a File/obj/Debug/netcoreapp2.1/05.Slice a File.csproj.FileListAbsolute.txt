@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\05.Slice a File\obj\Debug\netcoreapp2.1\05.Slice a File.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\05.Slice a File\obj\Debug\netcoreapp2.1\05.Slice a File.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\05.Slice a File\obj\Debug\netcoreapp2.1\05.Slice a File.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\05.Slice a File\bin\Debug\netcoreapp2.1\files\input.txt
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\05.Slice a File\bin\Debug\netcoreapp2.1\05.Slice a File.deps.json
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\05.Slice a File\bin\Debug\netcoreapp2.1\05.Slice a File.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\05.Slice a File\bin\Debug\netcoreapp2.1\05.Slice a File.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\05.Slice a File\bin\Debug\netcoreapp2.1\05.Slice a File.dll
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\05.Slice a File\bin\Debug\netcoreapp2.1\05.Slice a File.pdb
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\05.Slice a File\obj\Debug\netcoreapp2.1\05.Slice a File.dll
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories\05.Slice a File\obj\Debug\netcoreapp2.1\05.Slice a File.pdb

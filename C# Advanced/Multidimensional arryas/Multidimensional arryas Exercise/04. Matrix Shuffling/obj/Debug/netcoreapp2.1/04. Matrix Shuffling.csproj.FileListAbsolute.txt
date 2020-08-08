@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\04. Matrix Shuffling\bin\Debug\netcoreapp2.1\04. Matrix Shuffling.deps.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\04. Matrix Shuffling\bin\Debug\netcoreapp2.1\04. Matrix Shuffling.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\04. Matrix Shuffling\bin\Debug\netcoreapp2.1\04. Matrix Shuffling.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\04. Matrix Shuffling\bin\Debug\netcoreapp2.1\04. Matrix Shuffling.dll
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\04. Matrix Shuffling\bin\Debug\netcoreapp2.1\04. Matrix Shuffling.pdb
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\04. Matrix Shuffling\obj\Debug\netcoreapp2.1\04. Matrix Shuffling.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\04. Matrix Shuffling\obj\Debug\netcoreapp2.1\04. Matrix Shuffling.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\04. Matrix Shuffling\obj\Debug\netcoreapp2.1\04. Matrix Shuffling.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\04. Matrix Shuffling\obj\Debug\netcoreapp2.1\04. Matrix Shuffling.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\04. Matrix Shuffling\obj\Debug\netcoreapp2.1\04. Matrix Shuffling.dll
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\04. Matrix Shuffling\obj\Debug\netcoreapp2.1\04. Matrix Shuffling.pdb

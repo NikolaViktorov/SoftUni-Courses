@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\04. BookComparer\bin\Debug\netcoreapp2.1\04. BookComparer.deps.json
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\04. BookComparer\bin\Debug\netcoreapp2.1\04. BookComparer.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\04. BookComparer\bin\Debug\netcoreapp2.1\04. BookComparer.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\04. BookComparer\bin\Debug\netcoreapp2.1\04. BookComparer.dll
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\04. BookComparer\bin\Debug\netcoreapp2.1\04. BookComparer.pdb
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\04. BookComparer\obj\Debug\netcoreapp2.1\04. BookComparer.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\04. BookComparer\obj\Debug\netcoreapp2.1\04. BookComparer.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\04. BookComparer\obj\Debug\netcoreapp2.1\04. BookComparer.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\04. BookComparer\obj\Debug\netcoreapp2.1\04. BookComparer.dll
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\04. BookComparer\obj\Debug\netcoreapp2.1\04. BookComparer.pdb

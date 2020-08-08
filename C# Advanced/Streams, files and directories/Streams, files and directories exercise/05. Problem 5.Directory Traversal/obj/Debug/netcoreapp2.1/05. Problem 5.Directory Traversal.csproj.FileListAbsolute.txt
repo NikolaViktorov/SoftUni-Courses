@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\05. Problem 5.Directory Traversal\bin\Debug\netcoreapp2.1\05. Problem 5.Directory Traversal.deps.json
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\05. Problem 5.Directory Traversal\bin\Debug\netcoreapp2.1\05. Problem 5.Directory Traversal.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\05. Problem 5.Directory Traversal\bin\Debug\netcoreapp2.1\05. Problem 5.Directory Traversal.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\05. Problem 5.Directory Traversal\bin\Debug\netcoreapp2.1\05. Problem 5.Directory Traversal.dll
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\05. Problem 5.Directory Traversal\bin\Debug\netcoreapp2.1\05. Problem 5.Directory Traversal.pdb
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\05. Problem 5.Directory Traversal\obj\Debug\netcoreapp2.1\05. Problem 5.Directory Traversal.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\05. Problem 5.Directory Traversal\obj\Debug\netcoreapp2.1\05. Problem 5.Directory Traversal.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\05. Problem 5.Directory Traversal\obj\Debug\netcoreapp2.1\05. Problem 5.Directory Traversal.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\05. Problem 5.Directory Traversal\obj\Debug\netcoreapp2.1\05. Problem 5.Directory Traversal.dll
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\05. Problem 5.Directory Traversal\obj\Debug\netcoreapp2.1\05. Problem 5.Directory Traversal.pdb

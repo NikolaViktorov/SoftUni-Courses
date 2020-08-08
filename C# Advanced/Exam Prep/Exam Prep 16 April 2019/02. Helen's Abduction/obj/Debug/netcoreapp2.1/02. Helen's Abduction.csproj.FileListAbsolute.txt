@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam Prep 16 April 2019\02. Helen's Abduction\bin\Debug\netcoreapp2.1\02. Helen's Abduction.deps.json
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam Prep 16 April 2019\02. Helen's Abduction\bin\Debug\netcoreapp2.1\02. Helen's Abduction.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam Prep 16 April 2019\02. Helen's Abduction\bin\Debug\netcoreapp2.1\02. Helen's Abduction.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam Prep 16 April 2019\02. Helen's Abduction\bin\Debug\netcoreapp2.1\02. Helen's Abduction.dll
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam Prep 16 April 2019\02. Helen's Abduction\bin\Debug\netcoreapp2.1\02. Helen's Abduction.pdb
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam Prep 16 April 2019\02. Helen's Abduction\obj\Debug\netcoreapp2.1\02. Helen's Abduction.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam Prep 16 April 2019\02. Helen's Abduction\obj\Debug\netcoreapp2.1\02. Helen's Abduction.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam Prep 16 April 2019\02. Helen's Abduction\obj\Debug\netcoreapp2.1\02. Helen's Abduction.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam Prep 16 April 2019\02. Helen's Abduction\obj\Debug\netcoreapp2.1\02. Helen's Abduction.dll
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam Prep 16 April 2019\02. Helen's Abduction\obj\Debug\netcoreapp2.1\02. Helen's Abduction.pdb
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam Prep 16 April 2019\02. Helen's Abduction\obj\Debug\netcoreapp2.1\02. Helen's Abduction.csprojAssemblyReference.cache

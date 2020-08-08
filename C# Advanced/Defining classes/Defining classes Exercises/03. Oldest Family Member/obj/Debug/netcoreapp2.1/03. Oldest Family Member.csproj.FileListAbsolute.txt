@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\03. Oldest Family Member\bin\Debug\netcoreapp2.1\03. Oldest Family Member.deps.json
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\03. Oldest Family Member\bin\Debug\netcoreapp2.1\03. Oldest Family Member.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\03. Oldest Family Member\bin\Debug\netcoreapp2.1\03. Oldest Family Member.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\03. Oldest Family Member\bin\Debug\netcoreapp2.1\03. Oldest Family Member.dll
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\03. Oldest Family Member\bin\Debug\netcoreapp2.1\03. Oldest Family Member.pdb
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\03. Oldest Family Member\obj\Debug\netcoreapp2.1\03. Oldest Family Member.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\03. Oldest Family Member\obj\Debug\netcoreapp2.1\03. Oldest Family Member.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\03. Oldest Family Member\obj\Debug\netcoreapp2.1\03. Oldest Family Member.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\03. Oldest Family Member\obj\Debug\netcoreapp2.1\03. Oldest Family Member.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\03. Oldest Family Member\obj\Debug\netcoreapp2.1\03. Oldest Family Member.dll
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\03. Oldest Family Member\obj\Debug\netcoreapp2.1\03. Oldest Family Member.pdb

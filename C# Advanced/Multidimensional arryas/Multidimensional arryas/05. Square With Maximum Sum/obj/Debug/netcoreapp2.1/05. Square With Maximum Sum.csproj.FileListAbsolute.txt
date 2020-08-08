@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\05. Square With Maximum Sum\bin\Debug\netcoreapp2.1\05. Square With Maximum Sum.deps.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\05. Square With Maximum Sum\bin\Debug\netcoreapp2.1\05. Square With Maximum Sum.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\05. Square With Maximum Sum\bin\Debug\netcoreapp2.1\05. Square With Maximum Sum.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\05. Square With Maximum Sum\bin\Debug\netcoreapp2.1\05. Square With Maximum Sum.dll
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\05. Square With Maximum Sum\bin\Debug\netcoreapp2.1\05. Square With Maximum Sum.pdb
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\05. Square With Maximum Sum\obj\Debug\netcoreapp2.1\05. Square With Maximum Sum.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\05. Square With Maximum Sum\obj\Debug\netcoreapp2.1\05. Square With Maximum Sum.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\05. Square With Maximum Sum\obj\Debug\netcoreapp2.1\05. Square With Maximum Sum.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\05. Square With Maximum Sum\obj\Debug\netcoreapp2.1\05. Square With Maximum Sum.dll
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\05. Square With Maximum Sum\obj\Debug\netcoreapp2.1\05. Square With Maximum Sum.pdb

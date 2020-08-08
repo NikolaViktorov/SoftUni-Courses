@@ -1,0 +1,12 @@
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\04. Copy binary file\bin\Debug\netcoreapp2.1\copyMe.png
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\04. Copy binary file\bin\Debug\netcoreapp2.1\04. Copy binary file.deps.json
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\04. Copy binary file\bin\Debug\netcoreapp2.1\04. Copy binary file.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\04. Copy binary file\bin\Debug\netcoreapp2.1\04. Copy binary file.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\04. Copy binary file\bin\Debug\netcoreapp2.1\04. Copy binary file.dll
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\04. Copy binary file\bin\Debug\netcoreapp2.1\04. Copy binary file.pdb
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\04. Copy binary file\obj\Debug\netcoreapp2.1\04. Copy binary file.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\04. Copy binary file\obj\Debug\netcoreapp2.1\04. Copy binary file.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\04. Copy binary file\obj\Debug\netcoreapp2.1\04. Copy binary file.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\04. Copy binary file\obj\Debug\netcoreapp2.1\04. Copy binary file.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\04. Copy binary file\obj\Debug\netcoreapp2.1\04. Copy binary file.dll
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\04. Copy binary file\obj\Debug\netcoreapp2.1\04. Copy binary file.pdb

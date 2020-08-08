@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\03. Generic Scale\bin\Debug\netcoreapp2.1\03. Generic Scale.deps.json
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\03. Generic Scale\bin\Debug\netcoreapp2.1\03. Generic Scale.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\03. Generic Scale\bin\Debug\netcoreapp2.1\03. Generic Scale.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\03. Generic Scale\bin\Debug\netcoreapp2.1\03. Generic Scale.dll
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\03. Generic Scale\bin\Debug\netcoreapp2.1\03. Generic Scale.pdb
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\03. Generic Scale\obj\Debug\netcoreapp2.1\03. Generic Scale.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\03. Generic Scale\obj\Debug\netcoreapp2.1\03. Generic Scale.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\03. Generic Scale\obj\Debug\netcoreapp2.1\03. Generic Scale.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\03. Generic Scale\obj\Debug\netcoreapp2.1\03. Generic Scale.dll
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\03. Generic Scale\obj\Debug\netcoreapp2.1\03. Generic Scale.pdb

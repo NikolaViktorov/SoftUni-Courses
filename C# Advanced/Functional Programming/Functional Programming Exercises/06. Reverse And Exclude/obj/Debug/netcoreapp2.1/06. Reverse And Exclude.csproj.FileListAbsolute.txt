@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\06. Reverse And Exclude\bin\Debug\netcoreapp2.1\06. Reverse And Exclude.deps.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\06. Reverse And Exclude\bin\Debug\netcoreapp2.1\06. Reverse And Exclude.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\06. Reverse And Exclude\bin\Debug\netcoreapp2.1\06. Reverse And Exclude.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\06. Reverse And Exclude\bin\Debug\netcoreapp2.1\06. Reverse And Exclude.dll
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\06. Reverse And Exclude\bin\Debug\netcoreapp2.1\06. Reverse And Exclude.pdb
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\06. Reverse And Exclude\obj\Debug\netcoreapp2.1\06. Reverse And Exclude.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\06. Reverse And Exclude\obj\Debug\netcoreapp2.1\06. Reverse And Exclude.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\06. Reverse And Exclude\obj\Debug\netcoreapp2.1\06. Reverse And Exclude.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\06. Reverse And Exclude\obj\Debug\netcoreapp2.1\06. Reverse And Exclude.dll
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\06. Reverse And Exclude\obj\Debug\netcoreapp2.1\06. Reverse And Exclude.pdb

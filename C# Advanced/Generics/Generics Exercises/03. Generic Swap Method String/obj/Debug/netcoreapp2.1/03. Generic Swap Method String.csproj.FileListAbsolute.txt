@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\03. Generic Swap Method String\bin\Debug\netcoreapp2.1\03. Generic Swap Method String.deps.json
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\03. Generic Swap Method String\bin\Debug\netcoreapp2.1\03. Generic Swap Method String.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\03. Generic Swap Method String\bin\Debug\netcoreapp2.1\03. Generic Swap Method String.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\03. Generic Swap Method String\bin\Debug\netcoreapp2.1\03. Generic Swap Method String.dll
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\03. Generic Swap Method String\bin\Debug\netcoreapp2.1\03. Generic Swap Method String.pdb
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\03. Generic Swap Method String\obj\Debug\netcoreapp2.1\03. Generic Swap Method String.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\03. Generic Swap Method String\obj\Debug\netcoreapp2.1\03. Generic Swap Method String.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\03. Generic Swap Method String\obj\Debug\netcoreapp2.1\03. Generic Swap Method String.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\03. Generic Swap Method String\obj\Debug\netcoreapp2.1\03. Generic Swap Method String.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\03. Generic Swap Method String\obj\Debug\netcoreapp2.1\03. Generic Swap Method String.dll
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\03. Generic Swap Method String\obj\Debug\netcoreapp2.1\03. Generic Swap Method String.pdb

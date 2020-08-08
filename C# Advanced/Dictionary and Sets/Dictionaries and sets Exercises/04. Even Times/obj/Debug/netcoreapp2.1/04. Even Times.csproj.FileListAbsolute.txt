@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\04. Even Times\bin\Debug\netcoreapp2.1\04. Even Times.deps.json
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\04. Even Times\bin\Debug\netcoreapp2.1\04. Even Times.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\04. Even Times\bin\Debug\netcoreapp2.1\04. Even Times.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\04. Even Times\bin\Debug\netcoreapp2.1\04. Even Times.dll
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\04. Even Times\bin\Debug\netcoreapp2.1\04. Even Times.pdb
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\04. Even Times\obj\Debug\netcoreapp2.1\04. Even Times.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\04. Even Times\obj\Debug\netcoreapp2.1\04. Even Times.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\04. Even Times\obj\Debug\netcoreapp2.1\04. Even Times.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\04. Even Times\obj\Debug\netcoreapp2.1\04. Even Times.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\04. Even Times\obj\Debug\netcoreapp2.1\04. Even Times.dll
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\04. Even Times\obj\Debug\netcoreapp2.1\04. Even Times.pdb

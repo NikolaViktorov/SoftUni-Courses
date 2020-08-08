@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\01. Basic Stack Operations\bin\Debug\netcoreapp2.1\01. Basic Stack Operations.deps.json
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\01. Basic Stack Operations\bin\Debug\netcoreapp2.1\01. Basic Stack Operations.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\01. Basic Stack Operations\bin\Debug\netcoreapp2.1\01. Basic Stack Operations.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\01. Basic Stack Operations\bin\Debug\netcoreapp2.1\01. Basic Stack Operations.dll
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\01. Basic Stack Operations\bin\Debug\netcoreapp2.1\01. Basic Stack Operations.pdb
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\01. Basic Stack Operations\obj\Debug\netcoreapp2.1\01. Basic Stack Operations.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\01. Basic Stack Operations\obj\Debug\netcoreapp2.1\01. Basic Stack Operations.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\01. Basic Stack Operations\obj\Debug\netcoreapp2.1\01. Basic Stack Operations.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\01. Basic Stack Operations\obj\Debug\netcoreapp2.1\01. Basic Stack Operations.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\01. Basic Stack Operations\obj\Debug\netcoreapp2.1\01. Basic Stack Operations.dll
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\01. Basic Stack Operations\obj\Debug\netcoreapp2.1\01. Basic Stack Operations.pdb

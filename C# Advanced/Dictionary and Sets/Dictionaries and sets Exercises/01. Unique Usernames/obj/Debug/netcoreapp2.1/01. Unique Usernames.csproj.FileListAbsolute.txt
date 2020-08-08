@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\01. Unique Usernames\bin\Debug\netcoreapp2.1\01. Unique Usernames.deps.json
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\01. Unique Usernames\bin\Debug\netcoreapp2.1\01. Unique Usernames.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\01. Unique Usernames\bin\Debug\netcoreapp2.1\01. Unique Usernames.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\01. Unique Usernames\bin\Debug\netcoreapp2.1\01. Unique Usernames.dll
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\01. Unique Usernames\bin\Debug\netcoreapp2.1\01. Unique Usernames.pdb
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\01. Unique Usernames\obj\Debug\netcoreapp2.1\01. Unique Usernames.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\01. Unique Usernames\obj\Debug\netcoreapp2.1\01. Unique Usernames.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\01. Unique Usernames\obj\Debug\netcoreapp2.1\01. Unique Usernames.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\01. Unique Usernames\obj\Debug\netcoreapp2.1\01. Unique Usernames.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\01. Unique Usernames\obj\Debug\netcoreapp2.1\01. Unique Usernames.dll
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\01. Unique Usernames\obj\Debug\netcoreapp2.1\01. Unique Usernames.pdb

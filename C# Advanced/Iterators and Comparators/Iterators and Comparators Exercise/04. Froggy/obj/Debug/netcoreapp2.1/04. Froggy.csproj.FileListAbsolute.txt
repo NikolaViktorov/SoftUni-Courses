@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators Exercise\04. Froggy\bin\Debug\netcoreapp2.1\04. Froggy.deps.json
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators Exercise\04. Froggy\bin\Debug\netcoreapp2.1\04. Froggy.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators Exercise\04. Froggy\bin\Debug\netcoreapp2.1\04. Froggy.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators Exercise\04. Froggy\bin\Debug\netcoreapp2.1\04. Froggy.dll
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators Exercise\04. Froggy\bin\Debug\netcoreapp2.1\04. Froggy.pdb
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators Exercise\04. Froggy\obj\Debug\netcoreapp2.1\04. Froggy.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators Exercise\04. Froggy\obj\Debug\netcoreapp2.1\04. Froggy.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators Exercise\04. Froggy\obj\Debug\netcoreapp2.1\04. Froggy.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators Exercise\04. Froggy\obj\Debug\netcoreapp2.1\04. Froggy.dll
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators Exercise\04. Froggy\obj\Debug\netcoreapp2.1\04. Froggy.pdb

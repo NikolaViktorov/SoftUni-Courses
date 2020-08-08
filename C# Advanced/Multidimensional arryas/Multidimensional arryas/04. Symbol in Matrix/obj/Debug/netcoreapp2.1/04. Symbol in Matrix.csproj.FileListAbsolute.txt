@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\04. Symbol in Matrix\bin\Debug\netcoreapp2.1\04. Symbol in Matrix.deps.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\04. Symbol in Matrix\bin\Debug\netcoreapp2.1\04. Symbol in Matrix.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\04. Symbol in Matrix\bin\Debug\netcoreapp2.1\04. Symbol in Matrix.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\04. Symbol in Matrix\bin\Debug\netcoreapp2.1\04. Symbol in Matrix.dll
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\04. Symbol in Matrix\bin\Debug\netcoreapp2.1\04. Symbol in Matrix.pdb
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\04. Symbol in Matrix\obj\Debug\netcoreapp2.1\04. Symbol in Matrix.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\04. Symbol in Matrix\obj\Debug\netcoreapp2.1\04. Symbol in Matrix.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\04. Symbol in Matrix\obj\Debug\netcoreapp2.1\04. Symbol in Matrix.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\04. Symbol in Matrix\obj\Debug\netcoreapp2.1\04. Symbol in Matrix.dll
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\04. Symbol in Matrix\obj\Debug\netcoreapp2.1\04. Symbol in Matrix.pdb

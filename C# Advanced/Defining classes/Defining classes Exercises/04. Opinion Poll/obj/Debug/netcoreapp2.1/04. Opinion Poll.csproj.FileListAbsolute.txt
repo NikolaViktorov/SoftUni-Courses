@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\04. Opinion Poll\bin\Debug\netcoreapp2.1\04. Opinion Poll.deps.json
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\04. Opinion Poll\bin\Debug\netcoreapp2.1\04. Opinion Poll.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\04. Opinion Poll\bin\Debug\netcoreapp2.1\04. Opinion Poll.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\04. Opinion Poll\bin\Debug\netcoreapp2.1\04. Opinion Poll.dll
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\04. Opinion Poll\bin\Debug\netcoreapp2.1\04. Opinion Poll.pdb
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\04. Opinion Poll\obj\Debug\netcoreapp2.1\04. Opinion Poll.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\04. Opinion Poll\obj\Debug\netcoreapp2.1\04. Opinion Poll.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\04. Opinion Poll\obj\Debug\netcoreapp2.1\04. Opinion Poll.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\04. Opinion Poll\obj\Debug\netcoreapp2.1\04. Opinion Poll.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\04. Opinion Poll\obj\Debug\netcoreapp2.1\04. Opinion Poll.dll
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\04. Opinion Poll\obj\Debug\netcoreapp2.1\04. Opinion Poll.pdb

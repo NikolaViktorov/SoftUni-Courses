@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\01. Action Print\bin\Debug\netcoreapp2.1\01. Action Print.deps.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\01. Action Print\bin\Debug\netcoreapp2.1\01. Action Print.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\01. Action Print\bin\Debug\netcoreapp2.1\01. Action Print.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\01. Action Print\bin\Debug\netcoreapp2.1\01. Action Print.dll
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\01. Action Print\bin\Debug\netcoreapp2.1\01. Action Print.pdb
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\01. Action Print\obj\Debug\netcoreapp2.1\01. Action Print.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\01. Action Print\obj\Debug\netcoreapp2.1\01. Action Print.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\01. Action Print\obj\Debug\netcoreapp2.1\01. Action Print.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\01. Action Print\obj\Debug\netcoreapp2.1\01. Action Print.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\01. Action Print\obj\Debug\netcoreapp2.1\01. Action Print.dll
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\01. Action Print\obj\Debug\netcoreapp2.1\01. Action Print.pdb

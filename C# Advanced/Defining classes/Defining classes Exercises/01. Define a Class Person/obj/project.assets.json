@@ -1,0 +1,43 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v2.1": []
+  },
+  "packageFolders": {
+    "C:\\Users\\my\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Programming\\SoftUni\\C# Advanced\\Defining classes\\Defining classes Exercises\\01. Define a Class Person\\01. Define a Class Person.csproj",
+      "projectName": "01. Define a Class Person",
+      "projectPath": "D:\\Programming\\SoftUni\\C# Advanced\\Defining classes\\Defining classes Exercises\\01. Define a Class Person\\01. Define a Class Person.csproj",
+      "packagesPath": "C:\\Users\\my\\.nuget\\packages\\",
+      "outputPath": "D:\\Programming\\SoftUni\\C# Advanced\\Defining classes\\Defining classes Exercises\\01. Define a Class Person\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\my\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp2.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "netcoreapp2.1": {}
+    }
+  }
+}

@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\03. Maximum and Minimum Element\bin\Debug\netcoreapp2.1\03. Maximum and Minimum Element.deps.json
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\03. Maximum and Minimum Element\bin\Debug\netcoreapp2.1\03. Maximum and Minimum Element.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\03. Maximum and Minimum Element\bin\Debug\netcoreapp2.1\03. Maximum and Minimum Element.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\03. Maximum and Minimum Element\bin\Debug\netcoreapp2.1\03. Maximum and Minimum Element.dll
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\03. Maximum and Minimum Element\bin\Debug\netcoreapp2.1\03. Maximum and Minimum Element.pdb
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\03. Maximum and Minimum Element\obj\Debug\netcoreapp2.1\03. Maximum and Minimum Element.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\03. Maximum and Minimum Element\obj\Debug\netcoreapp2.1\03. Maximum and Minimum Element.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\03. Maximum and Minimum Element\obj\Debug\netcoreapp2.1\03. Maximum and Minimum Element.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\03. Maximum and Minimum Element\obj\Debug\netcoreapp2.1\03. Maximum and Minimum Element.dll
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues exercises\03. Maximum and Minimum Element\obj\Debug\netcoreapp2.1\03. Maximum and Minimum Element.pdb

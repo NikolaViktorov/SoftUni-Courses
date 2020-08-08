@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\00. Stack Demo\bin\Debug\netcoreapp2.1\00. Stack Demo.deps.json
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\00. Stack Demo\bin\Debug\netcoreapp2.1\00. Stack Demo.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\00. Stack Demo\bin\Debug\netcoreapp2.1\00. Stack Demo.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\00. Stack Demo\bin\Debug\netcoreapp2.1\00. Stack Demo.dll
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\00. Stack Demo\bin\Debug\netcoreapp2.1\00. Stack Demo.pdb
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\00. Stack Demo\obj\Debug\netcoreapp2.1\00. Stack Demo.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\00. Stack Demo\obj\Debug\netcoreapp2.1\00. Stack Demo.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\00. Stack Demo\obj\Debug\netcoreapp2.1\00. Stack Demo.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\00. Stack Demo\obj\Debug\netcoreapp2.1\00. Stack Demo.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\00. Stack Demo\obj\Debug\netcoreapp2.1\00. Stack Demo.dll
+D:\Programming\SoftUni\C# Advanced\Stacks and queues\Stacks and queues\00. Stack Demo\obj\Debug\netcoreapp2.1\00. Stack Demo.pdb

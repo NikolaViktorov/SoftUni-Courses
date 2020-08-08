@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\02. Sum Matrix Columns\bin\Debug\netcoreapp2.1\02. Sum Matrix Columns.deps.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\02. Sum Matrix Columns\bin\Debug\netcoreapp2.1\02. Sum Matrix Columns.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\02. Sum Matrix Columns\bin\Debug\netcoreapp2.1\02. Sum Matrix Columns.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\02. Sum Matrix Columns\bin\Debug\netcoreapp2.1\02. Sum Matrix Columns.dll
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\02. Sum Matrix Columns\bin\Debug\netcoreapp2.1\02. Sum Matrix Columns.pdb
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\02. Sum Matrix Columns\obj\Debug\netcoreapp2.1\02. Sum Matrix Columns.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\02. Sum Matrix Columns\obj\Debug\netcoreapp2.1\02. Sum Matrix Columns.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\02. Sum Matrix Columns\obj\Debug\netcoreapp2.1\02. Sum Matrix Columns.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\02. Sum Matrix Columns\obj\Debug\netcoreapp2.1\02. Sum Matrix Columns.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\02. Sum Matrix Columns\obj\Debug\netcoreapp2.1\02. Sum Matrix Columns.dll
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\02. Sum Matrix Columns\obj\Debug\netcoreapp2.1\02. Sum Matrix Columns.pdb

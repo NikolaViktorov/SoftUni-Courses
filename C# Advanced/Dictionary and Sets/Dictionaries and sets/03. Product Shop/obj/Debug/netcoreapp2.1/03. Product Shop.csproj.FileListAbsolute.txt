@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\03. Product Shop\bin\Debug\netcoreapp2.1\03. Product Shop.deps.json
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\03. Product Shop\bin\Debug\netcoreapp2.1\03. Product Shop.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\03. Product Shop\bin\Debug\netcoreapp2.1\03. Product Shop.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\03. Product Shop\bin\Debug\netcoreapp2.1\03. Product Shop.dll
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\03. Product Shop\bin\Debug\netcoreapp2.1\03. Product Shop.pdb
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\03. Product Shop\obj\Debug\netcoreapp2.1\03. Product Shop.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\03. Product Shop\obj\Debug\netcoreapp2.1\03. Product Shop.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\03. Product Shop\obj\Debug\netcoreapp2.1\03. Product Shop.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\03. Product Shop\obj\Debug\netcoreapp2.1\03. Product Shop.dll
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\03. Product Shop\obj\Debug\netcoreapp2.1\03. Product Shop.pdb

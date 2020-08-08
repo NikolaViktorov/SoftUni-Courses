@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\02. Excel Functions\bin\Debug\netcoreapp2.1\02. Excel Functions.deps.json
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\02. Excel Functions\bin\Debug\netcoreapp2.1\02. Excel Functions.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\02. Excel Functions\bin\Debug\netcoreapp2.1\02. Excel Functions.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\02. Excel Functions\bin\Debug\netcoreapp2.1\02. Excel Functions.dll
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\02. Excel Functions\bin\Debug\netcoreapp2.1\02. Excel Functions.pdb
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\02. Excel Functions\obj\Debug\netcoreapp2.1\02. Excel Functions.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\02. Excel Functions\obj\Debug\netcoreapp2.1\02. Excel Functions.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\02. Excel Functions\obj\Debug\netcoreapp2.1\02. Excel Functions.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\02. Excel Functions\obj\Debug\netcoreapp2.1\02. Excel Functions.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\02. Excel Functions\obj\Debug\netcoreapp2.1\02. Excel Functions.dll
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\02. Excel Functions\obj\Debug\netcoreapp2.1\02. Excel Functions.pdb

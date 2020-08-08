@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\05. Applied Arithmetics\bin\Debug\netcoreapp2.1\05. Applied Arithmetics.deps.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\05. Applied Arithmetics\bin\Debug\netcoreapp2.1\05. Applied Arithmetics.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\05. Applied Arithmetics\bin\Debug\netcoreapp2.1\05. Applied Arithmetics.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\05. Applied Arithmetics\bin\Debug\netcoreapp2.1\05. Applied Arithmetics.dll
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\05. Applied Arithmetics\bin\Debug\netcoreapp2.1\05. Applied Arithmetics.pdb
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\05. Applied Arithmetics\obj\Debug\netcoreapp2.1\05. Applied Arithmetics.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\05. Applied Arithmetics\obj\Debug\netcoreapp2.1\05. Applied Arithmetics.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\05. Applied Arithmetics\obj\Debug\netcoreapp2.1\05. Applied Arithmetics.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\05. Applied Arithmetics\obj\Debug\netcoreapp2.1\05. Applied Arithmetics.dll
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\05. Applied Arithmetics\obj\Debug\netcoreapp2.1\05. Applied Arithmetics.pdb

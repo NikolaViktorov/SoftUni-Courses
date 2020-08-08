@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\05. Date Modifier\bin\Debug\netcoreapp2.1\05. Date Modifier.deps.json
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\05. Date Modifier\bin\Debug\netcoreapp2.1\05. Date Modifier.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\05. Date Modifier\bin\Debug\netcoreapp2.1\05. Date Modifier.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\05. Date Modifier\bin\Debug\netcoreapp2.1\05. Date Modifier.dll
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\05. Date Modifier\bin\Debug\netcoreapp2.1\05. Date Modifier.pdb
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\05. Date Modifier\obj\Debug\netcoreapp2.1\05. Date Modifier.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\05. Date Modifier\obj\Debug\netcoreapp2.1\05. Date Modifier.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\05. Date Modifier\obj\Debug\netcoreapp2.1\05. Date Modifier.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\05. Date Modifier\obj\Debug\netcoreapp2.1\05. Date Modifier.dll
+D:\Programming\SoftUni\C# Advanced\Defining classes\Defining classes Exercises\05. Date Modifier\obj\Debug\netcoreapp2.1\05. Date Modifier.pdb

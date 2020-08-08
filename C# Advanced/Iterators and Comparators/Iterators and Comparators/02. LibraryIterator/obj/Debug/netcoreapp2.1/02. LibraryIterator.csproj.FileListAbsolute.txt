@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\02. LibraryIterator\bin\Debug\netcoreapp2.1\02. LibraryIterator.deps.json
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\02. LibraryIterator\bin\Debug\netcoreapp2.1\02. LibraryIterator.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\02. LibraryIterator\bin\Debug\netcoreapp2.1\02. LibraryIterator.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\02. LibraryIterator\bin\Debug\netcoreapp2.1\02. LibraryIterator.dll
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\02. LibraryIterator\bin\Debug\netcoreapp2.1\02. LibraryIterator.pdb
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\02. LibraryIterator\obj\Debug\netcoreapp2.1\02. LibraryIterator.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\02. LibraryIterator\obj\Debug\netcoreapp2.1\02. LibraryIterator.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\02. LibraryIterator\obj\Debug\netcoreapp2.1\02. LibraryIterator.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\02. LibraryIterator\obj\Debug\netcoreapp2.1\02. LibraryIterator.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\02. LibraryIterator\obj\Debug\netcoreapp2.1\02. LibraryIterator.dll
+D:\Programming\SoftUni\C# Advanced\Iterators and Comparators\Iterators and Comparators\02. LibraryIterator\obj\Debug\netcoreapp2.1\02. LibraryIterator.pdb

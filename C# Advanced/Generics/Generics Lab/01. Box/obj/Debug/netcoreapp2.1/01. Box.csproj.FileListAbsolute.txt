@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\01. Box\obj\Debug\netcoreapp2.1\01. Box.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\01. Box\obj\Debug\netcoreapp2.1\01. Box.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\01. Box\obj\Debug\netcoreapp2.1\01. Box.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\01. Box\obj\Debug\netcoreapp2.1\01. Box.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\01. Box\bin\Debug\netcoreapp2.1\01. Box.deps.json
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\01. Box\bin\Debug\netcoreapp2.1\01. Box.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\01. Box\bin\Debug\netcoreapp2.1\01. Box.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\01. Box\bin\Debug\netcoreapp2.1\01. Box.dll
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\01. Box\bin\Debug\netcoreapp2.1\01. Box.pdb
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\01. Box\obj\Debug\netcoreapp2.1\01. Box.dll
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Lab\01. Box\obj\Debug\netcoreapp2.1\01. Box.pdb

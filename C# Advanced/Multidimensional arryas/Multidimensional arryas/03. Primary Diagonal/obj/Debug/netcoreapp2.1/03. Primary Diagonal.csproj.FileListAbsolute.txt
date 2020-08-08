@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\03. Primary Diagonal\bin\Debug\netcoreapp2.1\03. Primary Diagonal.deps.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\03. Primary Diagonal\bin\Debug\netcoreapp2.1\03. Primary Diagonal.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\03. Primary Diagonal\bin\Debug\netcoreapp2.1\03. Primary Diagonal.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\03. Primary Diagonal\bin\Debug\netcoreapp2.1\03. Primary Diagonal.dll
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\03. Primary Diagonal\bin\Debug\netcoreapp2.1\03. Primary Diagonal.pdb
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\03. Primary Diagonal\obj\Debug\netcoreapp2.1\03. Primary Diagonal.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\03. Primary Diagonal\obj\Debug\netcoreapp2.1\03. Primary Diagonal.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\03. Primary Diagonal\obj\Debug\netcoreapp2.1\03. Primary Diagonal.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\03. Primary Diagonal\obj\Debug\netcoreapp2.1\03. Primary Diagonal.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\03. Primary Diagonal\obj\Debug\netcoreapp2.1\03. Primary Diagonal.dll
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\03. Primary Diagonal\obj\Debug\netcoreapp2.1\03. Primary Diagonal.pdb

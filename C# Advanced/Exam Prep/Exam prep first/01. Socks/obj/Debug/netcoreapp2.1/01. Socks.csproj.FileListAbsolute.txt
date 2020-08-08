@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\01. Socks\bin\Debug\netcoreapp2.1\01. Socks.deps.json
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\01. Socks\bin\Debug\netcoreapp2.1\01. Socks.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\01. Socks\bin\Debug\netcoreapp2.1\01. Socks.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\01. Socks\bin\Debug\netcoreapp2.1\01. Socks.dll
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\01. Socks\bin\Debug\netcoreapp2.1\01. Socks.pdb
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\01. Socks\obj\Debug\netcoreapp2.1\01. Socks.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\01. Socks\obj\Debug\netcoreapp2.1\01. Socks.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\01. Socks\obj\Debug\netcoreapp2.1\01. Socks.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\01. Socks\obj\Debug\netcoreapp2.1\01. Socks.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\01. Socks\obj\Debug\netcoreapp2.1\01. Socks.dll
+D:\Programming\SoftUni\C# Advanced\Exam Prep\Exam prep first\01. Socks\obj\Debug\netcoreapp2.1\01. Socks.pdb

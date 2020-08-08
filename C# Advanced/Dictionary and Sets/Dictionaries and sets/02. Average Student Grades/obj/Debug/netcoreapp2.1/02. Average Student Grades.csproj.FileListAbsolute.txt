@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\02. Average Student Grades\bin\Debug\netcoreapp2.1\02. Average Student Grades.deps.json
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\02. Average Student Grades\bin\Debug\netcoreapp2.1\02. Average Student Grades.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\02. Average Student Grades\bin\Debug\netcoreapp2.1\02. Average Student Grades.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\02. Average Student Grades\bin\Debug\netcoreapp2.1\02. Average Student Grades.dll
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\02. Average Student Grades\bin\Debug\netcoreapp2.1\02. Average Student Grades.pdb
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\02. Average Student Grades\obj\Debug\netcoreapp2.1\02. Average Student Grades.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\02. Average Student Grades\obj\Debug\netcoreapp2.1\02. Average Student Grades.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\02. Average Student Grades\obj\Debug\netcoreapp2.1\02. Average Student Grades.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\02. Average Student Grades\obj\Debug\netcoreapp2.1\02. Average Student Grades.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\02. Average Student Grades\obj\Debug\netcoreapp2.1\02. Average Student Grades.dll
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets\02. Average Student Grades\obj\Debug\netcoreapp2.1\02. Average Student Grades.pdb

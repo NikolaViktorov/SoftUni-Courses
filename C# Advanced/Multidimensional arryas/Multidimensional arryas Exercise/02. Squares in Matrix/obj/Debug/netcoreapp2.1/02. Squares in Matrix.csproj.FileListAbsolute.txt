@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\02. Squares in Matrix\bin\Debug\netcoreapp2.1\02. Squares in Matrix.deps.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\02. Squares in Matrix\bin\Debug\netcoreapp2.1\02. Squares in Matrix.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\02. Squares in Matrix\bin\Debug\netcoreapp2.1\02. Squares in Matrix.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\02. Squares in Matrix\bin\Debug\netcoreapp2.1\02. Squares in Matrix.dll
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\02. Squares in Matrix\bin\Debug\netcoreapp2.1\02. Squares in Matrix.pdb
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\02. Squares in Matrix\obj\Debug\netcoreapp2.1\02. Squares in Matrix.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\02. Squares in Matrix\obj\Debug\netcoreapp2.1\02. Squares in Matrix.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\02. Squares in Matrix\obj\Debug\netcoreapp2.1\02. Squares in Matrix.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\02. Squares in Matrix\obj\Debug\netcoreapp2.1\02. Squares in Matrix.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\02. Squares in Matrix\obj\Debug\netcoreapp2.1\02. Squares in Matrix.dll
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\02. Squares in Matrix\obj\Debug\netcoreapp2.1\02. Squares in Matrix.pdb

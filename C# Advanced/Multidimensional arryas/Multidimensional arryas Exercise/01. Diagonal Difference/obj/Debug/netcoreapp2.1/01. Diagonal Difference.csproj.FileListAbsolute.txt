@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\01. Diagonal Difference\bin\Debug\netcoreapp2.1\01. Diagonal Difference.deps.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\01. Diagonal Difference\bin\Debug\netcoreapp2.1\01. Diagonal Difference.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\01. Diagonal Difference\bin\Debug\netcoreapp2.1\01. Diagonal Difference.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\01. Diagonal Difference\bin\Debug\netcoreapp2.1\01. Diagonal Difference.dll
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\01. Diagonal Difference\bin\Debug\netcoreapp2.1\01. Diagonal Difference.pdb
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\01. Diagonal Difference\obj\Debug\netcoreapp2.1\01. Diagonal Difference.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\01. Diagonal Difference\obj\Debug\netcoreapp2.1\01. Diagonal Difference.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\01. Diagonal Difference\obj\Debug\netcoreapp2.1\01. Diagonal Difference.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\01. Diagonal Difference\obj\Debug\netcoreapp2.1\01. Diagonal Difference.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\01. Diagonal Difference\obj\Debug\netcoreapp2.1\01. Diagonal Difference.dll
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas Exercise\01. Diagonal Difference\obj\Debug\netcoreapp2.1\01. Diagonal Difference.pdb

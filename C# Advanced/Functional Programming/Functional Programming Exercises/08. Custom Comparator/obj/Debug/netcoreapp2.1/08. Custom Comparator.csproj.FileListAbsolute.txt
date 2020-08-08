@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\08. Custom Comparator\bin\Debug\netcoreapp2.1\08. Custom Comparator.deps.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\08. Custom Comparator\bin\Debug\netcoreapp2.1\08. Custom Comparator.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\08. Custom Comparator\bin\Debug\netcoreapp2.1\08. Custom Comparator.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\08. Custom Comparator\bin\Debug\netcoreapp2.1\08. Custom Comparator.dll
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\08. Custom Comparator\bin\Debug\netcoreapp2.1\08. Custom Comparator.pdb
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\08. Custom Comparator\obj\Debug\netcoreapp2.1\08. Custom Comparator.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\08. Custom Comparator\obj\Debug\netcoreapp2.1\08. Custom Comparator.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\08. Custom Comparator\obj\Debug\netcoreapp2.1\08. Custom Comparator.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\08. Custom Comparator\obj\Debug\netcoreapp2.1\08. Custom Comparator.dll
+D:\Programming\SoftUni\C# Advanced\Functional Programming\Functional Programming Exercises\08. Custom Comparator\obj\Debug\netcoreapp2.1\08. Custom Comparator.pdb

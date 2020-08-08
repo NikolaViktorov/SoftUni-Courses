@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\06. Wardrobe\bin\Debug\netcoreapp2.1\06. Wardrobe.deps.json
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\06. Wardrobe\bin\Debug\netcoreapp2.1\06. Wardrobe.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\06. Wardrobe\bin\Debug\netcoreapp2.1\06. Wardrobe.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\06. Wardrobe\bin\Debug\netcoreapp2.1\06. Wardrobe.dll
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\06. Wardrobe\bin\Debug\netcoreapp2.1\06. Wardrobe.pdb
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\06. Wardrobe\obj\Debug\netcoreapp2.1\06. Wardrobe.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\06. Wardrobe\obj\Debug\netcoreapp2.1\06. Wardrobe.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\06. Wardrobe\obj\Debug\netcoreapp2.1\06. Wardrobe.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\06. Wardrobe\obj\Debug\netcoreapp2.1\06. Wardrobe.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\06. Wardrobe\obj\Debug\netcoreapp2.1\06. Wardrobe.dll
+D:\Programming\SoftUni\C# Advanced\Dictionary and Sets\Dictionaries and sets Exercises\06. Wardrobe\obj\Debug\netcoreapp2.1\06. Wardrobe.pdb

@@ -1,0 +1,14 @@
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\03. Word count\bin\Debug\netcoreapp2.1\expectedResult.txt
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\03. Word count\bin\Debug\netcoreapp2.1\text.txt
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\03. Word count\bin\Debug\netcoreapp2.1\words.txt
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\03. Word count\bin\Debug\netcoreapp2.1\03. Word count.deps.json
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\03. Word count\bin\Debug\netcoreapp2.1\03. Word count.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\03. Word count\bin\Debug\netcoreapp2.1\03. Word count.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\03. Word count\bin\Debug\netcoreapp2.1\03. Word count.dll
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\03. Word count\bin\Debug\netcoreapp2.1\03. Word count.pdb
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\03. Word count\obj\Debug\netcoreapp2.1\03. Word count.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\03. Word count\obj\Debug\netcoreapp2.1\03. Word count.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\03. Word count\obj\Debug\netcoreapp2.1\03. Word count.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\03. Word count\obj\Debug\netcoreapp2.1\03. Word count.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\03. Word count\obj\Debug\netcoreapp2.1\03. Word count.dll
+D:\Programming\SoftUni\C# Advanced\Streams, files and directories\Streams, files and directories exercise\03. Word count\obj\Debug\netcoreapp2.1\03. Word count.pdb

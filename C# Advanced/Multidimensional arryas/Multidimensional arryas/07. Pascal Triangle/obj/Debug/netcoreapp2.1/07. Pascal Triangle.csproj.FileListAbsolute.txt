@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\07. Pascal Triangle\bin\Debug\netcoreapp2.1\07. Pascal Triangle.deps.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\07. Pascal Triangle\bin\Debug\netcoreapp2.1\07. Pascal Triangle.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\07. Pascal Triangle\bin\Debug\netcoreapp2.1\07. Pascal Triangle.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\07. Pascal Triangle\bin\Debug\netcoreapp2.1\07. Pascal Triangle.dll
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\07. Pascal Triangle\bin\Debug\netcoreapp2.1\07. Pascal Triangle.pdb
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\07. Pascal Triangle\obj\Debug\netcoreapp2.1\07. Pascal Triangle.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\07. Pascal Triangle\obj\Debug\netcoreapp2.1\07. Pascal Triangle.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\07. Pascal Triangle\obj\Debug\netcoreapp2.1\07. Pascal Triangle.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\07. Pascal Triangle\obj\Debug\netcoreapp2.1\07. Pascal Triangle.dll
+D:\Programming\SoftUni\C# Advanced\Multidimensional arryas\Multidimensional arryas\07. Pascal Triangle\obj\Debug\netcoreapp2.1\07. Pascal Triangle.pdb

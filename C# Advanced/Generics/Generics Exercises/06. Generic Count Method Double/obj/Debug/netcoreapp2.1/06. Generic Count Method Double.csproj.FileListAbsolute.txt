@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\06. Generic Count Method Double\bin\Debug\netcoreapp2.1\06. Generic Count Method Double.deps.json
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\06. Generic Count Method Double\bin\Debug\netcoreapp2.1\06. Generic Count Method Double.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\06. Generic Count Method Double\bin\Debug\netcoreapp2.1\06. Generic Count Method Double.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\06. Generic Count Method Double\bin\Debug\netcoreapp2.1\06. Generic Count Method Double.dll
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\06. Generic Count Method Double\bin\Debug\netcoreapp2.1\06. Generic Count Method Double.pdb
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\06. Generic Count Method Double\obj\Debug\netcoreapp2.1\06. Generic Count Method Double.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\06. Generic Count Method Double\obj\Debug\netcoreapp2.1\06. Generic Count Method Double.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\06. Generic Count Method Double\obj\Debug\netcoreapp2.1\06. Generic Count Method Double.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\06. Generic Count Method Double\obj\Debug\netcoreapp2.1\06. Generic Count Method Double.dll
+D:\Programming\SoftUni\C# Advanced\Generics\Generics Exercises\06. Generic Count Method Double\obj\Debug\netcoreapp2.1\06. Generic Count Method Double.pdb
