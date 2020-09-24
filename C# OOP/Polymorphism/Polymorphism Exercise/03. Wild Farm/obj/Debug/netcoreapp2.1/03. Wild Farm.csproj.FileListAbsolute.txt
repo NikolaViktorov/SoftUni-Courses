@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# OOP\Polymorphism\Polymorphism Exercise\03. Wild Farm\bin\Debug\netcoreapp2.1\03. Wild Farm.deps.json
+D:\Programming\SoftUni\C# OOP\Polymorphism\Polymorphism Exercise\03. Wild Farm\bin\Debug\netcoreapp2.1\03. Wild Farm.runtimeconfig.json
+D:\Programming\SoftUni\C# OOP\Polymorphism\Polymorphism Exercise\03. Wild Farm\bin\Debug\netcoreapp2.1\03. Wild Farm.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# OOP\Polymorphism\Polymorphism Exercise\03. Wild Farm\bin\Debug\netcoreapp2.1\03. Wild Farm.dll
+D:\Programming\SoftUni\C# OOP\Polymorphism\Polymorphism Exercise\03. Wild Farm\bin\Debug\netcoreapp2.1\03. Wild Farm.pdb
+D:\Programming\SoftUni\C# OOP\Polymorphism\Polymorphism Exercise\03. Wild Farm\obj\Debug\netcoreapp2.1\03. Wild Farm.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# OOP\Polymorphism\Polymorphism Exercise\03. Wild Farm\obj\Debug\netcoreapp2.1\03. Wild Farm.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# OOP\Polymorphism\Polymorphism Exercise\03. Wild Farm\obj\Debug\netcoreapp2.1\03. Wild Farm.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# OOP\Polymorphism\Polymorphism Exercise\03. Wild Farm\obj\Debug\netcoreapp2.1\03. Wild Farm.AssemblyInfo.cs
+D:\Programming\SoftUni\C# OOP\Polymorphism\Polymorphism Exercise\03. Wild Farm\obj\Debug\netcoreapp2.1\03. Wild Farm.dll
+D:\Programming\SoftUni\C# OOP\Polymorphism\Polymorphism Exercise\03. Wild Farm\obj\Debug\netcoreapp2.1\03. Wild Farm.pdb

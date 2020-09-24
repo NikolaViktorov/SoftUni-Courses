@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem\bin\Debug\netcoreapp2.1\ParkingSystem.deps.json
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem\bin\Debug\netcoreapp2.1\ParkingSystem.runtimeconfig.json
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem\bin\Debug\netcoreapp2.1\ParkingSystem.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem\bin\Debug\netcoreapp2.1\ParkingSystem.dll
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem\bin\Debug\netcoreapp2.1\ParkingSystem.pdb
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem\obj\Debug\netcoreapp2.1\ParkingSystem.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem\obj\Debug\netcoreapp2.1\ParkingSystem.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem\obj\Debug\netcoreapp2.1\ParkingSystem.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem\obj\Debug\netcoreapp2.1\ParkingSystem.AssemblyInfo.cs
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem\obj\Debug\netcoreapp2.1\ParkingSystem.dll
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem\obj\Debug\netcoreapp2.1\ParkingSystem.pdb

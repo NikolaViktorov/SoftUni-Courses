@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\02. Multiple Implementation\bin\Debug\netcoreapp2.1\02. Multiple Implementation.deps.json
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\02. Multiple Implementation\bin\Debug\netcoreapp2.1\02. Multiple Implementation.runtimeconfig.json
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\02. Multiple Implementation\bin\Debug\netcoreapp2.1\02. Multiple Implementation.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\02. Multiple Implementation\bin\Debug\netcoreapp2.1\02. Multiple Implementation.dll
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\02. Multiple Implementation\bin\Debug\netcoreapp2.1\02. Multiple Implementation.pdb
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\02. Multiple Implementation\obj\Debug\netcoreapp2.1\02. Multiple Implementation.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\02. Multiple Implementation\obj\Debug\netcoreapp2.1\02. Multiple Implementation.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\02. Multiple Implementation\obj\Debug\netcoreapp2.1\02. Multiple Implementation.AssemblyInfo.cs
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\02. Multiple Implementation\obj\Debug\netcoreapp2.1\02. Multiple Implementation.dll
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\02. Multiple Implementation\obj\Debug\netcoreapp2.1\02. Multiple Implementation.pdb

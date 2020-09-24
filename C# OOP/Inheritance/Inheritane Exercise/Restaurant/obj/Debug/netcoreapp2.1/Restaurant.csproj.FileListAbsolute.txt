@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritane Exercise\Restaurant\bin\Debug\netcoreapp2.1\Restaurant.deps.json
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritane Exercise\Restaurant\bin\Debug\netcoreapp2.1\Restaurant.runtimeconfig.json
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritane Exercise\Restaurant\bin\Debug\netcoreapp2.1\Restaurant.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritane Exercise\Restaurant\bin\Debug\netcoreapp2.1\Restaurant.dll
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritane Exercise\Restaurant\bin\Debug\netcoreapp2.1\Restaurant.pdb
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritane Exercise\Restaurant\obj\Debug\netcoreapp2.1\Restaurant.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritane Exercise\Restaurant\obj\Debug\netcoreapp2.1\Restaurant.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritane Exercise\Restaurant\obj\Debug\netcoreapp2.1\Restaurant.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritane Exercise\Restaurant\obj\Debug\netcoreapp2.1\Restaurant.AssemblyInfo.cs
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritane Exercise\Restaurant\obj\Debug\netcoreapp2.1\Restaurant.dll
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritane Exercise\Restaurant\obj\Debug\netcoreapp2.1\Restaurant.pdb

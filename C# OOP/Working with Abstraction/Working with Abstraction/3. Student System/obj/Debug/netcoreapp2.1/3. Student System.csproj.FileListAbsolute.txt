@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction\3. Student System\bin\Debug\netcoreapp2.1\3. Student System.deps.json
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction\3. Student System\bin\Debug\netcoreapp2.1\3. Student System.runtimeconfig.json
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction\3. Student System\bin\Debug\netcoreapp2.1\3. Student System.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction\3. Student System\bin\Debug\netcoreapp2.1\3. Student System.dll
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction\3. Student System\bin\Debug\netcoreapp2.1\3. Student System.pdb
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction\3. Student System\obj\Debug\netcoreapp2.1\3. Student System.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction\3. Student System\obj\Debug\netcoreapp2.1\3. Student System.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction\3. Student System\obj\Debug\netcoreapp2.1\3. Student System.AssemblyInfo.cs
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction\3. Student System\obj\Debug\netcoreapp2.1\3. Student System.dll
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction\3. Student System\obj\Debug\netcoreapp2.1\3. Student System.pdb

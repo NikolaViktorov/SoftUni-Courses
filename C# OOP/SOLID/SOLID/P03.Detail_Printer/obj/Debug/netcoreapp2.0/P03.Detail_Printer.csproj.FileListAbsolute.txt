@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID\P03.Detail_Printer\bin\Debug\netcoreapp2.0\P03.Detail_Printer.deps.json
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID\P03.Detail_Printer\bin\Debug\netcoreapp2.0\P03.Detail_Printer.runtimeconfig.json
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID\P03.Detail_Printer\bin\Debug\netcoreapp2.0\P03.Detail_Printer.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID\P03.Detail_Printer\bin\Debug\netcoreapp2.0\P03.Detail_Printer.dll
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID\P03.Detail_Printer\bin\Debug\netcoreapp2.0\P03.Detail_Printer.pdb
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID\P03.Detail_Printer\obj\Debug\netcoreapp2.0\P03.Detail_Printer.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID\P03.Detail_Printer\obj\Debug\netcoreapp2.0\P03.Detail_Printer.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID\P03.Detail_Printer\obj\Debug\netcoreapp2.0\P03.Detail_Printer.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID\P03.Detail_Printer\obj\Debug\netcoreapp2.0\P03.Detail_Printer.AssemblyInfo.cs
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID\P03.Detail_Printer\obj\Debug\netcoreapp2.0\P03.Detail_Printer.dll
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID\P03.Detail_Printer\obj\Debug\netcoreapp2.0\P03.Detail_Printer.pdb

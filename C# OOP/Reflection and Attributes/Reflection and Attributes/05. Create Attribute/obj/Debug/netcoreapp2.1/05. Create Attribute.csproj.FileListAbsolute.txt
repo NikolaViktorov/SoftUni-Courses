@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# OOP\Reflection and Attributes\Reflection and Attributes\05. Create Attribute\bin\Debug\netcoreapp2.1\05. Create Attribute.deps.json
+D:\Programming\SoftUni\C# OOP\Reflection and Attributes\Reflection and Attributes\05. Create Attribute\bin\Debug\netcoreapp2.1\05. Create Attribute.runtimeconfig.json
+D:\Programming\SoftUni\C# OOP\Reflection and Attributes\Reflection and Attributes\05. Create Attribute\bin\Debug\netcoreapp2.1\05. Create Attribute.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# OOP\Reflection and Attributes\Reflection and Attributes\05. Create Attribute\bin\Debug\netcoreapp2.1\05. Create Attribute.dll
+D:\Programming\SoftUni\C# OOP\Reflection and Attributes\Reflection and Attributes\05. Create Attribute\bin\Debug\netcoreapp2.1\05. Create Attribute.pdb
+D:\Programming\SoftUni\C# OOP\Reflection and Attributes\Reflection and Attributes\05. Create Attribute\obj\Debug\netcoreapp2.1\05. Create Attribute.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# OOP\Reflection and Attributes\Reflection and Attributes\05. Create Attribute\obj\Debug\netcoreapp2.1\05. Create Attribute.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# OOP\Reflection and Attributes\Reflection and Attributes\05. Create Attribute\obj\Debug\netcoreapp2.1\05. Create Attribute.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# OOP\Reflection and Attributes\Reflection and Attributes\05. Create Attribute\obj\Debug\netcoreapp2.1\05. Create Attribute.AssemblyInfo.cs
+D:\Programming\SoftUni\C# OOP\Reflection and Attributes\Reflection and Attributes\05. Create Attribute\obj\Debug\netcoreapp2.1\05. Create Attribute.dll
+D:\Programming\SoftUni\C# OOP\Reflection and Attributes\Reflection and Attributes\05. Create Attribute\obj\Debug\netcoreapp2.1\05. Create Attribute.pdb

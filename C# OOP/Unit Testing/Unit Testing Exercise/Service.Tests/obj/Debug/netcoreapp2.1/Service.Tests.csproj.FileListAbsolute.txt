@@ -1,0 +1,14 @@
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service.Tests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service.Tests\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service.Tests\bin\Debug\netcoreapp2.1\Service.Tests.deps.json
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service.Tests\bin\Debug\netcoreapp2.1\Service.Tests.runtimeconfig.json
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service.Tests\bin\Debug\netcoreapp2.1\Service.Tests.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service.Tests\bin\Debug\netcoreapp2.1\Service.Tests.dll
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service.Tests\bin\Debug\netcoreapp2.1\Service.Tests.pdb
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service.Tests\obj\Debug\netcoreapp2.1\Service.Tests.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service.Tests\obj\Debug\netcoreapp2.1\Service.Tests.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service.Tests\obj\Debug\netcoreapp2.1\Service.Tests.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service.Tests\obj\Debug\netcoreapp2.1\Service.Tests.AssemblyInfo.cs
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service.Tests\obj\Debug\netcoreapp2.1\Service.Tests.dll
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service.Tests\obj\Debug\netcoreapp2.1\Service.Tests.pdb

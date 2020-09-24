@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# OOP\Exam Prep 04 August 2019\MXGP\obj\Debug\netcoreapp2.1\MXGP.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# OOP\Exam Prep 04 August 2019\MXGP\obj\Debug\netcoreapp2.1\MXGP.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# OOP\Exam Prep 04 August 2019\MXGP\obj\Debug\netcoreapp2.1\MXGP.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# OOP\Exam Prep 04 August 2019\MXGP\obj\Debug\netcoreapp2.1\MXGP.AssemblyInfo.cs
+D:\Programming\SoftUni\C# OOP\Exam Prep 04 August 2019\MXGP\bin\Debug\netcoreapp2.1\MXGP.deps.json
+D:\Programming\SoftUni\C# OOP\Exam Prep 04 August 2019\MXGP\bin\Debug\netcoreapp2.1\MXGP.runtimeconfig.json
+D:\Programming\SoftUni\C# OOP\Exam Prep 04 August 2019\MXGP\bin\Debug\netcoreapp2.1\MXGP.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# OOP\Exam Prep 04 August 2019\MXGP\bin\Debug\netcoreapp2.1\MXGP.dll
+D:\Programming\SoftUni\C# OOP\Exam Prep 04 August 2019\MXGP\bin\Debug\netcoreapp2.1\MXGP.pdb
+D:\Programming\SoftUni\C# OOP\Exam Prep 04 August 2019\MXGP\obj\Debug\netcoreapp2.1\MXGP.dll
+D:\Programming\SoftUni\C# OOP\Exam Prep 04 August 2019\MXGP\obj\Debug\netcoreapp2.1\MXGP.pdb

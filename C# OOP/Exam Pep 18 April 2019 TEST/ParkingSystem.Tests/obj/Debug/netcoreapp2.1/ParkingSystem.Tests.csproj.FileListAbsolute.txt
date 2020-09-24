@@ -1,0 +1,17 @@
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\ParkingSystem.Tests.deps.json
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\ParkingSystem.Tests.runtimeconfig.json
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\ParkingSystem.Tests.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\ParkingSystem.Tests.dll
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\ParkingSystem.Tests.pdb
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\ParkingSystem.dll
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem.Tests\bin\Debug\netcoreapp2.1\ParkingSystem.pdb
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem.Tests\obj\Debug\netcoreapp2.1\ParkingSystem.Tests.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem.Tests\obj\Debug\netcoreapp2.1\ParkingSystem.Tests.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem.Tests\obj\Debug\netcoreapp2.1\ParkingSystem.Tests.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem.Tests\obj\Debug\netcoreapp2.1\ParkingSystem.Tests.AssemblyInfo.cs
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem.Tests\obj\Debug\netcoreapp2.1\ParkingSystem.Tests.csproj.CopyComplete
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem.Tests\obj\Debug\netcoreapp2.1\ParkingSystem.Tests.dll
+D:\Programming\SoftUni\C# OOP\Exam Pep 18 April 2019 TEST\ParkingSystem.Tests\obj\Debug\netcoreapp2.1\ParkingSystem.Tests.pdb

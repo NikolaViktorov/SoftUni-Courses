@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction Exercise\P01_RawData\bin\Debug\netcoreapp2.0\P01_RawData.deps.json
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction Exercise\P01_RawData\bin\Debug\netcoreapp2.0\P01_RawData.runtimeconfig.json
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction Exercise\P01_RawData\bin\Debug\netcoreapp2.0\P01_RawData.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction Exercise\P01_RawData\bin\Debug\netcoreapp2.0\P01_RawData.dll
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction Exercise\P01_RawData\bin\Debug\netcoreapp2.0\P01_RawData.pdb
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction Exercise\P01_RawData\obj\Debug\netcoreapp2.0\P01_RawData.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction Exercise\P01_RawData\obj\Debug\netcoreapp2.0\P01_RawData.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction Exercise\P01_RawData\obj\Debug\netcoreapp2.0\P01_RawData.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction Exercise\P01_RawData\obj\Debug\netcoreapp2.0\P01_RawData.AssemblyInfo.cs
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction Exercise\P01_RawData\obj\Debug\netcoreapp2.0\P01_RawData.dll
+D:\Programming\SoftUni\C# OOP\Working with Abstraction\Working with Abstraction Exercise\P01_RawData\obj\Debug\netcoreapp2.0\P01_RawData.pdb

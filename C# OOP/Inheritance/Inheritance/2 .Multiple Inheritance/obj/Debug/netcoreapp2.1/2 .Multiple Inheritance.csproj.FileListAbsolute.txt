@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritance\2 .Multiple Inheritance\bin\Debug\netcoreapp2.1\2 .Multiple Inheritance.deps.json
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritance\2 .Multiple Inheritance\bin\Debug\netcoreapp2.1\2 .Multiple Inheritance.runtimeconfig.json
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritance\2 .Multiple Inheritance\bin\Debug\netcoreapp2.1\2 .Multiple Inheritance.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritance\2 .Multiple Inheritance\bin\Debug\netcoreapp2.1\2 .Multiple Inheritance.dll
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritance\2 .Multiple Inheritance\bin\Debug\netcoreapp2.1\2 .Multiple Inheritance.pdb
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritance\2 .Multiple Inheritance\obj\Debug\netcoreapp2.1\2 .Multiple Inheritance.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritance\2 .Multiple Inheritance\obj\Debug\netcoreapp2.1\2 .Multiple Inheritance.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritance\2 .Multiple Inheritance\obj\Debug\netcoreapp2.1\2 .Multiple Inheritance.AssemblyInfo.cs
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritance\2 .Multiple Inheritance\obj\Debug\netcoreapp2.1\2 .Multiple Inheritance.dll
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritance\2 .Multiple Inheritance\obj\Debug\netcoreapp2.1\2 .Multiple Inheritance.pdb

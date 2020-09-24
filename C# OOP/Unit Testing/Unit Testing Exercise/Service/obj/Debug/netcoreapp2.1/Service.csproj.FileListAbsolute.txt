@@ -1,0 +1,8 @@
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service\bin\Debug\netcoreapp2.1\Service.deps.json
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service\bin\Debug\netcoreapp2.1\Service.dll
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service\bin\Debug\netcoreapp2.1\Service.pdb
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service\obj\Debug\netcoreapp2.1\Service.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service\obj\Debug\netcoreapp2.1\Service.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service\obj\Debug\netcoreapp2.1\Service.AssemblyInfo.cs
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service\obj\Debug\netcoreapp2.1\Service.dll
+D:\Programming\SoftUni\C# OOP\Unit Testing\Unit Testing Exercise\Service\obj\Debug\netcoreapp2.1\Service.pdb

@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# OOP\Encapsulation\Encapsulation Exercise\01. Class Box Data\bin\Debug\netcoreapp2.1\01. Class Box Data.deps.json
+D:\Programming\SoftUni\C# OOP\Encapsulation\Encapsulation Exercise\01. Class Box Data\bin\Debug\netcoreapp2.1\01. Class Box Data.runtimeconfig.json
+D:\Programming\SoftUni\C# OOP\Encapsulation\Encapsulation Exercise\01. Class Box Data\bin\Debug\netcoreapp2.1\01. Class Box Data.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# OOP\Encapsulation\Encapsulation Exercise\01. Class Box Data\bin\Debug\netcoreapp2.1\01. Class Box Data.dll
+D:\Programming\SoftUni\C# OOP\Encapsulation\Encapsulation Exercise\01. Class Box Data\bin\Debug\netcoreapp2.1\01. Class Box Data.pdb
+D:\Programming\SoftUni\C# OOP\Encapsulation\Encapsulation Exercise\01. Class Box Data\obj\Debug\netcoreapp2.1\01. Class Box Data.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# OOP\Encapsulation\Encapsulation Exercise\01. Class Box Data\obj\Debug\netcoreapp2.1\01. Class Box Data.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# OOP\Encapsulation\Encapsulation Exercise\01. Class Box Data\obj\Debug\netcoreapp2.1\01. Class Box Data.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# OOP\Encapsulation\Encapsulation Exercise\01. Class Box Data\obj\Debug\netcoreapp2.1\01. Class Box Data.AssemblyInfo.cs
+D:\Programming\SoftUni\C# OOP\Encapsulation\Encapsulation Exercise\01. Class Box Data\obj\Debug\netcoreapp2.1\01. Class Box Data.dll
+D:\Programming\SoftUni\C# OOP\Encapsulation\Encapsulation Exercise\01. Class Box Data\obj\Debug\netcoreapp2.1\01. Class Box Data.pdb

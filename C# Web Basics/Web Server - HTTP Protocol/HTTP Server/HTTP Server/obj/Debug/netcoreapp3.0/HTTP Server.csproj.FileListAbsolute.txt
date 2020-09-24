@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# Web Basics\Web Server - HTTP Protocol\HTTP Server\HTTP Server\bin\Debug\netcoreapp3.0\HTTP Server.exe
+D:\Programming\SoftUni\C# Web Basics\Web Server - HTTP Protocol\HTTP Server\HTTP Server\bin\Debug\netcoreapp3.0\HTTP Server.deps.json
+D:\Programming\SoftUni\C# Web Basics\Web Server - HTTP Protocol\HTTP Server\HTTP Server\bin\Debug\netcoreapp3.0\HTTP Server.runtimeconfig.json
+D:\Programming\SoftUni\C# Web Basics\Web Server - HTTP Protocol\HTTP Server\HTTP Server\bin\Debug\netcoreapp3.0\HTTP Server.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# Web Basics\Web Server - HTTP Protocol\HTTP Server\HTTP Server\bin\Debug\netcoreapp3.0\HTTP Server.dll
+D:\Programming\SoftUni\C# Web Basics\Web Server - HTTP Protocol\HTTP Server\HTTP Server\bin\Debug\netcoreapp3.0\HTTP Server.pdb
+D:\Programming\SoftUni\C# Web Basics\Web Server - HTTP Protocol\HTTP Server\HTTP Server\obj\Debug\netcoreapp3.0\HTTP Server.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Web Basics\Web Server - HTTP Protocol\HTTP Server\HTTP Server\obj\Debug\netcoreapp3.0\HTTP Server.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Web Basics\Web Server - HTTP Protocol\HTTP Server\HTTP Server\obj\Debug\netcoreapp3.0\HTTP Server.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Web Basics\Web Server - HTTP Protocol\HTTP Server\HTTP Server\obj\Debug\netcoreapp3.0\HTTP Server.dll
+D:\Programming\SoftUni\C# Web Basics\Web Server - HTTP Protocol\HTTP Server\HTTP Server\obj\Debug\netcoreapp3.0\HTTP Server.pdb

@@ -1,0 +1,11 @@
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction\01. Shapes\bin\Debug\netcoreapp2.1\01. Shapes.deps.json
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction\01. Shapes\bin\Debug\netcoreapp2.1\01. Shapes.runtimeconfig.json
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction\01. Shapes\bin\Debug\netcoreapp2.1\01. Shapes.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction\01. Shapes\bin\Debug\netcoreapp2.1\01. Shapes.dll
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction\01. Shapes\bin\Debug\netcoreapp2.1\01. Shapes.pdb
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction\01. Shapes\obj\Debug\netcoreapp2.1\01. Shapes.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction\01. Shapes\obj\Debug\netcoreapp2.1\01. Shapes.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction\01. Shapes\obj\Debug\netcoreapp2.1\01. Shapes.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction\01. Shapes\obj\Debug\netcoreapp2.1\01. Shapes.AssemblyInfo.cs
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction\01. Shapes\obj\Debug\netcoreapp2.1\01. Shapes.dll
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction\01. Shapes\obj\Debug\netcoreapp2.1\01. Shapes.pdb

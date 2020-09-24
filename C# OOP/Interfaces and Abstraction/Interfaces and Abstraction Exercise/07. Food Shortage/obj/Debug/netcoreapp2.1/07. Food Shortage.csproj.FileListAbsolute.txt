@@ -1,0 +1,10 @@
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\07. Food Shortage\obj\Debug\netcoreapp2.1\07. Food Shortage.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\07. Food Shortage\obj\Debug\netcoreapp2.1\07. Food Shortage.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\07. Food Shortage\obj\Debug\netcoreapp2.1\07. Food Shortage.AssemblyInfo.cs
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\07. Food Shortage\bin\Debug\netcoreapp2.1\07. Food Shortage.deps.json
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\07. Food Shortage\bin\Debug\netcoreapp2.1\07. Food Shortage.runtimeconfig.json
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\07. Food Shortage\bin\Debug\netcoreapp2.1\07. Food Shortage.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\07. Food Shortage\bin\Debug\netcoreapp2.1\07. Food Shortage.dll
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\07. Food Shortage\bin\Debug\netcoreapp2.1\07. Food Shortage.pdb
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\07. Food Shortage\obj\Debug\netcoreapp2.1\07. Food Shortage.dll
+D:\Programming\SoftUni\C# OOP\Interfaces and Abstraction\Interfaces and Abstraction Exercise\07. Food Shortage\obj\Debug\netcoreapp2.1\07. Food Shortage.pdb

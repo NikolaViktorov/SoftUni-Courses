@@ -1,0 +1,13 @@
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID DEMO\01. SRP\P01. DrawingShape-Before\bin\Debug\netcoreapp2.1\P01. DrawingShape-Before.dll.config
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID DEMO\01. SRP\P01. DrawingShape-Before\bin\Debug\netcoreapp2.1\P01. DrawingShape-Before.deps.json
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID DEMO\01. SRP\P01. DrawingShape-Before\bin\Debug\netcoreapp2.1\P01. DrawingShape-Before.runtimeconfig.json
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID DEMO\01. SRP\P01. DrawingShape-Before\bin\Debug\netcoreapp2.1\P01. DrawingShape-Before.runtimeconfig.dev.json
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID DEMO\01. SRP\P01. DrawingShape-Before\bin\Debug\netcoreapp2.1\P01. DrawingShape-Before.dll
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID DEMO\01. SRP\P01. DrawingShape-Before\bin\Debug\netcoreapp2.1\P01. DrawingShape-Before.pdb
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID DEMO\01. SRP\P01. DrawingShape-Before\obj\Debug\netcoreapp2.1\P01. DrawingShape-Before.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID DEMO\01. SRP\P01. DrawingShape-Before\obj\Debug\netcoreapp2.1\P01. DrawingShape-Before.dll.config
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID DEMO\01. SRP\P01. DrawingShape-Before\obj\Debug\netcoreapp2.1\P01. DrawingShape-Before.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID DEMO\01. SRP\P01. DrawingShape-Before\obj\Debug\netcoreapp2.1\P01. DrawingShape-Before.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID DEMO\01. SRP\P01. DrawingShape-Before\obj\Debug\netcoreapp2.1\P01. DrawingShape-Before.AssemblyInfo.cs
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID DEMO\01. SRP\P01. DrawingShape-Before\obj\Debug\netcoreapp2.1\P01. DrawingShape-Before.dll
+D:\Programming\SoftUni\C# OOP\SOLID\SOLID DEMO\01. SRP\P01. DrawingShape-Before\obj\Debug\netcoreapp2.1\P01. DrawingShape-Before.pdb

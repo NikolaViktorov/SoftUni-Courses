@@ -1,0 +1,3 @@
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritane Exercise\PlayersAndMonsters\obj\Debug\netcoreapp2.1\PlayersAndMonsters.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritane Exercise\PlayersAndMonsters\obj\Debug\netcoreapp2.1\PlayersAndMonsters.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# OOP\Inheritance\Inheritane Exercise\PlayersAndMonsters\obj\Debug\netcoreapp2.1\PlayersAndMonsters.AssemblyInfo.cs
