@@ -1,0 +1,33 @@
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.MvcFramework.deps.json
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.MvcFramework.dll
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.MvcFramework.pdb
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.HTTP.dll
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.HTTP.pdb
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.csproj.CopyComplete
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.dll
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.pdb
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.MvcFramework.deps.json
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.MvcFramework.dll
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.MvcFramework.pdb
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.HTTP.dll
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.HTTP.pdb
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.csproj.CopyComplete
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.dll
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.pdb
+D:\Programming\SoftUni\C# Web Basics\MVC - Exam Prep 16 Feb 2020\SUS\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.MvcFramework.deps.json
+D:\Programming\SoftUni\C# Web Basics\MVC - Exam Prep 16 Feb 2020\SUS\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.MvcFramework.dll
+D:\Programming\SoftUni\C# Web Basics\MVC - Exam Prep 16 Feb 2020\SUS\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.MvcFramework.pdb
+D:\Programming\SoftUni\C# Web Basics\MVC - Exam Prep 16 Feb 2020\SUS\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.HTTP.dll
+D:\Programming\SoftUni\C# Web Basics\MVC - Exam Prep 16 Feb 2020\SUS\SUS.MvcFramework\bin\Debug\netstandard2.0\SUS.HTTP.pdb
+D:\Programming\SoftUni\C# Web Basics\MVC - Exam Prep 16 Feb 2020\SUS\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Web Basics\MVC - Exam Prep 16 Feb 2020\SUS\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Web Basics\MVC - Exam Prep 16 Feb 2020\SUS\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Web Basics\MVC - Exam Prep 16 Feb 2020\SUS\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.csproj.CopyComplete
+D:\Programming\SoftUni\C# Web Basics\MVC - Exam Prep 16 Feb 2020\SUS\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.dll
+D:\Programming\SoftUni\C# Web Basics\MVC - Exam Prep 16 Feb 2020\SUS\SUS.MvcFramework\obj\Debug\netstandard2.0\SUS.MvcFramework.pdb

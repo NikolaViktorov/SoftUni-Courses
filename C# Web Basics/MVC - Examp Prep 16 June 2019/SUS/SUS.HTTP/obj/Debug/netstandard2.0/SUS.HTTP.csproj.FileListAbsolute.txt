@@ -1,0 +1,16 @@
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.HTTP\bin\Debug\netstandard2.0\SUS.HTTP.deps.json
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.HTTP\bin\Debug\netstandard2.0\SUS.HTTP.dll
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.HTTP\bin\Debug\netstandard2.0\SUS.HTTP.pdb
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.HTTP\obj\Debug\netstandard2.0\SUS.HTTP.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.HTTP\obj\Debug\netstandard2.0\SUS.HTTP.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.HTTP\obj\Debug\netstandard2.0\SUS.HTTP.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.HTTP\obj\Debug\netstandard2.0\SUS.HTTP.dll
+D:\Programming\SoftUni\C# Web Basics\Workshop\SUS\SUS.HTTP\obj\Debug\netstandard2.0\SUS.HTTP.pdb
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.HTTP\bin\Debug\netstandard2.0\SUS.HTTP.deps.json
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.HTTP\bin\Debug\netstandard2.0\SUS.HTTP.dll
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.HTTP\bin\Debug\netstandard2.0\SUS.HTTP.pdb
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.HTTP\obj\Debug\netstandard2.0\SUS.HTTP.csprojAssemblyReference.cache
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.HTTP\obj\Debug\netstandard2.0\SUS.HTTP.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.HTTP\obj\Debug\netstandard2.0\SUS.HTTP.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.HTTP\obj\Debug\netstandard2.0\SUS.HTTP.dll
+D:\Programming\SoftUni\C# Web Basics\MVC - Examp Prep 16 June 2019\SUS\SUS.HTTP\obj\Debug\netstandard2.0\SUS.HTTP.pdb
