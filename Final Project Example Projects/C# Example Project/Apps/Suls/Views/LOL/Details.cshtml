@@ -1,0 +1,59 @@
+﻿<main class="mt-3">
+    <h1 class="text-center suls-text-color">GOKO.GG</h1>
+    <table>
+        <tr>
+            @if (Model.BlueTeam.State == "Fail")
+            {
+                <th class="Fail">Defeat</th>
+                <th class="Fail"></th>
+                <th></th>
+                <th class="Win">Victory</th>
+                <th class="Win"></th>
+            }
+            @else
+            {
+            <th class="Win">Victory</th>
+            <th class="Win"></th>
+            <th></th>
+            <th class="Fail">Defeat</th>
+            <th class="Fail"></th>
+            }
+        </tr>
+        <tr>
+            <th>Player Names</th>
+            <th>Champion Names</th>
+            <th></th>
+            <th>Player Names</th>
+            <th>Champion Names</th>
+        </tr>
+        @for (int i = 0; i < 5; i++)
+        {
+            <tr>
+                <td>
+                    <img src="@Model.BlueTeam.Players[i].ProfileIconUrl" class="playerIcon">
+                    @Model.BlueTeam.Players[i].Username
+                </td>
+                <td>
+                    <img src="@Model.BlueTeam.Players[i].Champion.ChampionIconUrl" class="playerIcon">
+                    @Model.BlueTeam.Players[i].Champion.ChampionName
+                </td>
+                <td></td>
+                <td>
+                    <img src="@Model.RedTeam.Players[i].ProfileIconUrl" class="playerIcon">
+                    @Model.RedTeam.Players[i].Username
+                </td>
+                <td>
+                    <img src="@Model.RedTeam.Players[i].Champion.ChampionIconUrl" class="playerIcon">
+                    @Model.RedTeam.Players[i].Champion.ChampionName
+                </td>
+            </tr>
+        }
+        <tr>
+            <td>
+                <div class="button-holder">
+                    <a href="/LOL/Collection?gameId=@Model.GameId" class="btn btn-info text-uppercase">Add To Collection</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</main>

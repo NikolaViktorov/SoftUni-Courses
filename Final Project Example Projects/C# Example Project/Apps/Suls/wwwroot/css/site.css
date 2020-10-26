@@ -1,0 +1,112 @@
+﻿
+table {
+    margin-top: 10px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+td, th {
+    border: 1px solid rgb(43, 43, 43);
+    text-align: left;
+    padding: 16px;
+    color: #d0d0d0;
+}
+
+td {
+    max-width: 50px;
+}
+
+tr:nth-child(even) {
+    background-color: black;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(255,103,0);
+}
+
+.playerIcon {
+    width: 35px;
+    border-radius: 8px;
+}
+
+.Win {
+    background-color: rgb(21, 170, 21);
+}
+
+.Fail {
+    background-color: rgb(233, 39, 39);
+}
+
+body {
+    color: white;
+    background-color: rgb(43, 43, 43);
+}
+
+a {
+    color: wheat;
+}
+
+footer {
+    color: white;
+    text-align: center;
+}
+
+.top-border-line {
+    margin-top: 5px;
+}
+
+.bottom-border-line {
+    margin-top: 20px;
+}
+
+.heading-container {
+    border-bottom: solid;
+    border-color: white;
+    padding-top: 10px;
+}
+
+.primary-separator {
+    border-top: solid;
+    border-color: #4a4a4a;
+    margin-bottom: 10px;
+}
+
+.bottom-buffer-md {
+    margin-bottom: 15px;
+}
+
+.bottom-buffer-xs {
+    margin-bottom: 10px;
+}
+
+.navbar {
+    background-color: #4a4a4a;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+.nav-link:hover {
+    color: white;
+}
+
+.navbar-brand {
+    color: whitesmoke;
+}
+
+.jumbotron {
+    background-color: #4a4a4a;
+}
+
+.suls-bg-color {
+    background-color: #4a4a4a;
+    color: white;
+}
+
+.suls-text-color {
+    color: white;
+}
