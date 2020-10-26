@@ -20,5 +20,9 @@ namespace Suls.Services
         Task<HomePageGameViewModel> GetModelByGameId(long gameId);
 
         void AddGameToCollection(long gameId);
+
+        void AddGameToUser(string userId);
+        int GetGameCount(string userId);
+        ICollection<Match> GetCollectionGames(string userId);
     }
 }

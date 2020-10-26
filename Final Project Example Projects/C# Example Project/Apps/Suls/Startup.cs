@@ -19,6 +19,7 @@ namespace Suls
             serviceCollection.Add<IUsersService, UsersService>();
             serviceCollection.Add<IGamesService, GamesService>();
             serviceCollection.Add<IChampionsService, ChampionsService>();
+            serviceCollection.Add<IPlayersService, PlayersService>();
         }
     }
 }

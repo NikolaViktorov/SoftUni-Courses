@@ -21,6 +21,7 @@ namespace Suls.Services
     {
         private readonly ApplicationDbContext db;
         private readonly IChampionsService championsService;
+        private readonly IPlayersService playersService;
 
         private string ddVersion { get; set; }
 
@@ -28,10 +29,11 @@ namespace Suls.Services
 
         public RiotApi api { get; set; }
 
-        public GamesService(ApplicationDbContext db, IChampionsService championsService)
+        public GamesService(ApplicationDbContext db, IChampionsService championsService, IPlayersService playersService)
         {
             this.db = db;
             this.championsService = championsService;
+            this.playersService = playersService;
             this.api = RiotApi.GetDevelopmentInstance(PublicData.apiKey);
             this.ddVersion = PublicData.ddVerision;
         }
@@ -79,12 +81,12 @@ namespace Suls.Services
                     GameId = game.GameId,
                     BlueTeam = new TeamDTO
                     {
-                        Players = this.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 100),
+                        Players = this.playersService.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 100),
                         State = game.Teams[0].Win
                     },
                     RedTeam = new TeamDTO
                     {
-                        Players = this.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 200),
+                        Players = this.playersService.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 200),
                         State = game.Teams[1].Win
                     }
                 });
@@ -102,12 +104,12 @@ namespace Suls.Services
                 GameId = game.GameId,
                 BlueTeam = new TeamDTO
                 {
-                    Players = this.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 100),
+                    Players = this.playersService.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 100),
                     State = game.Teams[0].Win
                 },
                 RedTeam = new TeamDTO
                 {
-                    Players = this.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 200),
+                    Players = this.playersService.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 200),
                     State = game.Teams[1].Win
                 }
             };
@@ -118,46 +120,87 @@ namespace Suls.Services
         // UPDATE NEEDED 100% TODO - DONT REQUEST ALL CHAMPS
         public void AddGameToCollection(long gameId) // Update FOR COLLECTION TO WORK
         {
-            // 
-        }
+            var curGame = GetGameAsync(gameId).GetAwaiter().GetResult();
 
-        private ICollection<Data.LoL.Player> GetPlayersByParticipants(List<ParticipantIdentity> participantIdentities, List<Participant> participants, int teamId)
-        {
-            var players = new List<Data.LoL.Player>();
+            var game = new Game();
 
-            for (int i = 0; i < participants.Count; i++)
+            var firstTeam = new Team
             {
-                if (teamId == participants[i].TeamId && participants[i].ParticipantId == participantIdentities[i].ParticipantId)
-                {
-                    players.Add(new Data.LoL.Player
-                    {
-                        Username = participantIdentities[i].Player.SummonerName,
-                        ProfileIconUrl = $"http://ddragon.leagueoflegends.com/cdn/{this.ddVersion}/img/profileicon/{participantIdentities[i].Player.ProfileIcon}.png",
-                    });
-                }
+                State = curGame.Teams[0].Win
+            };
+
+            var secondTeam = new Team
+            {
+                State = curGame.Teams[1].Win
+            };
+
+            game.Teams.Add(firstTeam);
+            game.Teams.Add(secondTeam);
+
+            this.db.Games.Add(game);
+            this.db.SaveChanges();
+
+            var dbGame = this.db.Games.OrderByDescending(g => g.GameId).FirstOrDefault();
+
+            var firstTeamId = dbGame.Teams[0].TeamId;
+            var secondTeamId = dbGame.Teams[1].TeamId;
+
+
+            var firstTeamPlayers = playersService.GetPlayersByParticipants(curGame.ParticipantIdentities, curGame.Participants, 100).ToList();
+            // 100 first team / 200 second team
+            var secondTeamPlayers = playersService.GetPlayersByParticipants(curGame.ParticipantIdentities, curGame.Participants, 200).ToList();
+
+            firstTeamPlayers.ForEach(p => p.TeamId = firstTeamId);
+            secondTeamPlayers.ForEach(p => p.TeamId = secondTeamId);
+
+            foreach (var player in firstTeamPlayers)
+            {
+                this.db.Players.Add(player);
             }
 
-            return players;
-        }
-       
-        private List<PlayerDTO> GetPlayersByParticipantsDto(List<ParticipantIdentity> participantIdentities, List<Participant> participants, int teamId)
-        {
-            var players = new List<PlayerDTO>();
-
-            for (int i = 0; i < participants.Count; i++)
+            foreach (var player in secondTeamPlayers)
             {
-                if (teamId == participants[i].TeamId && participants[i].ParticipantId == participantIdentities[i].ParticipantId)
-                {
-                    players.Add(new PlayerDTO
-                    {
-                        Username = participantIdentities[i].Player.SummonerName,
-                        ProfileIconUrl = $"http://ddragon.leagueoflegends.com/cdn/{this.ddVersion}/img/profileicon/{participantIdentities[i].Player.ProfileIcon}.png",
-                        Champion = championsService.GetChampionDto(participants[i].ChampionId).GetAwaiter().GetResult()
-                    });
-                }
+                this.db.Players.Add(player);
             }
 
-            return players;
+            this.db.SaveChanges();
+
+            var players = this.db.Players.Where(p => p.TeamId == firstTeamId || p.TeamId == secondTeamId).Select(p => p).ToList();
+            var champions = this.db.ChampionsStatic.ToList();
+
+            for (int i = 0; i < players.Count; i++)
+            {
+                var playerId = players[i].PlayerId;
+                var champRiotId = curGame.Participants[i].ChampionId;
+                var champId = champions.FirstOrDefault(c => c.ChampionRiotId == champRiotId.ToString()).ChampionId;
+
+                this.db.PlayerChampion.Add(new PlayerChampion
+                {
+                    PlayerId = playerId,
+                    ChampionId = champId
+                });
+            }
+
+            this.db.SaveChanges();
+
+            Console.WriteLine();
+        }
+
+        public void AddGameToUser(string userId)
+        {
+            var dbGame = this.db.Games.OrderByDescending(g => g.GameId).FirstOrDefault();
+
+            this.db.UserGames.Add(new UserGames
+            {
+                UserId = userId,
+                GameId = dbGame.GameId
+            });
+            this.db.SaveChanges();
+        }
+
+        public int GetGameCount(string userId)
+        {
+            return this.db.UserGames.Where(u => u.UserId == userId).Count();
         }
     }
 }

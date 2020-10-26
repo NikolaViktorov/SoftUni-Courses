@@ -1,4 +1,5 @@
-﻿using Suls.Services;
+﻿using RiotSharp.Endpoints.MatchEndpoint;
+using Suls.Services;
 using Suls.ViewModels.Games;
 using SUS.HTTP;
 using SUS.MvcFramework;
@@ -59,7 +60,18 @@ namespace Suls.Controllers
                 return this.Redirect("/Users/Login");
             }
 
-            this.gamesService.AddGameToCollection(gameId);
+            var userId = this.GetUserId();
+            var userGameCount = gamesService.GetGameCount(userId);
+
+            if (userGameCount < 10 )
+            {
+                this.gamesService.AddGameToCollection(gameId);
+                this.gamesService.AddGameToUser(userId);
+            }
+            else
+            {
+                return this.Error("You already have the max of 10 games in your collection.");
+            }
 
             return this.Redirect("/LOL/Collection");
         }
@@ -70,6 +82,11 @@ namespace Suls.Controllers
             {
                 return this.Redirect("/Users/Login");
             }
+
+            var userId = this.GetUserId();
+
+            var games = gamesService.GetCollectionGames(userId);
+            var viewModel = this.gamesService.GetModelByGames(games);
 
             return this.View();
         }
