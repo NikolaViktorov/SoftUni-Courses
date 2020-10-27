@@ -104,3 +104,4 @@ D:\Programming\SoftUni\ASP.NET Core\C# Example Project\Apps\Suls\bin\Debug\netco
 D:\Programming\SoftUni\ASP.NET Core\C# Example Project\Apps\Suls\bin\Debug\netcoreapp3.0\Views\LOL\Details.cshtml
 D:\Programming\SoftUni\ASP.NET Core\C# Example Project\Apps\Suls\bin\Debug\netcoreapp3.0\Views\LOL\Collection.cshtml
 D:\Programming\SoftUni\ASP.NET Core\C# Example Project\Apps\Suls\bin\Debug\netcoreapp3.0\Views\RP\Home.cshtml
+D:\Programming\SoftUni\ASP.NET Core\C# Example Project\Apps\Suls\bin\Debug\netcoreapp3.0\Views\LOL\CollectionDetails.cshtml

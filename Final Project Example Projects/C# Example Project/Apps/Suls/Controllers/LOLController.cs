@@ -36,11 +36,12 @@ namespace Suls.Controllers
             }
 
             var games = gamesService.GetGamesAsync(username, count).GetAwaiter().GetResult();
-            var viewModel = this.gamesService.GetModelByGames(games);
+            var viewModel = this.gamesService.GetModelByMatches(games);
 
             return this.View(viewModel, "games");
         }
 
+        // TODO Remove Details if not in collection
         public HttpResponse Details(long gameId)
         {
             if (!this.IsUserSignedIn())
@@ -53,7 +54,21 @@ namespace Suls.Controllers
             return this.View(viewModel);
         }
 
-        public HttpResponse Collection(long gameId)
+        public HttpResponse Collection()
+        {
+            if (!this.IsUserSignedIn())
+            {
+                return this.Redirect("/Users/Login");
+            }
+
+            var userId = this.GetUserId();
+            var viewModel = gamesService.GetCollectionGames(userId);
+
+            return this.View(viewModel);
+        }
+
+        // add
+        public HttpResponse AddToCollection(long gameId)
         {
             if (!this.IsUserSignedIn())
             {
@@ -76,19 +91,16 @@ namespace Suls.Controllers
             return this.Redirect("/LOL/Collection");
         }
 
-        public HttpResponse Collection()
+        public HttpResponse CollectionDetails(long gameId)
         {
             if (!this.IsUserSignedIn())
             {
                 return this.Redirect("/Users/Login");
             }
 
-            var userId = this.GetUserId();
+            var viewModel = this.gamesService.GetModelByGameId(gameId).GetAwaiter().GetResult();
 
-            var games = gamesService.GetCollectionGames(userId);
-            var viewModel = this.gamesService.GetModelByGames(games);
-
-            return this.View();
+            return this.View(viewModel);
         }
     }
 }

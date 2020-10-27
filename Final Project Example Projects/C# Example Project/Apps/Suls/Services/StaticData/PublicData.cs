@@ -8,7 +8,7 @@ namespace Suls.Services.StaticData
 {
     public class PublicData
     {
-        public static string apiKey => "RGAPI-9327f72a-c2f9-4225-b6d7-e2f48b174f00";
+        public static string apiKey => "RGAPI-950b44be-2d0b-407d-a462-529e506ef5af";
 
         public static string ddVerision => GetLatestVersion();
 

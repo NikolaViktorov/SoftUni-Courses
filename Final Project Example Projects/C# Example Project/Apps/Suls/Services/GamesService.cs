@@ -23,8 +23,6 @@ namespace Suls.Services
         private readonly IChampionsService championsService;
         private readonly IPlayersService playersService;
 
-        private string ddVersion { get; set; }
-
         Region region = Region.Eune;
 
         public RiotApi api { get; set; }
@@ -35,7 +33,6 @@ namespace Suls.Services
             this.championsService = championsService;
             this.playersService = playersService;
             this.api = RiotApi.GetDevelopmentInstance(PublicData.apiKey);
-            this.ddVersion = PublicData.ddVerision;
         }
 
         public async Task<Summoner> GetBasicSummonerDataAsync(string summonerName)
@@ -70,7 +67,7 @@ namespace Suls.Services
             return games;
         }
 
-        public IEnumerable<HomePageGameViewModel> GetModelByGames(ICollection<Match> games)
+        public IEnumerable<HomePageGameViewModel> GetModelByMatches(ICollection<Match> games)
         {
             var viewModel = new List<HomePageGameViewModel>();
 
@@ -117,13 +114,14 @@ namespace Suls.Services
             return viewModel;
         }
 
-        // UPDATE NEEDED 100% TODO - DONT REQUEST ALL CHAMPS
-        public void AddGameToCollection(long gameId) // Update FOR COLLECTION TO WORK
+        // Reorganize the code... FIXME
+        public void AddGameToCollection(long gameId) 
         {
             var curGame = GetGameAsync(gameId).GetAwaiter().GetResult();
 
             var game = new Game();
 
+            game.RiotGameId = gameId;
             var firstTeam = new Team
             {
                 State = curGame.Teams[0].Win
@@ -144,7 +142,6 @@ namespace Suls.Services
 
             var firstTeamId = dbGame.Teams[0].TeamId;
             var secondTeamId = dbGame.Teams[1].TeamId;
-
 
             var firstTeamPlayers = playersService.GetPlayersByParticipants(curGame.ParticipantIdentities, curGame.Participants, 100).ToList();
             // 100 first team / 200 second team
@@ -182,8 +179,6 @@ namespace Suls.Services
             }
 
             this.db.SaveChanges();
-
-            Console.WriteLine();
         }
 
         public void AddGameToUser(string userId)
@@ -202,5 +197,130 @@ namespace Suls.Services
         {
             return this.db.UserGames.Where(u => u.UserId == userId).Count();
         }
+
+        public ICollection<CollectionPageGameViewModel> GetCollectionGames(string userId)
+        {
+            var viewModel = new List<CollectionPageGameViewModel>();
+            var gameIds = this.db.UserGames
+                .Where(ug => ug.UserId == userId)
+                .Select(ug => new { ug.GameId })
+                .ToList();
+            this.db.SaveChanges();
+
+            foreach (var gameId in gameIds)
+            {
+                var curGame = this.db.Games
+                    .FirstOrDefault(g => g.GameId == gameId.GameId);
+
+                var curGameTeams = this.db.Teams
+                    .Where(t => t.GameId == curGame.GameId)
+                    .ToArray();
+
+                // first team
+                var fTeam = curGameTeams[0];
+                var fPlayers = this.db.Players
+                    .Where(p => p.TeamId == fTeam.TeamId)
+                    .ToList();
+
+                var fChampions = new List<Champion>();
+
+                foreach (var player in fPlayers)
+                {
+                    fChampions.Add(this.db.PlayerChampion
+                    .Where(pc => pc.PlayerId == player.PlayerId)
+                    .Select(pc => new Champion
+                    {
+                        ChampionIconUrl = pc.Champion.ChampionIconUrl,
+                        ChampionName = pc.Champion.ChampionName,
+                        ChampionRiotId = pc.Champion.ChampionRiotId,
+                        ChampionId = pc.Champion.ChampionId
+                    })
+                    .FirstOrDefault());
+                }
+
+                // second team
+                var sTeam = curGameTeams[1];
+                var sPlayers = this.db.Players
+                    .Where(p => p.TeamId == sTeam.TeamId)
+                    .ToList();
+
+                var sChampions = new List<Champion>();
+
+                foreach (var player in sPlayers)
+                {
+                    sChampions.Add(this.db.PlayerChampion
+                    .Where(pc => pc.PlayerId == player.PlayerId)
+                    .Select(pc => new Champion
+                    {
+                        ChampionIconUrl = pc.Champion.ChampionIconUrl,
+                        ChampionName = pc.Champion.ChampionName,
+                        ChampionRiotId = pc.Champion.ChampionRiotId,
+                        ChampionId = pc.Champion.ChampionId
+                    })
+                    .FirstOrDefault());
+                }
+                
+                viewModel.Add(GetModelByGame(curGame, fChampions, sChampions));
+            }
+
+            return viewModel;
+        }
+
+        private CollectionPageGameViewModel GetModelByGame(Game game, List<Champion> fChampions, List<Champion> sChampions)
+        {
+            var curModel = new CollectionPageGameViewModel
+            {
+                GameId = game.RiotGameId,
+                BlueTeam = new TeamDTO
+                {
+                    Players = GetPlayersDtoList(game.Teams[0].Players, fChampions),
+                    State = game.Teams[0].State
+                },
+                RedTeam = new TeamDTO
+                {
+                    Players = GetPlayersDtoList(game.Teams[1].Players, sChampions),
+                    State = game.Teams[1].State
+                }
+            };
+
+            return curModel;
+        }
+
+        private List<PlayerDTO> GetPlayersDtoList(ICollection<Data.LoL.Player> players, List<Champion> champions)
+        {
+            var dtos = new List<PlayerDTO>();
+
+            int i = 0;
+            foreach (var player in players)
+            {
+                var champion = champions[i];
+
+                dtos.Add(new PlayerDTO
+                {
+                    Username = player.Username,
+                    ProfileIconUrl = player.ProfileIconUrl,
+                    Champion = new ChampionDTO
+                    {
+                        ChampionIconUrl = champion.ChampionIconUrl,
+                        ChampionName = champion.ChampionName
+                    }
+                });
+                i++;
+            }
+
+            return dtos;
+        }
     }
 }
+
+
+/*
+                .Where(pc => pc.PlayerId == player.PlayerId)
+                   .Select(pc => new Champion
+                   {
+                       ChampionIconUrl = pc.Champion.ChampionIconUrl,
+                       ChampionName = pc.Champion.ChampionName,
+                       ChampionRiotId = pc.Champion.ChampionRiotId,
+                       ChampionId = pc.Champion.ChampionId
+                   })
+                */

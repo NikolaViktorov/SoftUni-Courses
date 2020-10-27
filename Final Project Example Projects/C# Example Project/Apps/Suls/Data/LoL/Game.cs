@@ -14,6 +14,8 @@ namespace Suls.Data.LoL
 
         public int GameId { get; set; }
 
+        public long RiotGameId { get; set; }
+
         public virtual List<Team> Teams { get; set; }
 
         public virtual ICollection<UserGames> UserGames { get; set; }

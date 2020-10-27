@@ -16,5 +16,7 @@ namespace Suls.Data.LoL
         public ICollection<Player> Players { get; set; }
 
         public string State { get; set; }
+
+        public int GameId { get; set; }
     }
 }
