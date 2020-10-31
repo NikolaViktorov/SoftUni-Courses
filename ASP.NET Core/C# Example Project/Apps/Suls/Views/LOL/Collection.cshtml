@@ -1,8 +1,16 @@
 ﻿<main class="mt-3">
     <h1 class="text-center suls-text-color">GOKO.GG</h1>
     <div class="button-holder">
-        <a href="/LOL/lolapp" class="btn btn-info text-uppercase">Back</a>
     </div>
+    @if (Model.Count == 0)
+    {
+        <h2 class="text-md-center"> You do not have any games in your collection, try adding some from <a href="/LOL/lolapp" class="btn btn-info text-uppercase">League of Legends match history viewer</a> </h2>
+    }
+    @else
+    {
+        <a href="/LOL/lolapp" class="btn btn-info text-uppercase">Back</a>
+    }
+
     @foreach (var game in Model)
     {
         <table>

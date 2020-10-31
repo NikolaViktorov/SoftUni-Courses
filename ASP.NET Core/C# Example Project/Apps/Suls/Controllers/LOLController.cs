@@ -1,10 +1,6 @@
-﻿using RiotSharp.Endpoints.MatchEndpoint;
-using Suls.Services;
-using Suls.ViewModels.Games;
+﻿using Suls.Services;
 using SUS.HTTP;
 using SUS.MvcFramework;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Suls.Controllers
 {
@@ -15,6 +11,16 @@ namespace Suls.Controllers
         public LOLController(IGamesService gamesService)
         {
             this.gamesService = gamesService;
+        }
+
+        public HttpResponse Home()
+        {
+            if (!this.IsUserSignedIn())
+            {
+                return this.Redirect("/Users/Login");
+            }
+
+            return this.View();
         }
 
         public HttpResponse lolapp()

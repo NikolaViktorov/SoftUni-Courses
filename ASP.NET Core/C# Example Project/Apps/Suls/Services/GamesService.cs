@@ -162,7 +162,8 @@ namespace Suls.Services
             for (int i = 0; i < players.Count; i++)
             {
                 var playerId = players[i].PlayerId;
-                var champRiotId = curGame.Participants[i].ChampionId;
+                var participantIndex = curGame.ParticipantIdentities.FirstOrDefault(p => p.Player.SummonerName == players[i].Username).ParticipantId - 1;
+                var champRiotId = curGame.Participants[participantIndex].ChampionId;
                 var champId = champions.FirstOrDefault(c => c.ChampionRiotId == champRiotId.ToString()).ChampionId;
 
                 this.db.PlayerChampion.Add(new PlayerChampion
