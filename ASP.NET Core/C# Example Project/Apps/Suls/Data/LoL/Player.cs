@@ -19,6 +19,6 @@ namespace Suls.Data.LoL
 
         public int TeamId { get; set; }
 
-        public ICollection<PlayerChampion> PlayerChampions { get; set; }
+        public virtual ICollection<PlayerChampion> PlayerChampions { get; set; }
     }
 }

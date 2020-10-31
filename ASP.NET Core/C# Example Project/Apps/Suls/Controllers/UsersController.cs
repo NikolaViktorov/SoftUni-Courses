@@ -35,7 +35,7 @@ namespace Suls.Controllers
             }
 
             this.SignIn(userId);
-            return this.Redirect("/LOL/lolapp");
+            return this.Redirect("/");
         }
 
         public HttpResponse Register()

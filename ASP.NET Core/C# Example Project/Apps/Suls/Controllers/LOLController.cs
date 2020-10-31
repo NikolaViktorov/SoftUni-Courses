@@ -1,4 +1,5 @@
-﻿using Suls.Services;
+﻿using RiotSharp.Endpoints.MatchEndpoint;
+using Suls.Services;
 using Suls.ViewModels.Games;
 using SUS.HTTP;
 using SUS.MvcFramework;
@@ -35,11 +36,12 @@ namespace Suls.Controllers
             }
 
             var games = gamesService.GetGamesAsync(username, count).GetAwaiter().GetResult();
-            var viewModel = this.gamesService.GetModelByGames(games);
+            var viewModel = this.gamesService.GetModelByMatches(games);
 
             return this.View(viewModel, "games");
         }
 
+        // TODO Remove Details if not in collection
         public HttpResponse Details(long gameId)
         {
             if (!this.IsUserSignedIn())
@@ -52,18 +54,6 @@ namespace Suls.Controllers
             return this.View(viewModel);
         }
 
-        public HttpResponse Collection(long gameId)
-        {
-            if (!this.IsUserSignedIn())
-            {
-                return this.Redirect("/Users/Login");
-            }
-
-            this.gamesService.AddGameToCollection(gameId);
-
-            return this.Redirect("/LOL/Collection");
-        }
-
         public HttpResponse Collection()
         {
             if (!this.IsUserSignedIn())
@@ -71,7 +61,59 @@ namespace Suls.Controllers
                 return this.Redirect("/Users/Login");
             }
 
-            return this.View();
+            var userId = this.GetUserId();
+            var viewModel = gamesService.GetCollectionGames(userId);
+
+            return this.View(viewModel);
+        }
+
+        // add
+        public HttpResponse AddToCollection(long gameId)
+        {
+            if (!this.IsUserSignedIn())
+            {
+                return this.Redirect("/Users/Login");
+            }
+
+            var userId = this.GetUserId();
+            var userGameCount = gamesService.GetGameCount(userId);
+
+            if (userGameCount < 10 )
+            {
+                this.gamesService.AddGameToCollection(gameId);
+                this.gamesService.AddGameToUser(userId);
+            }
+            else
+            {
+                return this.Error("You already have the max of 10 games in your collection.");
+            }
+
+            return this.Redirect("/LOL/Collection");
+        }
+
+        public HttpResponse CollectionDetails(long gameId)
+        {
+            if (!this.IsUserSignedIn())
+            {
+                return this.Redirect("/Users/Login");
+            }
+
+            var viewModel = this.gamesService.GetModelByGameId(gameId).GetAwaiter().GetResult();
+
+            return this.View(viewModel);
+        }
+
+        public HttpResponse Remove(long gameId)
+        {
+            if (!this.IsUserSignedIn())
+            {
+                return this.Redirect("/Users/Login");
+            }
+
+            var userId = this.GetUserId();
+            this.gamesService.RemoveGameFromCollection(userId, gameId);
+
+            return this.Redirect("/LOL/Collection");
         }
     }
 }

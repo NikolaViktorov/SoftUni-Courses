@@ -9,10 +9,10 @@ table {
 }
 
 td, th {
-    border: 1px solid #0000ff;
+    border: 1px solid rgb(43, 43, 43);
     text-align: left;
     padding: 16px;
-    color: black;
+    color: #d0d0d0;
 }
 
 td {
@@ -20,11 +20,11 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: rgba(41, 44, 202, 0.719);
+    background-color: black;
 }
 
 tr:nth-child(odd) {
-    background-color: rgba(25, 218, 73, 0.863);
+    background-color: rgb(255,103,0);
 }
 
 .playerIcon {
@@ -42,6 +42,7 @@ tr:nth-child(odd) {
 
 body {
     color: white;
+    background-color: rgb(43, 43, 43);
 }
 
 a {
@@ -49,7 +50,7 @@ a {
 }
 
 footer {
-    color: black;
+    color: white;
     text-align: center;
 }
 
@@ -69,7 +70,7 @@ footer {
 
 .primary-separator {
     border-top: solid;
-    border-color: purple;
+    border-color: #4a4a4a;
     margin-bottom: 10px;
 }
 
@@ -82,7 +83,7 @@ footer {
 }
 
 .navbar {
-    background-color: purple; 
+    background-color: #4a4a4a;
 }
 
 .nav-link {
@@ -98,14 +99,14 @@ footer {
 }
 
 .jumbotron {
-    background-color: purple;
+    background-color: #4a4a4a;
 }
 
 .suls-bg-color {
-    background-color: purple;
+    background-color: #4a4a4a;
     color: white;
 }
 
 .suls-text-color {
-    color: purple;
+    color: white;
 }

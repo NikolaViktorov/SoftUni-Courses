@@ -15,10 +15,6 @@ namespace Suls.Data
         }
 
 
-        public DbSet<Problem> Problems { get; set; }
-
-        public DbSet<Submission> Submissions { get; set; }
-
         public DbSet<User> Users { get; set; }
 
         public DbSet<Game> Games { get; set; }
@@ -27,9 +23,12 @@ namespace Suls.Data
 
         public DbSet<Team> Teams { get; set; }
 
+        public DbSet<Champion> ChampionsStatic { get; set; }
+
         public DbSet<PlayerChampion> PlayerChampion { get; set; }
 
-        public DbSet<Champion> ChampionsStatic { get; set; }
+        public DbSet<UserGames> UserGames { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -42,6 +41,7 @@ namespace Suls.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<PlayerChampion>().HasKey(x => new { x.PlayerId, x.ChampionId });
+            modelBuilder.Entity<UserGames>().HasKey(x => new { x.UserId, x.GameId });
             base.OnModelCreating(modelBuilder);
         }
     }

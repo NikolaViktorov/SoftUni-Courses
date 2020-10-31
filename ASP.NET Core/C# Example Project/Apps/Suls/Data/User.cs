@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Suls.Data.LoL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
@@ -9,7 +10,7 @@ namespace Suls.Data
         public User()
         {
             this.Id = Guid.NewGuid().ToString();
-            this.Submissions = new HashSet<Submission>();
+            this.UserGames = new HashSet<UserGames>();
         }
 
         public string Id { get; set; }
@@ -24,6 +25,6 @@ namespace Suls.Data
         [Required]
         public string Password { get; set; }
 
-        public ICollection<Submission> Submissions { get; set; }
+        public virtual ICollection<UserGames> UserGames { get; set; }
     }
 }

@@ -8,11 +8,17 @@ namespace Suls.Data.LoL
     {
         public Game()
         {
-            this.Teams = new HashSet<Team>();
+            this.Teams = new List<Team>();
+            this.UserGames = new HashSet<UserGames>();
         }
 
         public int GameId { get; set; }
 
-        public virtual ICollection<Team> Teams { get; set; }
+        public long RiotGameId { get; set; }
+
+        public virtual List<Team> Teams { get; set; }
+
+        public virtual ICollection<UserGames> UserGames { get; set; }
+
     }
 }

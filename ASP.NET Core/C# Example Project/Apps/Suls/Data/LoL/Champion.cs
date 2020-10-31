@@ -7,11 +7,6 @@ namespace Suls.Data.LoL
 {
     public class Champion
     {
-        public Champion()
-        {
-            this.PlayerChampions = new HashSet<PlayerChampion>();
-        }
-
         [Key]
         public int ChampionId { get; set; }
 
@@ -20,9 +15,5 @@ namespace Suls.Data.LoL
         public string ChampionIconUrl { get; set; }
 
         public string ChampionRiotId { get; set; }
-
-        public ICollection<PlayerChampion> PlayerChampions { get; set; }
-
-
     }
 }

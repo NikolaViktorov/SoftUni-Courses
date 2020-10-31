@@ -1,9 +1,17 @@
 ﻿<div class="row">
     <div class="jumbotron col-md-12">
         <div class="heading-container bottom-buffer-md">
-            <h1>Welcome to SULS Platform!</h1>
+            <h1>Welcome to GOKO Community website!</h1>
         </div>
-        <h3><a href="/Users/Login">Login</a> to use the Platform.</h3>
-        <h3><a href="/Users/Register">Register</a> if you don't have an account.</h3>
+        @if (User == null)
+        {
+            <h3><a href="/Users/Login">Login</a> to use the rest of the website.</h3>
+            <h3><a href="/Users/Register">Register</a> if you don't have an account.</h3>
+        }
+        @else
+        {
+            <h3><a href="/LOL/lolapp">GOKO.GG</a> to visit the League of Legends match history viewing app.</h3>
+            <h3><a href="/RP/Home">GOKO.RP</a> to visit the Goko Roleplay Server info page.</h3>
+        }
     </div>
 </div>

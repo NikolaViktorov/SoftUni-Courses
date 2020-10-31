@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using System.Threading.Tasks;
 using RiotSharp;
 using RiotSharp.Endpoints.MatchEndpoint;
-using RiotSharp.Endpoints.StaticDataEndpoint.Champion;
 using RiotSharp.Endpoints.SummonerEndpoint;
 using RiotSharp.Misc;
 using Suls.Data;
 using Suls.Data.LoL;
+using Suls.Services.StaticData;
 using Suls.ViewModels.Games;
 using Suls.ViewModels.Games.DTOs;
 
@@ -19,20 +16,17 @@ namespace Suls.Services
     public class GamesService : IGamesService
     {
         private readonly ApplicationDbContext db;
+        private readonly IPlayersService playersService;
 
-        public const string apiKey = "RGAPI-41eca856-e4e7-4eb7-90a6-6e5867de3057";
-
-        public const Region region = Region.Eune; // change to choice
-
-        private string ddVersion { get; set; }
+        Region region = Region.Eune;
 
         public RiotApi api { get; set; }
 
-        public GamesService(ApplicationDbContext db)
+        public GamesService(ApplicationDbContext db, IPlayersService playersService)
         {
             this.db = db;
-            this.api = RiotApi.GetDevelopmentInstance(apiKey);
-            this.ddVersion = GetLatestVersion();
+            this.playersService = playersService;
+            this.api = RiotApi.GetDevelopmentInstance(PublicData.apiKey);
         }
 
         public async Task<Summoner> GetBasicSummonerDataAsync(string summonerName)
@@ -67,7 +61,7 @@ namespace Suls.Services
             return games;
         }
 
-        public IEnumerable<HomePageGameViewModel> GetModelByGames(ICollection<Match> games)
+        public IEnumerable<HomePageGameViewModel> GetModelByMatches(ICollection<Match> games)
         {
             var viewModel = new List<HomePageGameViewModel>();
 
@@ -78,12 +72,12 @@ namespace Suls.Services
                     GameId = game.GameId,
                     BlueTeam = new TeamDTO
                     {
-                        Players = this.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 100),
+                        Players = this.playersService.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 100),
                         State = game.Teams[0].Win
                     },
                     RedTeam = new TeamDTO
                     {
-                        Players = this.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 200),
+                        Players = this.playersService.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 200),
                         State = game.Teams[1].Win
                     }
                 });
@@ -101,12 +95,12 @@ namespace Suls.Services
                 GameId = game.GameId,
                 BlueTeam = new TeamDTO
                 {
-                    Players = this.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 100),
+                    Players = this.playersService.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 100),
                     State = game.Teams[0].Win
                 },
                 RedTeam = new TeamDTO
                 {
-                    Players = this.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 200),
+                    Players = this.playersService.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 200),
                     State = game.Teams[1].Win
                 }
             };
@@ -114,159 +108,269 @@ namespace Suls.Services
             return viewModel;
         }
 
-        // UPDATE NEEDED 100% TODO - DONT REQUEST ALL CHAMPS
-        public void AddGameToCollection(long gameId) // Update FOR COLLECTION TO WORK
+        // Reorganize the code... FIXME
+        public void AddGameToCollection(long gameId)
         {
-            var game = api.Match.GetMatchAsync(region, gameId).GetAwaiter().GetResult();
+            var curGame = GetGameAsync(gameId).GetAwaiter().GetResult();
 
-            //var curGame = new Data.LoL.Game
-            //{
-            //    Teams = new List<Team>
-            //    {
-            //        new Team
-            //        {
-            //            Players = this.GetPlayersByParticipants(game.ParticipantIdentities, game.Participants, 100),
-            //            State = game.Teams[0].Win
-            //        },
-            //        new Team
-            //        {
-            //            Players = this.GetPlayersByParticipants(game.ParticipantIdentities, game.Participants, 200),
-            //            State = game.Teams[1].Win
-            //        },
-            //    }
-            //};
+            var game = new Game();
 
-            var playerst1 = this.GetPlayersByParticipants(game.ParticipantIdentities, game.Participants, 100).ToList();
-            var playerst2 = this.GetPlayersByParticipants(game.ParticipantIdentities, game.Participants, 200).ToList();
+            game.RiotGameId = gameId;
+            var firstTeam = new Team
+            {
+                State = curGame.Teams[0].Win
+            };
 
-            this.db.Players.AddRange(playerst1);
-            this.db.Players.AddRange(playerst2);
+            var secondTeam = new Team
+            {
+                State = curGame.Teams[1].Win
+            };
+
+            game.Teams.Add(firstTeam);
+            game.Teams.Add(secondTeam);
+
+            this.db.Games.Add(game);
+            this.db.SaveChanges();
+
+            var dbGame = this.db.Games.OrderByDescending(g => g.GameId).FirstOrDefault();
+
+            var firstTeamId = dbGame.Teams[0].TeamId;
+            var secondTeamId = dbGame.Teams[1].TeamId;
+
+            var firstTeamPlayers = playersService.GetPlayersByParticipants(curGame.ParticipantIdentities, curGame.Participants, 100).ToList();
+            // 100 first team / 200 second team
+            var secondTeamPlayers = playersService.GetPlayersByParticipants(curGame.ParticipantIdentities, curGame.Participants, 200).ToList();
+
+            firstTeamPlayers.ForEach(p => p.TeamId = firstTeamId);
+            secondTeamPlayers.ForEach(p => p.TeamId = secondTeamId);
+
+            foreach (var player in firstTeamPlayers)
+            {
+                this.db.Players.Add(player);
+            }
+
+            foreach (var player in secondTeamPlayers)
+            {
+                this.db.Players.Add(player);
+            }
+
+            this.db.SaveChanges();
+
+            var players = this.db.Players.Where(p => p.TeamId == firstTeamId || p.TeamId == secondTeamId).Select(p => p).ToList();
+            var champions = this.db.ChampionsStatic.ToList();
+
+            for (int i = 0; i < players.Count; i++)
+            {
+                var playerId = players[i].PlayerId;
+                var champRiotId = curGame.Participants[i].ChampionId;
+                var champId = champions.FirstOrDefault(c => c.ChampionRiotId == champRiotId.ToString()).ChampionId;
+
+                this.db.PlayerChampion.Add(new PlayerChampion
+                {
+                    PlayerId = playerId,
+                    ChampionId = champId
+                });
+            }
 
             this.db.SaveChanges();
         }
 
-        private async Task<Champion> GetChampion(int championId)
+        public void AddGameToUser(string userId)
         {
-            if (this.db.ChampionsStatic.ToList().Count == 0)
+            var dbGame = this.db.Games.OrderByDescending(g => g.GameId).FirstOrDefault();
+
+            this.db.UserGames.Add(new UserGames
             {
-                await UploadChamionsToDBAsync();
-            }
-
-            var champion = this.db.ChampionsStatic.FirstOrDefault(c => c.ChampionId == championId);
-
-            return champion;
+                UserId = userId,
+                GameId = dbGame.GameId
+            });
+            this.db.SaveChanges();
         }
 
-        private async Task<ChampionDTO> GetChampionDto(int championId)
+        public int GetGameCount(string userId)
         {
-            if (this.db.ChampionsStatic.ToList().Count == 0)
-            {
-                await UploadChamionsToDBAsync();
-            }
-
-            var champion = this.db.ChampionsStatic
-                .Where(c => c.ChampionRiotId == championId.ToString())
-                .Select(c => new ChampionDTO
-                {
-                    ChampionIconUrl = c.ChampionIconUrl,
-                    ChampionName = c.ChampionName
-                })
-                .FirstOrDefault();
-
-            return champion;
+            return this.db.UserGames.Where(u => u.UserId == userId).Count();
         }
 
-        private async Task UploadChamionsToDBAsync()
+        public ICollection<CollectionPageGameViewModel> GetCollectionGames(string userId)
         {
-            var dic = await api.StaticData.Champions.GetAllAsync(this.ddVersion);
-            var champions = dic.Champions.Values;
+            var viewModel = new List<CollectionPageGameViewModel>();
+            var gameIds = this.db.UserGames
+                .Where(ug => ug.UserId == userId)
+                .Select(ug => new { ug.GameId })
+                .ToList();
+            this.db.SaveChanges();
 
-            foreach (var champ in champions)
+            foreach (var gameId in gameIds)
             {
-                var champion = new Champion
+                var curGame = this.db.Games
+                    .FirstOrDefault(g => g.GameId == gameId.GameId);
+
+                var curGameTeams = this.db.Teams
+                    .Where(t => t.GameId == curGame.GameId)
+                    .ToArray();
+
+                // first team
+                var fTeam = curGameTeams[0];
+                var fPlayers = this.db.Players
+                    .Where(p => p.TeamId == fTeam.TeamId)
+                    .ToList();
+
+                var fChampions = new List<Champion>();
+
+                foreach (var player in fPlayers)
                 {
-                    ChampionName = champ.Name,
-                    ChampionIconUrl = $"http://ddragon.leagueoflegends.com/cdn/{this.ddVersion}/img/champion/{champ.Image.Full}",
-                    ChampionRiotId = champ.Id.ToString()
-                };
-
-                this.db.ChampionsStatic.Add(champion);
-            }
-
-            await this.db.SaveChangesAsync();
-        }
-
-        private ICollection<Data.LoL.Player> GetPlayersByParticipants(List<ParticipantIdentity> participantIdentities, List<Participant> participants, int teamId)
-        {
-            var players = new List<Data.LoL.Player>();
-
-            for (int i = 0; i < participants.Count; i++)
-            {
-                if (teamId == participants[i].TeamId && participants[i].ParticipantId == participantIdentities[i].ParticipantId)
-                {
-                    players.Add(new Data.LoL.Player
+                    fChampions.Add(this.db.PlayerChampion
+                    .Where(pc => pc.PlayerId == player.PlayerId)
+                    .Select(pc => new Champion
                     {
-                        Username = participantIdentities[i].Player.SummonerName,
-                        ProfileIconUrl = $"http://ddragon.leagueoflegends.com/cdn/{this.ddVersion}/img/profileicon/{participantIdentities[i].Player.ProfileIcon}.png",
-                    });
-                }
-            }
-
-            return players;
-        }
-
-        private string GetLatestVersion()
-        {
-            string url = "https://ddragon.leagueoflegends.com/api/versions.json";
-            var req = (HttpWebRequest)WebRequest.Create(url);
-            var latestVersion = string.Empty;
-
-            req.Method = "GET";
-
-            using (HttpWebResponse res = (HttpWebResponse)req.GetResponse())
-            {
-                if (res.StatusCode != HttpStatusCode.OK)
-                {
-                    throw new ApplicationException("error code: " + res.StatusCode);
+                        ChampionIconUrl = pc.Champion.ChampionIconUrl,
+                        ChampionName = pc.Champion.ChampionName,
+                        ChampionRiotId = pc.Champion.ChampionRiotId,
+                        ChampionId = pc.Champion.ChampionId
+                    })
+                    .FirstOrDefault());
                 }
 
-                using (Stream resStream = res.GetResponseStream())
-                {
-                    if (resStream != null)
-                    {
-                        using (StreamReader reader = new StreamReader(resStream))
-                        {
-                            string[] result = reader.ReadToEnd().Split(new char[] { '[', ']', '\\', '\"', '{', '}', ':', ',' }, StringSplitOptions.RemoveEmptyEntries);
+                // second team
+                var sTeam = curGameTeams[1];
+                var sPlayers = this.db.Players
+                    .Where(p => p.TeamId == sTeam.TeamId)
+                    .ToList();
 
-                            latestVersion = result[0];
-                        }
+                var sChampions = new List<Champion>();
+
+                foreach (var player in sPlayers)
+                {
+                    sChampions.Add(this.db.PlayerChampion
+                    .Where(pc => pc.PlayerId == player.PlayerId)
+                    .Select(pc => new Champion
+                    {
+                        ChampionIconUrl = pc.Champion.ChampionIconUrl,
+                        ChampionName = pc.Champion.ChampionName,
+                        ChampionRiotId = pc.Champion.ChampionRiotId,
+                        ChampionId = pc.Champion.ChampionId
+                    })
+                    .FirstOrDefault());
+                }
+
+                viewModel.Add(GetModelByGame(curGame, fChampions, sChampions));
+            }
+
+            return viewModel;
+        }
+
+        private CollectionPageGameViewModel GetModelByGame(Game game, List<Champion> fChampions, List<Champion> sChampions)
+        {
+            var curModel = new CollectionPageGameViewModel
+            {
+                GameId = game.RiotGameId,
+                BlueTeam = new TeamDTO
+                {
+                    Players = GetPlayersDtoList(game.Teams[0].Players, fChampions),
+                    State = game.Teams[0].State
+                },
+                RedTeam = new TeamDTO
+                {
+                    Players = GetPlayersDtoList(game.Teams[1].Players, sChampions),
+                    State = game.Teams[1].State
+                }
+            };
+
+            return curModel;
+        }
+
+        private List<PlayerDTO> GetPlayersDtoList(ICollection<Data.LoL.Player> players, List<Champion> champions)
+        {
+            var dtos = new List<PlayerDTO>();
+
+            int i = 0;
+            foreach (var player in players)
+            {
+                var champion = champions[i];
+
+                dtos.Add(new PlayerDTO
+                {
+                    Username = player.Username,
+                    ProfileIconUrl = player.ProfileIconUrl,
+                    Champion = new ChampionDTO
+                    {
+                        ChampionIconUrl = champion.ChampionIconUrl,
+                        ChampionName = champion.ChampionName
                     }
-                }
+                });
+                i++;
             }
 
-            return latestVersion;
+            return dtos;
         }
-       
-        private List<PlayerDTO> GetPlayersByParticipantsDto(List<ParticipantIdentity> participantIdentities, List<Participant> participants, int teamId)
+
+        public void RemoveGameFromCollection(string userId, long gameId)
         {
-            var players = new List<PlayerDTO>();
+            var game = this.db.Games
+                .FirstOrDefault(g => g.RiotGameId == gameId);
 
-            for (int i = 0; i < participants.Count; i++)
-            {
-                if (teamId == participants[i].TeamId && participants[i].ParticipantId == participantIdentities[i].ParticipantId)
-                {
-                    players.Add(new PlayerDTO
-                    {
-                        Username = participantIdentities[i].Player.SummonerName,
-                        ProfileIconUrl = $"http://ddragon.leagueoflegends.com/cdn/{this.ddVersion}/img/profileicon/{participantIdentities[i].Player.ProfileIcon}.png",
-                        Champion = GetChampionDto(participants[i].ChampionId).GetAwaiter().GetResult()
-                    });
-                }
-            }
+            var teams = this.db.Teams
+                .Where(t => t.GameId == game.GameId)
+                .ToArray();
 
-            return players;
+            // first team
+            var fTeam = teams[0];
+            var fPlayers = this.db.Players
+                .Where(p => p.TeamId == fTeam.TeamId)
+                .ToList();
+
+            fPlayers.ForEach(p => p.PlayerChampions.Clear());
+            this.db.Players.RemoveRange(fPlayers);
+
+            //var fChampions = new List<Champion>();
+
+            //foreach (var player in fPlayers)
+            //{
+            //    fChampions.Add(this.db.PlayerChampion
+            //    .Where(pc => pc.PlayerId == player.PlayerId)
+            //    .Select(pc => new Champion
+            //    {
+            //        ChampionIconUrl = pc.Champion.ChampionIconUrl,
+            //        ChampionName = pc.Champion.ChampionName,
+            //        ChampionRiotId = pc.Champion.ChampionRiotId,
+            //        ChampionId = pc.Champion.ChampionId
+            //    })
+            //    .FirstOrDefault());
+            //}
+
+            // second team
+            var sTeam = teams[1];
+            var sPlayers = this.db.Players
+                .Where(p => p.TeamId == sTeam.TeamId)
+                .ToList();
+
+            sPlayers.ForEach(p => p.PlayerChampions.Clear());
+            this.db.Players.RemoveRange(sPlayers);
+
+            this.db.Teams.RemoveRange(teams);
+
+            //var sChampions = new List<Champion>();
+
+            //foreach (var player in sPlayers)
+            //{
+            //    sChampions.Add(this.db.PlayerChampion
+            //    .Where(pc => pc.PlayerId == player.PlayerId)
+            //    .Select(pc => new Champion
+            //    {
+            //        ChampionIconUrl = pc.Champion.ChampionIconUrl,
+            //        ChampionName = pc.Champion.ChampionName,
+            //        ChampionRiotId = pc.Champion.ChampionRiotId,
+            //        ChampionId = pc.Champion.ChampionId
+            //    })
+            //    .FirstOrDefault());
+
+            //}
+            this.db.Games.FirstOrDefault(g => g.RiotGameId == gameId).UserGames.Clear();
+
+            this.db.Games.Remove(game);
+
+            this.db.SaveChanges();
         }
-
-
     }
 }
