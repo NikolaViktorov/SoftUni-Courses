@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using RiotSharp.Endpoints.MatchEndpoint;
-using Suls.Data.LoL;
 using Suls.Services.StaticData;
 using Suls.ViewModels.Games.DTOs;
 

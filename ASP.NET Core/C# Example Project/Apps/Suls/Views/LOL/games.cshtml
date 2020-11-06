@@ -25,29 +25,29 @@
         }
     </tr>
     <tr>
-        <th>Player Names</th>
-        <th>Champion Names</th>
+        <th class="blueTeamNames">Player Names</th>
+        <th class="blueTeamNames">Champion Names</th>
         <th></th>
-        <th>Player Names</th>
-        <th>Champion Names</th>
+        <th class="redTeamNames">Player Names</th>
+        <th class="redTeamNames">Champion Names</th>
     </tr>
     @for (int i = 0; i < 5; i++)
     {
-        <tr>
-            <td>
+        <tr >
+            <td class="blueTeam">
             <img src="@game.BlueTeam.Players[i].ProfileIconUrl" class="playerIcon">
             @game.BlueTeam.Players[i].Username
         </td>
-        <td>
+        <td class="blueTeam">
             <img src="@game.BlueTeam.Players[i].Champion.ChampionIconUrl" class="playerIcon">
             @game.BlueTeam.Players[i].Champion.ChampionName
         </td>
         <td></td>
-        <td>
+        <td class="redTeam">
             <img src="@game.RedTeam.Players[i].ProfileIconUrl" class="playerIcon">
             @game.RedTeam.Players[i].Username
         </td>
-        <td>
+        <td class="redTeam">
             <img src="@game.RedTeam.Players[i].Champion.ChampionIconUrl" class="playerIcon">
             @game.RedTeam.Players[i].Champion.ChampionName
         </td>
@@ -58,6 +58,9 @@
         <td>
             <div class="button-holder">
                 <a href="/LOL/Details?gameId=@game.GameId" class="btn btn-info text-uppercase">Details</a>
+            </div>
+            <div class="button-holder">
+                <a href="/LOL/AddToCollection?gameId=@game.GameId" class="btn btn-info text-uppercase">Add To Collection</a>
             </div>
         </td>
     </tr>

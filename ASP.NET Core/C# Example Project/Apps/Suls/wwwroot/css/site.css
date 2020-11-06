@@ -19,14 +19,46 @@ td {
     max-width: 50px;
 }
 
-tr:nth-child(even) {
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.redTeam {
+    background-color: rgb(143, 18, 18);
+}
+
+.blueTeam {
+    background-color: rgb(40, 73, 232);
+}
+
+.blueTeamNames {
+    background-color: darkblue;
+}
+
+.redTeamNames {
+    background-color: rgb(116, 18, 18);
+}
+
+/* 
+    tr:nth-child(even) {
     background-color: black;
 }
 
 tr:nth-child(odd) {
     background-color: rgb(255,103,0);
 }
-
+*/
 .playerIcon {
     width: 35px;
     border-radius: 8px;

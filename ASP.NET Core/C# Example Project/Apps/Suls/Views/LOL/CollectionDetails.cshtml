@@ -20,29 +20,29 @@
             }
         </tr>
         <tr>
-            <th>Player Names</th>
-            <th>Champion Names</th>
+            <th class="blueTeamNames">Player Names</th>
+            <th class="blueTeamNames">Champion Names</th>
             <th></th>
-            <th>Player Names</th>
-            <th>Champion Names</th>
+            <th class="redTeamNames">Player Names</th>
+            <th class="redTeamNames">Champion Names</th>
         </tr>
         @for (int i = 0; i < 5; i++)
         {
             <tr>
-                <td>
+                <td class="blueTeam">
                     <img src="@Model.BlueTeam.Players[i].ProfileIconUrl" class="playerIcon">
                     @Model.BlueTeam.Players[i].Username
                 </td>
-                <td>
+                <td class="blueTeam">
                     <img src="@Model.BlueTeam.Players[i].Champion.ChampionIconUrl" class="playerIcon">
                     @Model.BlueTeam.Players[i].Champion.ChampionName
                 </td>
                 <td></td>
-                <td>
+                <td class="redTeam">
                     <img src="@Model.RedTeam.Players[i].ProfileIconUrl" class="playerIcon">
                     @Model.RedTeam.Players[i].Username
                 </td>
-                <td>
+                <td class="redTeam">
                     <img src="@Model.RedTeam.Players[i].Champion.ChampionIconUrl" class="playerIcon">
                     @Model.RedTeam.Players[i].Champion.ChampionName
                 </td>
