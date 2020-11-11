@@ -1,0 +1,35 @@
+﻿@using GokoSite.Data.Models
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+
+@{
+    this.ViewData["Title"] = "Home Page";
+}
+
+@*@<div class="text-center">
+        <h1 class="display-4">Welcome to @GlobalConstants.SystemName!</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>*@
+
+<div class="row">
+    <div class="jumbotron col-md-12">
+        <div class="heading-container bottom-buffer-md">
+            <h1>Welcome to GOKO Community website!</h1>
+        </div>
+        @if (!this.SignInManager.IsSignedIn(this.User))
+        {
+            <h3>
+                <a asp-area="Identity" asp-page="/Account/Login">Login</a> to use the rest of the website.
+            </h3>
+            <h3>
+                <a asp-area="Identity" asp-page="/Account/Register">Register</a> if you don't have an account.
+            </h3>
+        }
+        else
+        {
+            <h3><a href="/LOL/Home">GOKO.GG</a> to visit the League of Legends match history viewing app.</h3>
+            <h3><a href="/RP/Home">GOKO.RP</a> to visit the Goko Roleplay Server info page.</h3>
+        }
+    </div>
+</div>
+
