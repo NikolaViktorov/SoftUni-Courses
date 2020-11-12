@@ -4,14 +4,16 @@ using GokoSite.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace GokoSite.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201111160600_TestMigration")]
+    partial class TestMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -248,58 +250,6 @@ namespace GokoSite.Data.Migrations
                     b.ToTable("UserGames");
                 });
 
-            modelBuilder.Entity("GokoSite.Data.Models.RP.Forum", b =>
-                {
-                    b.Property<string>("ForumId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("ForumText")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ForumTopic")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Likes")
-                        .HasColumnType("int");
-
-                    b.HasKey("ForumId");
-
-                    b.ToTable("Forums");
-                });
-
-            modelBuilder.Entity("GokoSite.Data.Models.RP.UserForums", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("ForumId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("UserId", "ForumId");
-
-                    b.HasIndex("ForumId");
-
-                    b.ToTable("UserForums");
-                });
-
-            modelBuilder.Entity("GokoSite.Data.Models.RP.UserLikes", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("ForumId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<bool>("Liked")
-                        .HasColumnType("bit");
-
-                    b.HasKey("UserId", "ForumId");
-
-                    b.HasIndex("ForumId");
-
-                    b.ToTable("UserLikes");
-                });
-
             modelBuilder.Entity("GokoSite.Data.Models.Setting", b =>
                 {
                     b.Property<int>("Id")
@@ -494,36 +444,6 @@ namespace GokoSite.Data.Migrations
 
                     b.HasOne("GokoSite.Data.Models.ApplicationUser", "User")
                         .WithMany("UserGames")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("GokoSite.Data.Models.RP.UserForums", b =>
-                {
-                    b.HasOne("GokoSite.Data.Models.RP.Forum", "Forum")
-                        .WithMany("UserForums")
-                        .HasForeignKey("ForumId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("GokoSite.Data.Models.ApplicationUser", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("GokoSite.Data.Models.RP.UserLikes", b =>
-                {
-                    b.HasOne("GokoSite.Data.Models.RP.Forum", "Forum")
-                        .WithMany()
-                        .HasForeignKey("ForumId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("GokoSite.Data.Models.ApplicationUser", "User")
-                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

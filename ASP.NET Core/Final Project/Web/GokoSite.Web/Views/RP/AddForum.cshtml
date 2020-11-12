@@ -1,0 +1,21 @@
+﻿<div class="row">
+    <div class="jumbotron col-md-12">
+        <div class="heading-container bottom-buffer-md">
+            <h1>Here you can share some of your ideas!</h1>
+        </div>
+
+        <form class="mx-auto half-width col-5" method="post" asp-controller="RP" asp-action="AddForum">
+            <div class="top-border-line primary-separator"></div>
+
+                <label for="topic" class="suls-text-color">Topic</label>
+                <input type="text" class="form-control" id="topic" placeholder="Topic..." name="Topic">
+
+                <label for="text" class="suls-text-color">Your opinion</label>
+                <input type="text" class="form-control" id="text" placeholder="Write your opinion..." name="Text">
+
+            <div class="top-border-line primary-separator"></div>
+
+                <button type="submit" class="btn forum-add-bg-color">Post!</button>
+        </form>
+    </div>
+</div>

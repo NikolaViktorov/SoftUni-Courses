@@ -66,6 +66,7 @@
             services.AddTransient<ISettingsService, SettingsService>();
             services.AddTransient<IChampionsService, ChampionsService>();
             services.AddTransient<IPlayersService, PlayersService>();
+            services.AddTransient<IForumsService, ForumsService>();
             services.AddTransient<IRPServerService, RPServerService>();
             services.AddTransient<IGamesService, GamesService>();
         }

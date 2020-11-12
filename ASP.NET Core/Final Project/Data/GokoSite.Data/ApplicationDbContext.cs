@@ -9,6 +9,7 @@
     using GokoSite.Data.Common.Models;
     using GokoSite.Data.Models;
     using GokoSite.Data.Models.LoL;
+    using GokoSite.Data.Models.RP;
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore;
 
@@ -37,6 +38,12 @@
         public DbSet<PlayerChampion> PlayerChampion { get; set; }
 
         public DbSet<UserGames> UserGames { get; set; }
+
+        public DbSet<Forum> Forums { get; set; }
+
+        public DbSet<UserForums> UserForums { get; set; }
+
+        public DbSet<UserLikes> UserLikes { get; set; }
 
         public override int SaveChanges() => this.SaveChanges(true);
 
@@ -87,6 +94,8 @@
 
             builder.Entity<PlayerChampion>().HasKey(x => new { x.PlayerId, x.ChampionId });
             builder.Entity<UserGames>().HasKey(x => new { x.UserId, x.GameId });
+            builder.Entity<UserForums>().HasKey(x => new { x.UserId, x.ForumId });
+            builder.Entity<UserLikes>().HasKey(x => new { x.UserId, x.ForumId });
             base.OnModelCreating(builder);
         }
 

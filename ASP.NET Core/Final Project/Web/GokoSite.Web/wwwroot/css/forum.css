@@ -1,0 +1,226 @@
+﻿.search-media {
+    border: 6px solid #ddd;
+    margin-top: -1px;
+    padding: 12px 150px 12px 12px;
+    -webkit-transition: border .1s ease-in-out 0s;
+    -o-transition: border .1s ease-in-out 0s;
+    transition: border .1s ease-in-out 0s;
+    position: relative
+}
+
+.row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+    .search-media:hover {
+        border-color: #75A8CE;
+        z-index: 1
+    }
+
+    .search-media .search-actions {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 20%;
+        min-width: 100px;
+        max-width: 150px;
+        padding: 6px 9px
+    }
+
+        .search-media .search-actions::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 8px;
+            bottom: 16px;
+            width: 1px;
+            background-image: -webkit-linear-gradient(top, #FFF 0, #DDD 100%);
+            background-image: -o-linear-gradient(top, #FFF 0, #DDD 100%);
+            background-image: linear-gradient(to bottom, #FFF 0, #DDD 100%);
+            background-repeat: repeat-x;
+            filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffdddddd', GradientType=0)
+        }
+
+    .search-media:hover .search-actions {
+        background-color: #F0F4F7
+    }
+
+    .search-media.disabled:hover .search-actions {
+        background-color: #F6F6F6
+    }
+
+    .search-media:not(.disabled):hover .search-actions::before {
+        background-image: -webkit-linear-gradient(top, #FFF 0, #84bee5 100%);
+        background-image: -o-linear-gradient(top, #FFF 0, #84bee5 100%);
+        background-image: linear-gradient(to bottom, #FFF 0, #84bee5 100%);
+        background-repeat: repeat-x;
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ff84bee5', GradientType=0)
+    }
+
+.dislike-btn {
+    background-color: darkgrey;
+    color: black;
+}
+
+.search-filter-header {
+    padding: 8px;
+    margin: -4px
+}
+
+.search-btn-action {
+    background-color: rgb(207, 23, 1);
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    width: auto;
+    -webkit-transition: bottom .15s;
+    -o-transition: bottom .15s;
+    transition: bottom .15s;
+    border: 1px;
+    border-color: red;
+}
+
+.search-btn-action:hover {
+    background-color: rgb(115, 23, 1);
+    color: white;
+}
+.search-media:hover .search-btn-action {
+    bottom: 1px
+}
+
+.search-promotion.label {
+    position: absolute;
+    margin-top: -1px;
+    margin-left: -1px
+}
+
+.search-filter-element {
+    padding: 12px;
+    background-color: #FFF;
+    border: 1px solid #C9DDE7
+}
+
+.search-results {
+    padding: 24px 12px;
+    min-height: 20px
+}
+
+.search-result {
+    margin-top: -1px;
+    position: relative;
+    padding: 12px;
+    border: 1px dotted;
+    border-color: #DDD #FFF #FFF;
+    border-color: rgba(0, 0, 0, .11) transparent transparent
+}
+
+    .search-result:hover {
+        background-color: #F7F7F7;
+        border-color: #D6E1EA;
+        border-style: solid;
+        z-index: 1
+    }
+
+    .search-result:first-child {
+        border-top-color: transparent
+    }
+
+        .search-result:first-child:hover {
+            border-top-color: #D6E1EA
+        }
+
+    .search-result .search-title {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 6px
+    }
+
+    .search-result .search-content {
+        margin-top: 2px
+    }
+
+.btn-grey.disabled, .btn-grey.disabled.active, .btn-grey.disabled:active, .btn-grey.disabled:focus,
+.btn-grey.disabled:hover, .btn-grey[disabled], .btn-grey[disabled].active, .btn-grey[disabled]:active,
+.btn-grey[disabled]:focus, .btn-grey[disabled]:hover, fieldset[disabled] .btn-grey, fieldset[disabled] .btn-grey.active,
+fieldset[disabled] .btn-grey:active, fieldset[disabled] .btn-grey:focus, fieldset[disabled] .btn-grey:hover {
+    background-color: #A0A0A0 !important;
+    border-color: #A0A0A0;
+    color: #fff;
+}
+
+
+.dark {
+    color: #333 !important
+}
+
+.white {
+    color: #FFF !important
+}
+
+.red {
+    color: #DD5A43 !important
+}
+
+.red2 {
+    color: #E08374 !important
+}
+
+.light-red {
+    color: #F77 !important
+}
+
+.blue {
+    color: #478FCA !important
+}
+
+.light-blue {
+    color: #93CBF9 !important
+}
+
+.green {
+    color: #69AA46 !important
+}
+
+.light-green {
+    color: #B0D877 !important
+}
+
+.orange {
+    color: #FF892A !important
+}
+
+.orange2 {
+    color: #FEB902 !important
+}
+
+.light-orange {
+    color: #FCAC6F !important
+}
+
+.purple {
+    color: #A069C3 !important
+}
+
+.pink {
+    color: #C6699F !important
+}
+
+.pink2 {
+    color: #D6487E !important
+}
+
+.brown {
+    color: brown !important
+}
+
+.grey {
+    color: #777 !important
+}
+
+.no-forums {
+    font-size: 20px;
+}
