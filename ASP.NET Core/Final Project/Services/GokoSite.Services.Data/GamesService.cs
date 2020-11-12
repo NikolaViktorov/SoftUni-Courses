@@ -1,5 +1,6 @@
 ﻿namespace GokoSite.Services.Data
 {
+    using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
@@ -32,9 +33,16 @@
 
         public async Task<Summoner> GetBasicSummonerDataAsync(string summonerName)
         {
-            var summoner = await this.Api.Summoner.GetSummonerByNameAsync(this.region, summonerName);
+            try
+            {
+                var summoner = await this.Api.Summoner.GetSummonerByNameAsync(this.region, summonerName);
 
-            return summoner;
+                return summoner;
+            }
+            catch (RiotSharpException ex)
+            {
+                return null;
+            }
         }
 
         public async Task<Match> GetGameAsync(long gameId)
@@ -47,6 +55,11 @@
         public async Task<ICollection<Match>> GetGamesAsync(string summonerName, int count)
         {
             var summoner = await this.GetBasicSummonerDataAsync(summonerName);
+
+            if (summoner == null)
+            {
+                throw new ArgumentException("Wrong summoner name!");
+            }
 
             var matches = await this.Api.Match.GetMatchListAsync(region, summoner.AccountId);
 

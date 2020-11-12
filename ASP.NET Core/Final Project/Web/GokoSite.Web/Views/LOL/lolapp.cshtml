@@ -1,15 +1,24 @@
-﻿<main class="mt-3">
+﻿@using Microsoft.AspNetCore.Mvc;
+
+<main class="mt-3">
     <h1 class="text-center suls-text-color">GOKO.GG</h1>
     <div class="mx-auto half-width container-fluid ml-5">
         <form class="mx-auto half-width col-5" method="get" action="/LOL/GetGames">
             <div class="top-border-line primary-separator"></div>
             <div class="form-group">
                 <label for="username" class="suls-text-color">Username</label>
-                <input type="text" class="form-control" id="username" placeholder="Username..." name="username">
+                <input type="text" maxlength="16"  class="form-control" id="username" placeholder="Username..." name="username">
             </div>
             <div class="form-group">
                 <label for="count" class="suls-text-color">Number Of Games</label>
                 <input type="number" class="form-control" id="count" placeholder="Count..." name="count">
+                @foreach (var modelState in ViewData.ModelState.Values)
+                {
+                    foreach (var error in modelState.Errors)
+                    {
+                        <span>@error.ErrorMessage</span>
+                    }
+                }
             </div>
             <div class="top-border-line primary-separator"></div>
             <div class="button-holder d-flex justify-content-center">
