@@ -37,67 +37,6 @@
             return this.View();
         }
 
-        public IActionResult Forum()
-        {
-            if (!this.User.Identity.IsAuthenticated)
-            {
-                return this.Redirect("/Identity/Account/Login");
-            }
-
-            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            var viewModel = this.forumsService.GetAll(userId);
-
-            return this.View(viewModel);
-        }
-
-        public IActionResult AddForum()
-        {
-            if (!this.User.Identity.IsAuthenticated)
-            {
-                return this.Redirect("/Identity/Account/Login");
-            }
-
-            return this.View();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> AddForum(string topic, string text)
-        {
-            if (!this.User.Identity.IsAuthenticated)
-            {
-                return this.Redirect("/Identity/Account/Login");
-            }
-
-            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            AddForumModel inputModel = new AddForumModel()
-            {
-                ForumTopic = topic,
-                ForumText = text,
-                Likes = 0,
-            };
-
-            await this.forumsService.AddPost(inputModel);
-            await this.forumsService.AddPostToUser(userId);
-
-            return this.Redirect("/RP/Forum");
-        }
-
-        public async Task<IActionResult> Like(string id)
-        {
-            if (!this.User.Identity.IsAuthenticated)
-            {
-                return this.Redirect("/Identity/Account/Login");
-            }
-
-            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            await this.forumsService.Like(id, userId);
-
-            return this.Redirect("/RP/Forum");
-        }
-
         public IActionResult Players()
         {
             if (!this.User.Identity.IsAuthenticated)
@@ -139,6 +78,83 @@
             }
 
             return this.View();
+        }
+
+        // Forum Routes
+
+        public IActionResult Forum()
+        {
+            if (!this.User.Identity.IsAuthenticated)
+            {
+                return this.Redirect("/Identity/Account/Login");
+            }
+
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var viewModel = this.forumsService.GetAll(userId);
+
+            return this.View(viewModel);
+        }
+
+        public IActionResult MyForums()
+        {
+            if (!this.User.Identity.IsAuthenticated)
+            {
+                return this.Redirect("/Identity/Account/Login");
+            }
+
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var viewModel = this.forumsService.GetPersonalPosts(userId);
+
+            return this.View(viewModel);
+        }
+
+        public IActionResult AddForum()
+        {
+            if (!this.User.Identity.IsAuthenticated)
+            {
+                return this.Redirect("/Identity/Account/Login");
+            }
+
+            return this.View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddForum(string topic, string text)
+        {
+            if (!this.User.Identity.IsAuthenticated)
+            {
+                return this.Redirect("/Identity/Account/Login");
+            }
+
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            AddForumModel inputModel = new AddForumModel()
+            {
+                ForumTopic = topic,
+                ForumText = text,
+                Likes = 0,
+            };
+
+            string forumId = await this.forumsService.AddPost(inputModel);
+            await this.forumsService.AddPostToUser(userId, forumId);
+
+            return this.Redirect("/RP/Forum");
+        }
+
+        public async Task<IActionResult> Like(string id)
+        {
+            if (!this.User.Identity.IsAuthenticated)
+            {
+                return this.Redirect("/Identity/Account/Login");
+            }
+
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            await this.forumsService.Like(id, userId);
+
+            return this.Redirect("/RP/Forum");
         }
     }
 }

@@ -61,9 +61,35 @@
         filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ff84bee5', GradientType=0)
     }
 
+.delete-btn {
+    background-color: red;
+    color: black;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.edit-btn {
+    background-color: lightseagreen;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.edit-btn:hover {
+    background-color: seagreen;
+    color: white;
+}
+
 .dislike-btn {
     background-color: darkgrey;
     color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .search-filter-header {

@@ -1,12 +1,13 @@
 ﻿namespace GokoSite.Services.Data
 {
-    using GokoSite.Data;
-    using GokoSite.Data.Models.RP;
-    using GokoSite.Web.ViewModels.Forums;
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+
+    using GokoSite.Data;
+    using GokoSite.Data.Models.RP;
+    using GokoSite.Web.ViewModels.Forums;
 
     public class ForumsService : IForumsService
     {
@@ -17,7 +18,7 @@
             this.db = db;
         }
 
-        public async Task AddPost(AddForumModel input)
+        public async Task<string> AddPost(AddForumModel input)
         {
             var post = new Forum()
             {
@@ -29,11 +30,13 @@
             await this.db.Forums.AddAsync(post);
 
             await this.db.SaveChangesAsync();
+
+            return post.ForumId;
         }
 
-        public async Task AddPostToUser(string userId)
+        public async Task AddPostToUser(string userId, string forumId)
         {
-            var post = this.db.Forums.OrderByDescending(f => f.ForumId).FirstOrDefault();
+            var post = this.db.Forums.FirstOrDefault(f => f.ForumId == forumId);
 
             if (post != null)
             {
@@ -61,12 +64,29 @@
                     Liked = IsForumLiked(forum.ForumId, userId),
                 });
             }
+
             return forums;
         }
 
         public ICollection<PersonalForumViewModel> GetPersonalPosts(string userId)
         {
-            throw new NotImplementedException();
+            var forums = new List<PersonalForumViewModel>();
+
+            var userForums = this.db.UserForums.Where(uf => uf.UserId == userId).ToList();
+            var forumIds = userForums.Select(uf => uf.ForumId).ToArray();
+
+            foreach (var forum in this.db.Forums.Where(f => forumIds.Contains(f.ForumId)))
+            {
+                forums.Add(new PersonalForumViewModel()
+                {
+                    ForumId = forum.ForumId,
+                    ForumText = forum.ForumText,
+                    ForumTopic = forum.ForumTopic,
+                    OwnerId = userId,
+                });
+            }
+
+            return forums;
         }
 
         public async Task Like(string postId, string userId)

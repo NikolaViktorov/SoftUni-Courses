@@ -13,8 +13,8 @@
 
         public Task Like(string postId, string userId);
 
-        public Task AddPost(AddForumModel input);
+        public Task<string> AddPost(AddForumModel input);
 
-        public Task AddPostToUser(string userId);
+        public Task AddPostToUser(string userId, string forumId);
     }
 }
