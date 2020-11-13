@@ -164,3 +164,22 @@ footer {
 .suls-text-color {
     color: white;
 }
+
+.error404-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1250px;
+    height: 550px;
+}
+
+.notFound {
+    margin-top: 20px;
+}
+
+.notFoundInfo {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}

@@ -87,7 +87,7 @@
 
             var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            var viewModel = gamesService.GetCollectionGames(userId);
+            var viewModel = this.gamesService.GetCollectionGames(userId);
 
             return this.View(viewModel);
         }
@@ -102,7 +102,7 @@
 
             var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            var userGameCount = gamesService.GetGameCount(userId);
+            var userGameCount = this.gamesService.GetGameCount(userId);
 
             if (userGameCount < 10 )
             {
