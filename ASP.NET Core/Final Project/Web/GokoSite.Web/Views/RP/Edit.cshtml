@@ -1,0 +1,26 @@
+﻿<div class="row">
+    <div class="jumbotron col-md-12">
+        <div class="heading-container bottom-buffer-md">
+            <h1>Here you can edit your idea!</h1>
+        </div>
+
+        <form class="mx-auto half-width col-5" method="post" asp-controller="RP" asp-action="EditPost">
+            <div class="top-border-line primary-separator"></div>
+
+            <label for="topic" class="suls-text-color">Topic</label>
+            <input type="text" class="form-control" id="topic" placeholder="Topic..." value="@Model.ForumTopic" name="Topic">
+
+            <label for="text" class="suls-text-color">Your opinion</label>
+            <input type="text" class="form-control" id="text" placeholder="Write your opinion..." value="@Model.ForumText" name="Text">
+
+            <label for="text" class="suls-text-color">This post has @Model.Likes likes!</label>
+            <input type="text" class="hide" hidden="hidden" id="text" value="@Model.Likes" name="Likes">
+
+            <input type="text" class="hide" hidden="hidden" id="text" value="@Model.ForumId" name="id">
+
+            <div class="top-border-line primary-separator"></div>
+
+            <button type="submit" class="btn forum-add-bg-color">Edit!</button>
+        </form>
+    </div>
+</div>

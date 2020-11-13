@@ -1,8 +1,9 @@
 ﻿namespace GokoSite.Services.Data
 {
-    using GokoSite.Web.ViewModels.Forums;
     using System.Collections.Generic;
     using System.Threading.Tasks;
+
+    using GokoSite.Web.ViewModels.Forums;
 
     // TODO
     public interface IForumsService
@@ -10,6 +11,12 @@
         public ICollection<ForumViewModel> GetAll(string userId);
 
         public ICollection<PersonalForumViewModel> GetPersonalPosts(string userId);
+
+        public EditForumViewModel GetPost(string postId);
+
+        public Task DeletePost(string postId);
+
+        public Task EditPost(AddForumModel input);
 
         public Task Like(string postId, string userId);
 

@@ -1,8 +1,13 @@
 ﻿<div class="row">
-    <div class="jumbotron col-md-12">
+    <div class="jumbotron col-md-12" id="video-container">
         <div class="heading-container bottom-buffer-md">
             <h1>Welcome to the GOKO Roleplay info page!</h1>
         </div>
+
+        <video id="video-background" class="video" autoplay="autoplay" onloadstart="this.volume=0.04">
+            <source src="/videos/rpserver.mp4" type="video/mp4" />
+            <button class='button'>Hui</button>
+        </video>
 
         <h2> Here you can see the server rules</h2>
         <div class="button-holder">
@@ -24,5 +29,9 @@
             <a href="/RP/WhitelistApps" class="btn btn-info text-uppercase">Whitelite Applications</a>
         </div>
 
+
     </div>
 </div>
+
+
+<script src="~/js/rpvideo.js"></script>

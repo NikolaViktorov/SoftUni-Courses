@@ -156,5 +156,50 @@
 
             return this.Redirect("/RP/Forum");
         }
+
+        public async Task<IActionResult> Delete(string id)
+        {
+            if (!this.User.Identity.IsAuthenticated)
+            {
+                return this.Redirect("/Identity/Account/Login");
+            }
+
+            await this.forumsService.DeletePost(id);
+
+            return this.Redirect("/RP/MyForums");
+        }
+
+        public IActionResult Edit(string id)
+        {
+            if (!this.User.Identity.IsAuthenticated)
+            {
+                return this.Redirect("/Identity/Account/Login");
+            }
+
+            var viewModel = this.forumsService.GetPost(id);
+
+            return this.View(viewModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditPost(string id, string topic, string text, int likes)
+        {
+            if (!this.User.Identity.IsAuthenticated)
+            {
+                return this.Redirect("/Identity/Account/Login");
+            }
+
+            var newPost = new AddForumModel()
+            {
+                ForumId = id,
+                ForumText = text,
+                ForumTopic = topic,
+                Likes = likes,
+            };
+
+            await this.forumsService.EditPost(newPost);
+
+            return this.Redirect("/RP/MyForums");
+        }
     }
 }

@@ -50,6 +50,30 @@
             }
         }
 
+        public async Task DeletePost(string postId)
+        {
+            var post = this.db.Forums.FirstOrDefault(f => f.ForumId == postId);
+
+            if (post != null)
+            {
+                this.db.Remove(post);
+                await this.db.SaveChangesAsync();
+            }
+        }
+
+        public async Task EditPost(AddForumModel input)
+        {
+            var post = this.db.Forums.FirstOrDefault(f => f.ForumId == input.ForumId);
+
+            if (post != null)
+            {
+                post.ForumText = input.ForumText;
+                post.ForumTopic = input.ForumTopic;
+
+                await this.db.SaveChangesAsync();
+            }
+        }
+
         public ICollection<ForumViewModel> GetAll(string userId)
         {
             var forums = new List<ForumViewModel>();
@@ -87,6 +111,24 @@
             }
 
             return forums;
+        }
+
+        public EditForumViewModel GetPost(string postId)
+        {
+            var postDb = this.db.Forums.FirstOrDefault(f => f.ForumId == postId);
+
+            if (postDb == null)
+            {
+                return null;
+            }
+
+            return new EditForumViewModel()
+            {
+                ForumId = postDb.ForumId,
+                ForumTopic = postDb.ForumTopic,
+                ForumText = postDb.ForumText,
+                Likes = postDb.Likes,
+            };
         }
 
         public async Task Like(string postId, string userId)

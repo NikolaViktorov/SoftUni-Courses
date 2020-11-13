@@ -1,9 +1,12 @@
 ﻿namespace Suls.Controllers
 {
-    using GokoSite.Services.Data;
-    using Microsoft.AspNetCore.Mvc;
+    using System.Collections.Generic;
     using System.Security.Claims;
     using System.Threading.Tasks;
+
+    using GokoSite.Services.Data;
+    using GokoSite.Web.ViewModels.Games;
+    using Microsoft.AspNetCore.Mvc;
 
     public class LOLController : Controller
     {
@@ -49,9 +52,22 @@
             {
                 this.ModelState.AddModelError("count", "Count must be between 1 and 10!");
             }
+
             if (string.IsNullOrEmpty(username) || username.Length > 16)
             {
                 this.ModelState.AddModelError("username", "Username must be between 1 and 16 characters long!");
+            }
+
+            IEnumerable<HomePageGameViewModel> viewModel = new List<HomePageGameViewModel>();
+
+            try
+            {
+                var games = await this.gamesService.GetGamesAsync(username, countNum);
+                viewModel = this.gamesService.GetModelByMatches(games);
+            }
+            catch (System.Exception e)
+            {
+                this.ModelState.AddModelError("lol", e.Message);
             }
 
             if (!this.ModelState.IsValid)
@@ -59,23 +75,7 @@
                 return this.View("lolapp");
             }
 
-            var games = await this.gamesService.GetGamesAsync(username, countNum);
-            var viewModel = this.gamesService.GetModelByMatches(games);
-
             return this.View("games", viewModel);
-        }
-
-        // TODO Remove Details if not in collection
-        public IActionResult Details(long gameId)
-        {
-            if (!this.User.Identity.IsAuthenticated)
-            {
-                return this.Redirect("/Identity/Account/Login");
-            }
-
-            var viewModel = this.gamesService.GetModelByGameId(gameId).GetAwaiter().GetResult();
-
-            return this.View(viewModel);
         }
 
         public IActionResult Collection()
