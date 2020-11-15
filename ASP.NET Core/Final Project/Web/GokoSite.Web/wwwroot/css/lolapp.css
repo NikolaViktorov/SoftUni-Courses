@@ -132,3 +132,139 @@
         font-size: 11px
     }
 }
+
+.news-btn {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+.newsImage-box {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+}
+
+.newsImage-details {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.newsImage-title-box {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 60px;
+    z-index: 2;
+}
+
+.jtSCCa {
+    box-sizing: border-box;
+    background-color: rgb(0, 18, 22);
+    width: 100%;
+    border-width: 0px 1px 1px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-color: rgb(36, 44, 54);
+    border-bottom-color: rgb(36, 44, 54);
+    border-left-color: rgb(36, 44, 54);
+    border-image: initial;
+    border-top-style: initial;
+    border-top-color: initial;
+}
+
+.crPSMM {
+    display: flex;
+    align-items: flex-start;
+}
+
+.fCQbDk {
+    max-width: 90%;
+    text-align: center;
+    flex: 1 0 auto;
+    padding-bottom: 0.25em;
+    font-weight: 800;
+    margin: -0.5em 15px 0px; /* This */
+    z-index: 3; /* This */
+    font-size: 3.75rem;
+    letter-spacing: 3px;
+    line-height: 0.9;
+    font-style: italic; /* This */
+}
+
+.cRqIBK {
+    border-top: 1px solid rgb(36, 44, 54);
+    color: rgb(93, 97, 102);
+    background-color: rgb(0, 18, 22);
+    align-items: center;
+}
+
+.dYRCfL {
+    display: flex;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.gLkYks {
+    text-align: center;
+    flex: 5 1 auto;
+    width: 100%;
+    border-width: 0px 1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-image: initial;
+    border-right-color: rgb(36, 44, 54);
+    border-left-color: rgb(36, 44, 54);
+    border-top-style: initial;
+    border-top-color: initial;
+    border-bottom-style: initial;
+    border-bottom-color: initial;
+    padding: 15px 0px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(0, 18, 22);
+}
+
+.dhCzKp {
+    box-sizing: border-box;
+}
+
+.QAuEs {
+    color: rgb(208, 168, 92);
+}
+
+.dYaFx {
+    white-space: nowrap;
+    padding: 0px 30px 0px 40px;
+}
+
+.cJORtJ {
+    box-sizing: border-box;
+    display: flex;
+    width: 40%;
+    max-width: 1560px;
+    background-color: rgb(0, 18, 22);
+    margin: 0px auto;
+    padding: 10px 30px;
+    margin-right: 70%;
+    margin-left: 9.1%;
+    border: solid;
+    border-color: rgb(36, 44, 54);
+    border-width: 2px;
+}
+
+.bQRKpI {
+    flex: 1 1 0%;
+    width: 40%;
+    font-size: 1.475rem;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    text-align: left;
+}
+

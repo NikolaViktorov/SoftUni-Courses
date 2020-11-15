@@ -70,6 +70,7 @@
             services.AddTransient<IRPServerService, RPServerService>();
             services.AddTransient<IGamesService, GamesService>();
             services.AddTransient<IAuthorizationsService, AuthorizationsService>();
+            services.AddTransient<INewsService, NewsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
