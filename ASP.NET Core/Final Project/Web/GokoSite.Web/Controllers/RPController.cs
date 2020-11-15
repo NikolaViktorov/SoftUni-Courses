@@ -81,7 +81,6 @@
         }
 
         // Forum Routes
-
         public IActionResult Forum()
         {
             if (!this.User.Identity.IsAuthenticated)

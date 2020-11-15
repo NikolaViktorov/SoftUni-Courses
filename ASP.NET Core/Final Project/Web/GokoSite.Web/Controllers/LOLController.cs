@@ -6,15 +6,20 @@
 
     using GokoSite.Services.Data;
     using GokoSite.Web.ViewModels.Games;
+    using GokoSite.Web.ViewModels.News;
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
 
     public class LOLController : Controller
     {
         private readonly IGamesService gamesService;
+        private readonly IAuthorizationsService authorizationsService;
 
-        public LOLController(IGamesService gamesService)
+        public LOLController(IGamesService gamesService,
+            IAuthorizationsService authorizationsService)
         {
             this.gamesService = gamesService;
+            this.authorizationsService = authorizationsService;
         }
 
         public IActionResult Home()
@@ -137,6 +142,36 @@
             this.gamesService.RemoveGameFromCollection(userId, gameId);
 
             return this.Redirect("/LOL/Collection");
+        }
+
+        public IActionResult AddNew()
+        {
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var isAdministrator = this.authorizationsService.IsUserAdministrator(userId);
+
+            if (!isAdministrator)
+            {
+                return this.Redirect("/LOL/Home");
+            }
+
+            return this.View();
+        }
+
+        public IActionResult AddNew(NewAddInputModel input)
+        {
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var isAdministrator = this.authorizationsService.IsUserAdministrator(userId);
+
+            if (!isAdministrator)
+            {
+                return this.Redirect("/LOL/Home");
+            }
+
+            // input validations....
+
+            return this.View();
         }
     }
 }

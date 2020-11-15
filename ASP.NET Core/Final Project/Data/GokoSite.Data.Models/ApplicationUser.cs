@@ -6,6 +6,7 @@ namespace GokoSite.Data.Models
 
     using GokoSite.Data.Common.Models;
     using GokoSite.Data.Models.LoL;
+    using GokoSite.Data.Models.News;
     using Microsoft.AspNetCore.Identity;
 
     public class ApplicationUser : IdentityUser, IAuditInfo, IDeletableEntity
@@ -17,6 +18,7 @@ namespace GokoSite.Data.Models
             this.Claims = new HashSet<IdentityUserClaim<string>>();
             this.Logins = new HashSet<IdentityUserLogin<string>>();
             this.UserGames = new HashSet<UserGames>();
+            this.News = new HashSet<New>();
         }
 
         // Audit info
@@ -36,5 +38,7 @@ namespace GokoSite.Data.Models
         public virtual ICollection<IdentityUserLogin<string>> Logins { get; set; }
 
         public virtual ICollection<UserGames> UserGames { get; set; }
+
+        public virtual ICollection<New> News { get; set; }
     }
 }
