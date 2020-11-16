@@ -9,12 +9,12 @@
     {
         public ICollection<NewHomePageViewModel> GetNews();
 
-        public NewDetailsPageViewModel GetNew(string newId, string authorUsername);
+        public NewDetailsPageViewModel GetNew(string newId);
 
         public Task AddNew(NewAddInputModel input, string userId);
 
-        public void RemoveNew(string newId);
+        public Task<bool> RemoveNew(string newId);
 
-        public void EditNew(NewAddInputModel input);
+        public Task EditNew(NewAddInputModel input, string newId);
     }
 }

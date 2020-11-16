@@ -183,15 +183,17 @@ fieldset[disabled] .btn-grey:active, fieldset[disabled] .btn-grey:focus, fieldse
     /* making the video fullscreen */
     position: absolute;
     top: 60%;
-    left: 70%;
+    left: 64%;
     margin: -180px 0 0 -240px;
     border: 3px solid #ECECEC;
     box-sizing: border-box;
+    width: 800px;
 }
 
 #video-background:active {
     opacity: 75%;
 }
+
 
 .dark {
     color: #333 !important

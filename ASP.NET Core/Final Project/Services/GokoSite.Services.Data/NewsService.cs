@@ -26,6 +26,7 @@
                 Content = input.Content,
                 Image = input.Image,
                 UserId = userId,
+                UploadedOn = DateTime.UtcNow,
             };
 
             this.db.News.Add(newDb);
@@ -33,9 +34,18 @@
             await this.db.SaveChangesAsync();
         }
 
-        public void EditNew(NewAddInputModel input)
+        public async Task EditNew(NewAddInputModel input, string newId)
         {
-            throw new NotImplementedException();
+            var newDb = this.db.News.FirstOrDefault(n => n.NewId == newId);
+
+            if (newDb != null)
+            {
+                newDb.Title = input.Title;
+                newDb.Content = input.Content;
+                newDb.Image = input.Image;
+
+                await this.db.SaveChangesAsync();
+            }
         }
 
         public ICollection<NewHomePageViewModel> GetNews()
@@ -50,14 +60,26 @@
             return news;
         }
 
-        public void RemoveNew(string newId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public NewDetailsPageViewModel GetNew(string newId, string authorUsername)
+        public async Task<bool> RemoveNew(string newId)
         {
             var newDb = this.db.News.FirstOrDefault(n => n.NewId == newId);
+
+            if (newDb != null)
+            {
+                this.db.News.Remove(newDb);
+                await this.db.SaveChangesAsync();
+
+                return true;
+            }
+
+            return false;
+        }
+
+        public NewDetailsPageViewModel GetNew(string newId)
+        {
+            var newDb = this.db.News.FirstOrDefault(n => n.NewId == newId);
+
+            var user = this.db.Users.FirstOrDefault(u => u.Id == newDb.UserId);
 
             var newModel = new NewDetailsPageViewModel()
             {
@@ -65,7 +87,8 @@
                 Title = newDb.Title,
                 Content = newDb.Content,
                 Image = newDb.Image,
-                AuthorUsername = authorUsername,
+                AuthorUsername = user?.UserName,
+                UploadedOn = newDb.UploadedOn,
             };
 
             return newModel;

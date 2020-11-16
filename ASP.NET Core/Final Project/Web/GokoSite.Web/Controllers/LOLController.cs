@@ -6,22 +6,18 @@
 
     using GokoSite.Services.Data;
     using GokoSite.Web.ViewModels.Games;
-    using GokoSite.Web.ViewModels.News;
     using Microsoft.AspNetCore.Mvc;
 
     public class LOLController : Controller
     {
         private readonly IGamesService gamesService;
-        private readonly IAuthorizationsService authorizationsService;
         private readonly INewsService newsService;
 
         public LOLController(
             IGamesService gamesService,
-            IAuthorizationsService authorizationsService,
             INewsService newsService)
         {
             this.gamesService = gamesService;
-            this.authorizationsService = authorizationsService;
             this.newsService = newsService;
         }
 
@@ -149,48 +145,9 @@
             return this.Redirect("/LOL/Collection");
         }
 
-        public IActionResult AddNew()
-        {
-            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            var isAdministrator = this.authorizationsService.IsUserAdministrator(userId);
-
-            if (!isAdministrator)
-            {
-                return this.Redirect("/LOL/Home");
-            }
-
-            return this.View();
-        }
-
-        [HttpPost]
-        public async Task<IActionResult> AddNew(NewAddInputModel input)
-        {
-            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            var isAdministrator = this.authorizationsService.IsUserAdministrator(userId);
-
-            if (!isAdministrator)
-            {
-                return this.Redirect("/LOL/Home");
-            }
-
-            // input validations....
-            if (string.IsNullOrEmpty(input.Title) || input.Title.Length <= 0)
-            {
-                // error
-            }
-
-            await this.newsService.AddNew(input, userId);
-
-            return this.Redirect("/LOL/Home");
-        }
-
         public IActionResult New(string newId)
         {
-            var userName = this.User.FindFirstValue(ClaimTypes.Name);
-
-            var viewModel = this.newsService.GetNew(newId, userName);
+            var viewModel = this.newsService.GetNew(newId);
 
             return this.View(viewModel);
         }

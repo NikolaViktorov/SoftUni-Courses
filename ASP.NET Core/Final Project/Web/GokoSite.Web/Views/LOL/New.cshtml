@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="cRqIBK dYRCfL">
-                <time class="dYaFx" datetime="2020-11-10T19:00:00.000Z" class="bRTHLn">5 days ago</time>
+                <time class="dYaFx" datetime="2020-11-10T19:00:00.000Z" class="bRTHLn">@Model.UploadedOn</time>
                 <div class="gLkYks">
                     <span class="dhCzKp">
                         <span class="kZKxoP">Author</span>
@@ -32,6 +32,12 @@
 
         <div class="button-holder">
             <a href="/LOL/Home" class="btn btn-info text-uppercase">Go Back</a>
+            @if (this.User.IsInRole("Administrator"))
+            {
+                <div class="admin-new-btn">
+                    <a class="btn btn-info text-uppercase" onclick="return confirm('Are you sure?')" asp-route-id="@Model.NewId" asp-area="" asp-controller="Administration" asp-action="RemoveNew">Remove New</a>
+                </div>
+            }
         </div>
 
         <p></p>

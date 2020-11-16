@@ -1,5 +1,7 @@
 ﻿namespace GokoSite.Web.ViewModels.News
 {
+    using System;
+
     public class NewDetailsPageViewModel
     {
         public string NewId { get; set; }
@@ -12,6 +14,6 @@
 
         public string AuthorUsername { get; set; }
 
-        // UserId who created
+        public DateTime UploadedOn { get; set; }
     }
 }

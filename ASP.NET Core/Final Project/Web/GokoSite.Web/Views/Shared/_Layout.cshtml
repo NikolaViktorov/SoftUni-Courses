@@ -23,6 +23,12 @@
                 @if (this.SignInManager.IsSignedIn(this.User))
                 {
                     <ul class="navbar-nav ml-auto">
+                        @if (this.User.IsInRole("Administrator"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Administration" asp-action="AdminPanel">Admin Panel</a>
+                            </li>
+                        }
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
