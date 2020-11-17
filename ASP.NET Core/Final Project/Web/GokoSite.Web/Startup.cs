@@ -47,6 +47,12 @@
                         options.MinimumSameSitePolicy = SameSiteMode.None;
                     });
 
+            services.AddAuthentication().AddFacebook(options =>
+            {
+                options.AppId = "652150732134432";
+                options.AppSecret = "62080652267f3c0dd1de1cc7f26be9ee";
+            });
+
             services.AddControllersWithViews(
                 options =>
                     {

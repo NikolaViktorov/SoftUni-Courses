@@ -5,9 +5,9 @@
     public class AddForumModel
     {
         [Required]
-        public string ForumTopic { get; set; }
+        public string Topic { get; set; }
 
         [Required]
-        public string ForumText { get; set; }
+        public string Text { get; set; }
     }
 }

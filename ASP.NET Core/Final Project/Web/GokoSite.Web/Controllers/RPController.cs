@@ -120,7 +120,7 @@
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddForum(string topic, string text)
+        public async Task<IActionResult> AddForum(AddForumModel input)
         {
             if (!this.User.Identity.IsAuthenticated)
             {
@@ -129,13 +129,7 @@
 
             var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            AddForumModel inputModel = new AddForumModel()
-            {
-                ForumTopic = topic,
-                ForumText = text,
-            };
-
-            string forumId = await this.forumsService.AddPost(inputModel);
+            string forumId = await this.forumsService.AddPost(input);
             await this.forumsService.AddPostToUser(userId, forumId);
 
             return this.Redirect("/RP/Forum");

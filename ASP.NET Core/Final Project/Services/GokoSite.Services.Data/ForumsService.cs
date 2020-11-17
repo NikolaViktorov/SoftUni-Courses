@@ -22,8 +22,8 @@
         {
             var post = new Forum()
             {
-                ForumText = input.ForumText,
-                ForumTopic = input.ForumTopic,
+                ForumText = input.Text,
+                ForumTopic = input.Topic,
                 Likes = 0,
             };
 

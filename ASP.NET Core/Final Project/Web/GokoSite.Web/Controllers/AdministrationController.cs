@@ -3,11 +3,14 @@
     using System.Security.Claims;
     using System.Threading.Tasks;
 
+    using GokoSite.Common;
     using GokoSite.Services.Data;
     using GokoSite.Web.ViewModels.Administration;
     using GokoSite.Web.ViewModels.News;
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
 
+    [Authorize(Roles = GlobalConstants.AdministratorRoleName)]
     public class AdministrationController : Controller
     {
         private readonly IAuthorizationsService authorizationsService;
@@ -23,11 +26,7 @@
 
         public IActionResult AdminPanel()
         {
-            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            var isAdministrator = this.authorizationsService.IsUserAdministrator(userId);
-
-            if (!isAdministrator)
+            if (!this.User.IsInRole("Administrator"))
             {
                 return this.Redirect("/");
             }
@@ -37,11 +36,7 @@
 
         public IActionResult AddAdmin()
         {
-            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            var isAdministrator = this.authorizationsService.IsUserAdministrator(userId);
-
-            if (!isAdministrator)
+            if (!this.User.IsInRole("Administrator"))
             {
                 return this.Redirect("/");
             }
@@ -50,13 +45,10 @@
         }
 
         [HttpPost]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> AddAdmin(AddAdminInputModel input)
         {
-            var curUserId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            var isAdministrator = this.authorizationsService.IsUserAdministrator(curUserId);
-
-            if (!isAdministrator)
+            if (!this.User.IsInRole("Administrator"))
             {
                 return this.Redirect("/");
             }
@@ -68,11 +60,7 @@
 
         public IActionResult AddNew()
         {
-            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            var isAdministrator = this.authorizationsService.IsUserAdministrator(userId);
-
-            if (!isAdministrator)
+            if (!this.User.IsInRole("Administrator"))
             {
                 return this.Redirect("/");
             }
@@ -81,21 +69,14 @@
         }
 
         [HttpPost]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> AddNew(NewAddInputModel input)
         {
             var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            var isAdministrator = this.authorizationsService.IsUserAdministrator(userId);
-
-            if (!isAdministrator)
+            if (!this.User.IsInRole("Administrator"))
             {
                 return this.Redirect("/");
-            }
-
-            // input validations....
-            if (string.IsNullOrEmpty(input.Title) || input.Title.Length <= 0)
-            {
-                // error
             }
 
             await this.newsService.AddNew(input, userId);
@@ -105,11 +86,7 @@
 
         public async Task<IActionResult> RemoveNew(string id)
         {
-            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            var isAdministrator = this.authorizationsService.IsUserAdministrator(userId);
-
-            if (!isAdministrator)
+            if (!this.User.IsInRole("Administrator"))
             {
                 return this.Redirect("/");
             }
