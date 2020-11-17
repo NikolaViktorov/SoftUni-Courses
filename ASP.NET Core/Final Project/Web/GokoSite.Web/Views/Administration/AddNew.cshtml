@@ -1,4 +1,8 @@
-﻿<div class="row">
+﻿@using GokoSite.Web.ViewModels.News;
+
+@model NewAddInputModel
+
+<div class="row">
     <div class="jumbotron col-md-12">
         <div class="heading-container bottom-buffer-md">
             <h1>Here you can share some of your ideas!</h1>
@@ -7,14 +11,23 @@
         <form class="mx-auto half-width col-5" method="post" asp-controller="Administration" asp-action="AddNew">
             <div class="top-border-line primary-separator"></div>
 
-            <label for="topic" class="suls-text-color">Title</label>
-            <input type="text" class="form-control" id="title" placeholder="Title..." name="Title">
+            <div class="form-group">
+                <label asp-for="Title" class="suls-text-color"></label>
+                <input asp-for="Title" class="form-control" placeholder="Title...">
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
 
-            <label for="text" class="suls-text-color">Content</label>
-            <textarea name="Content" class="form-control" placeholder="Content..." cols="30" rows="5"></textarea>
+            <div class="form-group">
+                <label asp-for="Content" class="suls-text-color"></label>
+                <textarea asp-for="Content" class="form-control" placeholder="Content..." cols="30" rows="5"></textarea>
+                <span asp-validation-for="Content" class="text-danger"></span>
+            </div>
 
-            <label for="image" class="suls-text-color">Image Url</label>
-            <input type="text" class="form-control" id="image" placeholder="Image Url..." name="Image">
+            <div class="form-group">
+                <label asp-for="Image" class="suls-text-color">Image Url</label>
+                <input asp-for="Image" class="form-control" placeholder="Image Url...">
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
 
             <div class="top-border-line primary-separator"></div>
 

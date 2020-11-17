@@ -24,7 +24,7 @@
             {
                 ForumText = input.ForumText,
                 ForumTopic = input.ForumTopic,
-                Likes = input.Likes,
+                Likes = 0,
             };
 
             await this.db.Forums.AddAsync(post);
@@ -61,14 +61,14 @@
             }
         }
 
-        public async Task EditPost(AddForumModel input)
+        public async Task EditPost(EditForumInputModel input)
         {
             var post = this.db.Forums.FirstOrDefault(f => f.ForumId == input.ForumId);
 
             if (post != null)
             {
-                post.ForumText = input.ForumText;
-                post.ForumTopic = input.ForumTopic;
+                post.ForumText = input.Text;
+                post.ForumTopic = input.Topic;
 
                 await this.db.SaveChangesAsync();
             }
@@ -85,7 +85,7 @@
                     ForumText = forum.ForumText,
                     ForumTopic = forum.ForumTopic,
                     Likes = forum.Likes,
-                    Liked = IsForumLiked(forum.ForumId, userId),
+                    Liked = this.IsForumLiked(forum.ForumId, userId),
                 });
             }
 
@@ -125,8 +125,8 @@
             return new EditForumViewModel()
             {
                 ForumId = postDb.ForumId,
-                ForumTopic = postDb.ForumTopic,
-                ForumText = postDb.ForumText,
+                Topic = postDb.ForumTopic,
+                Text = postDb.ForumText,
                 Likes = postDb.Likes,
             };
         }

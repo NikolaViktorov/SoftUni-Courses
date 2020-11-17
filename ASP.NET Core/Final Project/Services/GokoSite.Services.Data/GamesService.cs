@@ -52,9 +52,9 @@
             return game;
         }
 
-        public async Task<ICollection<Match>> GetGamesAsync(string summonerName, int count)
+        public async Task<ICollection<Match>> GetGamesAsync(GetGamesInputModel input)
         {
-            var summoner = await this.GetBasicSummonerDataAsync(summonerName);
+            var summoner = await this.GetBasicSummonerDataAsync(input.Username);
 
             if (summoner == null)
             {
@@ -65,7 +65,7 @@
 
             var games = new List<Match>();
 
-            for (int i = 0; i < count; i++)
+            for (int i = 0; i < input.Count; i++)
             {
                 var game = await this.GetGameAsync(matches.Matches[i].GameId);
 

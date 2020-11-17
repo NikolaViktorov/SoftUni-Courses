@@ -14,9 +14,9 @@
             this.db = db;
         }
 
-        public async Task AddAdministrator(string userId)
+        public async Task AddAdministrator(string email)
         {
-            var user = this.db.Users.FirstOrDefault(u => u.Id == userId);
+            var user = this.db.Users.FirstOrDefault(u => u.Email == email);
             var administratorRole = this.db.Roles.FirstOrDefault(r => r.Name == "Administrator");
 
             if (user != null && administratorRole != null)

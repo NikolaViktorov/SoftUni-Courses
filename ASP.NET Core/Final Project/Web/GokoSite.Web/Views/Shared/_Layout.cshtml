@@ -18,7 +18,9 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="/">GOKO</a>
+            <a class="navbar-brand" href="/">
+                <img class="logo-image" src="~/images/small-logo.png"/>
+            </a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 @if (this.SignInManager.IsSignedIn(this.User))
                 {

@@ -133,7 +133,6 @@
             {
                 ForumTopic = topic,
                 ForumText = text,
-                Likes = 0,
             };
 
             string forumId = await this.forumsService.AddPost(inputModel);
@@ -181,22 +180,14 @@
         }
 
         [HttpPost]
-        public async Task<IActionResult> EditPost(string id, string topic, string text, int likes)
+        public async Task<IActionResult> EditPost(EditForumInputModel input)
         {
             if (!this.User.Identity.IsAuthenticated)
             {
                 return this.Redirect("/Identity/Account/Login");
             }
 
-            var newPost = new AddForumModel()
-            {
-                ForumId = id,
-                ForumText = text,
-                ForumTopic = topic,
-                Likes = likes,
-            };
-
-            await this.forumsService.EditPost(newPost);
+            await this.forumsService.EditPost(input);
 
             return this.Redirect("/RP/MyForums");
         }

@@ -1,13 +1,13 @@
 ﻿namespace GokoSite.Web.ViewModels.Forums
 {
+    using System.ComponentModel.DataAnnotations;
+
     public class AddForumModel
     {
-        public string ForumId { get; set; }
-
+        [Required]
         public string ForumTopic { get; set; }
 
+        [Required]
         public string ForumText { get; set; }
-
-        public int Likes { get; set; }
     }
 }

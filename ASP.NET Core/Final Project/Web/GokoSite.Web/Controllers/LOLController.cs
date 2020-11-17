@@ -43,37 +43,30 @@
             return this.View();
         }
 
-        public async Task<IActionResult> GetGames(string username, string count)
+        public async Task<IActionResult> GetGames(GetGamesInputModel input)
         {
             if (!this.User.Identity.IsAuthenticated)
             {
                 return this.Redirect("/Identity/Account/Login");
             }
 
-            if (int.TryParse(count, out int countNum) == false)
-            {
-                this.ModelState.AddModelError("count", "Count must be a number");
-            }
-            else if (countNum < 1 || countNum > 10)
-            {
-                this.ModelState.AddModelError("count", "Count must be between 1 and 10!");
-            }
-
-            if (string.IsNullOrEmpty(username) || username.Length > 16)
-            {
-                this.ModelState.AddModelError("username", "Username must be between 1 and 16 characters long!");
-            }
-
             IEnumerable<HomePageGameViewModel> viewModel = new List<HomePageGameViewModel>();
 
             try
             {
-                var games = await this.gamesService.GetGamesAsync(username, countNum);
+                var games = await this.gamesService.GetGamesAsync(input);
                 viewModel = this.gamesService.GetModelByMatches(games);
             }
             catch (System.Exception e)
             {
-                this.ModelState.AddModelError("lol", e.Message);
+                if (e.Message == "404, Resource not found")
+                {
+                    this.ModelState.AddModelError("lol", "There are no results recorded.");
+                }
+                else
+                {
+                    this.ModelState.AddModelError("lol", e.Message);
+                }
             }
 
             if (!this.ModelState.IsValid)

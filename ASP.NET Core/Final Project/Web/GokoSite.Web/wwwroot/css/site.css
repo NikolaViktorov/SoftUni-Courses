@@ -19,6 +19,13 @@ td {
     max-width: 50px;
 }
 
+.logo-image {
+    height: 55px;
+    width: 55px;
+    margin-left: 24px;
+    vertical-align: middle;
+}
+
 .resp-container {
     position: relative;
     overflow: hidden;
@@ -136,6 +143,7 @@ footer {
 }
 
 .nav-link {
+    font-size: 20px;
     color: white;
     text-decoration: none;
 }

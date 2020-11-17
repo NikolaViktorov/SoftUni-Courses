@@ -2,8 +2,9 @@
 {
     using System.ComponentModel.DataAnnotations;
 
-    public class EditForumViewModel
+    public class EditForumInputModel
     {
+        [Required]
         public string ForumId { get; set; }
 
         [Required]
@@ -11,7 +12,5 @@
 
         [Required]
         public string Text { get; set; }
-
-        public int Likes { get; set; }
     }
 }

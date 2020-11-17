@@ -21,6 +21,10 @@
     display: none
 }
 
+.game-table {
+    display: flex;
+}
+
 .newsImage {
     overflow: hidden;
     width: 1000px;

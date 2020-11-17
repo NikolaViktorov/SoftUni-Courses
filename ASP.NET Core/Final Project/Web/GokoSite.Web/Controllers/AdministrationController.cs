@@ -4,6 +4,7 @@
     using System.Threading.Tasks;
 
     using GokoSite.Services.Data;
+    using GokoSite.Web.ViewModels.Administration;
     using GokoSite.Web.ViewModels.News;
     using Microsoft.AspNetCore.Mvc;
 
@@ -49,7 +50,7 @@
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddAdmin(string userId)
+        public async Task<IActionResult> AddAdmin(AddAdminInputModel input)
         {
             var curUserId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
 
@@ -60,7 +61,7 @@
                 return this.Redirect("/");
             }
 
-            await this.authorizationsService.AddAdministrator(userId);
+            await this.authorizationsService.AddAdministrator(input.Email);
 
             return this.Redirect("/");
         }

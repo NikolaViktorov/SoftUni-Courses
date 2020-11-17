@@ -16,7 +16,7 @@
 
         public Task DeletePost(string postId);
 
-        public Task EditPost(AddForumModel input);
+        public Task EditPost(EditForumInputModel input);
 
         public Task Like(string postId, string userId);
 

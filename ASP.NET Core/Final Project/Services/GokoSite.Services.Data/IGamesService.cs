@@ -9,7 +9,7 @@
 
     public interface IGamesService
     {
-        Task<ICollection<Match>> GetGamesAsync(string summonerName, int count);
+        Task<ICollection<Match>> GetGamesAsync(GetGamesInputModel input);
 
         ICollection<CollectionPageGameViewModel> GetCollectionGames(string userId);
 

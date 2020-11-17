@@ -1,4 +1,9 @@
-﻿<div class="row">
+﻿@using GokoSite.Web.ViewModels.Administration;
+
+@model AddAdminInputModel
+
+
+<div class="row">
     <div class="jumbotron col-md-12">
         <div class="heading-container bottom-buffer-md">
             <h1>Here you can add an admin!</h1>
@@ -7,12 +12,15 @@
         <form class="mx-auto half-width col-5" method="post" asp-controller="Administration" asp-action="AddAdmin">
             <div class="top-border-line primary-separator"></div>
 
-            <label for="topic" class="suls-text-color">User's id</label>
-            <input type="text" class="form-control" id="userId" placeholder="User id..." name="userId">
+            <div class="form-group">
+                <label asp-for="Email" class="suls-text-color">User's e-mail</label>
+                <input asp-for="Email" class="form-control" placeholder="Email...">
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
 
             <div class="top-border-line primary-separator"></div>
 
-            <button type="submit" class="btn forum-add-bg-color">Add!</button>
+            <button type="submit" class="btn forum-add-bg-color">Add</button>
         </form>
     </div>
 </div>
