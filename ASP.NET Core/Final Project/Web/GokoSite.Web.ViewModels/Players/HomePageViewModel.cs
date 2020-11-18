@@ -6,6 +6,8 @@
     {
         public List<string> PlayerNames { get; set; }
 
+        public List<int> PlayerPings { get; set; }
+
         public int PlayersCount { get; set; }
     }
 }

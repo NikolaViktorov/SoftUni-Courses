@@ -191,3 +191,28 @@ footer {
     margin-right: auto;
     margin-top: 30px;
 }
+
+
+.home-page-item-image {
+    width: 100%;
+    border: 3px;
+    border-style: solid;
+}
+
+.home-page-item-box {
+    width: 95%;
+    margin-bottom: 50px;
+}
+
+.home-page-item-text {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.home-page-item-image-link {
+    margin-left: auto;
+    width: 70%;
+    display: block;
+    position: relative;
+    margin-right: auto;
+}

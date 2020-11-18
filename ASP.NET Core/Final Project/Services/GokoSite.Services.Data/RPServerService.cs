@@ -20,6 +20,7 @@
         public HomePageViewModel GetPlayers()
         {
             List<string> names = new List<string>();
+            List<int> pings = new List<int>();
 
             string url = this.Host("players");
             var req = (HttpWebRequest)WebRequest.Create(url);
@@ -47,6 +48,10 @@
                                 {
                                     names.Add(result[i + 1]);
                                 }
+                                if (result[i] == "ping")
+                                {
+                                    pings.Add(int.Parse(result[i + 1]));
+                                }
                             }
 
                             reader.Dispose();
@@ -59,7 +64,7 @@
                 res.Dispose();
             }
 
-            return new HomePageViewModel { PlayerNames = names, PlayersCount = names.Count };
+            return new HomePageViewModel { PlayerNames = names, PlayerPings = pings, PlayersCount = names.Count };
         }
     }
 }

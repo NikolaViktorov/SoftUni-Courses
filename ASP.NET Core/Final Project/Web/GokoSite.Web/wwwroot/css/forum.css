@@ -8,6 +8,24 @@
     position: relative
 }
 
+.players-table-td {
+    color: white;
+    font-style: oblique;
+    font-size: 26px;
+}
+
+.ping-td {
+    width: 110px;
+}
+
+.ping-td-bad {
+    color: red;
+}
+
+.ping-td-good {
+    color: green;
+}
+
 .row {
     margin-top: 10px;
     margin-bottom: 10px;
