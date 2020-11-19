@@ -23,7 +23,7 @@
             <div class="form-group">
                 <label class="suls-text-color">Region</label>
                 <select asp-for="RegionId" class="form-control">
-                    @foreach (var region in ViewBag.Regions)
+                    @foreach (var region in ViewBag?.Regions)
                     {
                         <option value="@region.Id">
                             @region.Name

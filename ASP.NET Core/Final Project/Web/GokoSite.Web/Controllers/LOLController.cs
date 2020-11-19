@@ -79,6 +79,8 @@
 
             if (!this.ModelState.IsValid)
             {
+                var regions = await this.regionsService.GetRegions();
+                this.ViewBag.Regions = regions;
                 return this.View("lolapp");
             }
 

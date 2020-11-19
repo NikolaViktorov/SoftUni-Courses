@@ -46,16 +46,32 @@
         <div class="heading-container bottom-buffer-md">
         </div>
 
-        <h2 class="lol-menu-heading"> Here you can see your latest matches</h2>
-        <div class="button-holder">
-            <a href="/LOL/lolapp" class="btn btn-info text-uppercase lol-button">League Of Legends match viewer</a>
-        </div>
+        <div class="row row-cols-1 flex-row lol-home-row">
+            <div class="rp-home-page-item-box">
+                <div class="rp-home-page-img-box">
+                    <img class="rp-home-page-img" src="~/images/lol/lol.jpg" />
+                </div>
+                <div class="rp-home-page-content-box">
+                    <div class="button-holder">
+                        <a asp-controller="LOL" asp-action="lolapp" class="btn-border btn-rp-home btn-primaryrp">
+                            <span class="btn-rp btn-primaryrp btn-lg">League Of Legends match viewer </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
-        <p></p>
-
-        <h2 class="lol-menu-heading"> Here is your collection of added games</h2>
-        <div class="button-holder">
-            <a href="/LOL/Collection" class="btn btn-info text-uppercase lol-button">Collection</a>
+            <div class="rp-home-page-item-box">
+                <div class="rp-home-page-img-box">
+                    <img class="rp-home-page-img" src="~/images/lol/collection.jpg" />
+                </div>
+                <div class="rp-home-page-content-box">
+                    <div class="button-holder">
+                        <a asp-controller="LOL" asp-action="Collection" class="btn-border btn-rp-home btn-primaryrp">
+                            <span class="btn-rp btn-primaryrp btn-lg">Collection</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

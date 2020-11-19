@@ -39,6 +39,10 @@
     margin: auto;
 }
 
+.lol-home-row {
+    margin-left: 10%;
+    margin-right: auto;
+}
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
@@ -295,4 +299,3 @@
     text-align: left;
     white-space: pre-line
 }
-

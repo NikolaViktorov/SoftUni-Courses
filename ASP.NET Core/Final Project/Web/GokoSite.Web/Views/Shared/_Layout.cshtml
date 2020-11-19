@@ -14,6 +14,7 @@
     <link href="~/css/site.min.css" rel="stylesheet" asp-append-version="true" />
     <link href="~/css/forum.css" rel="stylesheet" asp-append-version="true" />
     <link href="~/css/lolapp.css" rel="stylesheet" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -35,10 +36,30 @@
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="RP" asp-action="Home">GOKO.RP</a>
+                            <div class="dropdown">
+                                <a class="nav-link" asp-controller="RP" asp-action="Home">
+                                    GOKO.RP
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                                <div class="dropdown-content">
+                                    <a asp-controller="RP" asp-action="Rules">Server rules</a>
+                                    <a asp-controller="RP" asp-action="Forum">Forum</a>
+                                    <a asp-controller="RP" asp-action="Players">Online players</a>
+                                    <a asp-controller="RP" asp-action="WhitelistApps">Applications</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="LOL" asp-action="Home">GOKO.GG</a>
+                            <div class="dropdown">
+                                <a class="nav-link" asp-controller="LOL" asp-action="Home">
+                                    GOKO.GG
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                                <div class="dropdown-content">
+                                    <a asp-controller="LOL" asp-action="lolapp">Match history</a>
+                                    <a asp-controller="LOL" asp-action="Collection">Collection</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@(this.Url.Action("Index", "Home", new { area = string.Empty }))">

@@ -1,4 +1,14 @@
-﻿.search-media {
+﻿@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url(../glyphicons-halflings-regular.ttf);
+}
+
+.rp-home-row {
+    margin-right: auto;
+    width: 65%;
+}
+
+.search-media {
     border: 6px solid #ddd;
     margin-top: -1px;
     padding: 12px 150px 12px 12px;
@@ -24,6 +34,157 @@
 
 .ping-td-good {
     color: green;
+}
+
+.rp-home-page-item-box {
+    max-width: 35%;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+.rp-home-page-img-box {
+    position: relative;
+}
+
+.rp-home-page-img {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rp-home-page-content-box {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.rp-server-button {
+    color: black;
+    text-align: center;
+    background-color: rgb(255, 170, 1);
+}
+
+.btn-border {
+    display: inline-block;
+    padding: 4px;
+    background: 0 0;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #FA0;
+    transition: all .25s ease;
+}
+
+btn-primaryrp {
+    color: #1B1B1B;
+    background-color: transparent;
+    border-color: #FA0;
+}
+
+.btn-lg {
+    padding-top: 8px;
+    padding-bottom: 6px;
+    font-size: 24px;
+}
+
+.btn-rp-home {
+    font-size: 18px;
+    line-height: 30px;
+    color: black;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    transition: all .25s ease;
+    font-family: 'Press Start 2P','Courier New',cursive;
+    text-transform: uppercase;
+}
+
+.btn-rp {
+    font-size: 18px;
+    line-height: 20px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    background-color: #FA0;
+    text-decoration: none;
+    transition: all .25s ease;
+    font-family: 'Press Start 2P','Courier New',cursive;
+    text-transform: uppercase;
+}
+
+.btn-rp:hover {
+    background-color: #cc8800;
+}
+
+btn-primaryrp:hover {
+}
+
+.btn-border:hover {
+    border-color: #cc8800;
+    text-decoration: none;
+    color: black;
+}
+
+.feature-box {
+    position: relative;
+    margin-bottom: 40px;
+}
+.feature-header {
+    margin: 0 0 40px;
+    font-size: 34px;
+}
+
+.icon-circle-outer {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    background: 0 0;
+    border: 4px solid #FA0;
+    padding: 4px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: all .25s ease;
+}
+
+.icon-circle-outer .icon-circle-inner {
+    display: inline-block;
+    width: 104px;
+    height: 104px;
+    background: #FA0;
+    border-radius: 50%;
+    color: #1B1B1B;
+    font-size: 35px;
+    line-height: 106px;
+}
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.glyphicon-book:before {
+    content: "\e043";
+    font-family: 'Glyphicons Halflings';
+}
+
+.bracket:before {
+    margin-right: .2em;
+     content: '{'; 
+}
+
+.bracket:after {
+    margin-right: .2em;
+    content: '}';
+}
+
+.bracket:after, .bracket:before {
+    position: relative;
+    font-size: 1.1em;
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
 }
 
 .row {
