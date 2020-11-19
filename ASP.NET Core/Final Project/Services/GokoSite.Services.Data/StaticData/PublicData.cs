@@ -6,7 +6,7 @@
 
     public class PublicData
     {
-        public static string apiKey => "RGAPI-750059f9-d524-434e-8158-3f0632f368a5";
+        public static string apiKey => "RGAPI-9c186eda-4be9-4f1a-99e5-4aef7bfbba0e";
 
         public static string ddVerision => GetLatestVersion();
 

@@ -1,4 +1,8 @@
-﻿<main class="mt-3">
+﻿@using GokoSite.Web.ViewModels.Games
+
+@model ICollection<CollectionPageGameViewModel>
+
+<main class="mt-3">
     <h1 class="text-center suls-text-color">GOKO.GG</h1>
     <div class="button-holder">
     </div>
@@ -11,7 +15,7 @@
         <a href="/LOL/lolapp" class="btn btn-info text-uppercase">Back</a>
     }
 
-    @foreach (var game in Model)
+    @foreach (CollectionPageGameViewModel game in Model)
     {
         <table>
             <tr>
@@ -66,7 +70,7 @@
                 <td>
                     <div id="wrapper">
                         <div id="first">
-                            <a href="/LOL/CollectionDetails?gameId=@game.GameId" class="btn btn-info text-uppercase">Details</a>
+                            <a href="/LOL/CollectionDetails?gameId=@game.GameId&regionId=@game.RegionId" class="btn btn-info text-uppercase">Details</a>
                         </div>
                         <div id="second">
                             <a href="/LOL/Remove?gameId=@game.GameId" class="btn btn-info text-uppercase">Remove From Collection</a>

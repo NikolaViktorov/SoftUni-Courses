@@ -20,8 +20,6 @@
         private readonly ApplicationDbContext db;
         private readonly IPlayersService playersService;
 
-        Region region = Region.Eune;
-
         public RiotApi Api { get; set; }
 
         public GamesService(ApplicationDbContext db, IPlayersService playersService)
@@ -31,11 +29,11 @@
             this.Api = RiotApi.GetDevelopmentInstance(PublicData.apiKey);
         }
 
-        public async Task<Summoner> GetBasicSummonerDataAsync(string summonerName)
+        public async Task<Summoner> GetBasicSummonerDataAsync(string summonerName, RiotSharp.Misc.Region region)
         {
             try
             {
-                var summoner = await this.Api.Summoner.GetSummonerByNameAsync(this.region, summonerName);
+                var summoner = await this.Api.Summoner.GetSummonerByNameAsync(region, summonerName);
 
                 return summoner;
             }
@@ -45,16 +43,18 @@
             }
         }
 
-        public async Task<Match> GetGameAsync(long gameId)
+        public async Task<Match> GetGameAsync(long gameId, RiotSharp.Misc.Region region)
         {
-            var game = await this.Api.Match.GetMatchAsync(this.region, gameId);
+            var game = await this.Api.Match.GetMatchAsync(region, gameId);
 
             return game;
         }
 
         public async Task<ICollection<Match>> GetGamesAsync(GetGamesInputModel input)
         {
-            var summoner = await this.GetBasicSummonerDataAsync(input.Username);
+            RiotSharp.Misc.Region region = (RiotSharp.Misc.Region)input.RegionId;
+
+            var summoner = await this.GetBasicSummonerDataAsync(input.Username, region);
 
             if (summoner == null)
             {
@@ -67,7 +67,7 @@
 
             for (int i = 0; i < input.Count; i++)
             {
-                var game = await this.GetGameAsync(matches.Matches[i].GameId);
+                var game = await this.GetGameAsync(matches.Matches[i].GameId, region);
 
                 games.Add(game);
             }
@@ -75,7 +75,7 @@
             return games;
         }
 
-        public IEnumerable<HomePageGameViewModel> GetModelByMatches(ICollection<Match> games)
+        public IEnumerable<HomePageGameViewModel> GetModelByMatches(ICollection<Match> games, int regionId)
         {
             var viewModel = new List<HomePageGameViewModel>();
 
@@ -84,6 +84,7 @@
                 viewModel.Add(new HomePageGameViewModel
                 {
                     GameId = game.GameId,
+                    RegionId = regionId,
                     BlueTeam = new TeamDTO
                     {
                         Players = this.playersService.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 100),
@@ -100,13 +101,15 @@
             return viewModel.ToList();
         }
 
-        public async Task<HomePageGameViewModel> GetModelByGameId(long gameId) // More eficient..
+        public async Task<HomePageGameViewModel> GetModelByGameId(long gameId, int regionId) // More eficient..
         {
-            var game = await Api.Match.GetMatchAsync(region, gameId);
-
+            var region = (RiotSharp.Misc.Region)regionId;
+            var game = await this.Api.Match.GetMatchAsync(region, gameId);
+            
             var viewModel = new HomePageGameViewModel
             {
                 GameId = game.GameId,
+                RegionId = regionId,
                 BlueTeam = new TeamDTO
                 {
                     Players = this.playersService.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 100),
@@ -123,13 +126,19 @@
         }
 
         // Reorganize the code... FIXME
-        public void AddGameToCollection(long gameId)
+        public async Task AddGameToCollection(long gameId, int regionId)
         {
-            var curGame = GetGameAsync(gameId).GetAwaiter().GetResult();
+            var curGame = await this.GetGameAsync(gameId, (RiotSharp.Misc.Region)regionId);
 
-            var game = new Game();
+            var region = this.db.Regions.FirstOrDefault(r => r.RiotRegionId == regionId);
 
-            game.RiotGameId = gameId;
+            var game = new Game()
+            {
+                Region = region,
+                RegionId = region.RegionId,
+                RiotGameId = gameId,
+            };
+
             var firstTeam = new Team
             {
                 State = curGame.Teams[0].Win,
@@ -313,9 +322,12 @@
 
         private CollectionPageGameViewModel GetModelByGame(Game game, List<Champion> fChampions, List<Champion> sChampions)
         {
+            var regionId = this.db.Regions.FirstOrDefault(r => r.RegionId == game.RegionId).RiotRegionId;
+
             var curModel = new CollectionPageGameViewModel
             {
                 GameId = game.RiotGameId,
+                RegionId = regionId,
                 BlueTeam = new TeamDTO
                 {
                     Players = GetPlayersDtoList(game.Teams[0].Players, fChampions),

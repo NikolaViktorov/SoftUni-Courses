@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace GokoSite.Data.Models.LoL
+﻿namespace GokoSite.Data.Models.LoL
 {
+    using System.Collections.Generic;
+
     public class Game
     {
         public Game()
@@ -20,5 +18,8 @@ namespace GokoSite.Data.Models.LoL
 
         public virtual ICollection<UserGames> UserGames { get; set; }
 
+        public virtual Region Region { get; set; }
+
+        public string RegionId { get; set; }
     }
 }

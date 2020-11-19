@@ -36,6 +36,8 @@
 
         public DbSet<Team> Teams { get; set; }
 
+        public DbSet<Region> Regions { get; set; }
+
         public DbSet<Champion> ChampionsStatic { get; set; }
 
         public DbSet<PlayerChampion> PlayerChampion { get; set; }

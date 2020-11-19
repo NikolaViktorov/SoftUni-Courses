@@ -14,13 +14,16 @@
     {
         private readonly IGamesService gamesService;
         private readonly INewsService newsService;
+        private readonly IRegionsService regionsService;
 
         public LOLController(
             IGamesService gamesService,
-            INewsService newsService)
+            INewsService newsService,
+            IRegionsService regionsService)
         {
             this.gamesService = gamesService;
             this.newsService = newsService;
+            this.regionsService = regionsService;
         }
 
         public IActionResult Home()
@@ -35,12 +38,15 @@
             return this.View(viewModel);
         }
 
-        public IActionResult lolapp()
+        public async Task<IActionResult> lolapp()
         {
             if (!this.User.Identity.IsAuthenticated)
             {
                 return this.Redirect("/Identity/Account/Login");
             }
+
+            var regions = await this.regionsService.GetRegions();
+            this.ViewBag.Regions = regions;
 
             return this.View();
         }
@@ -57,7 +63,7 @@
             try
             {
                 var games = await this.gamesService.GetGamesAsync(input);
-                viewModel = this.gamesService.GetModelByMatches(games);
+                viewModel = this.gamesService.GetModelByMatches(games, input.RegionId);
             }
             catch (System.Exception e)
             {
@@ -94,7 +100,7 @@
         }
 
         // add
-        public IActionResult AddToCollection(long gameId)
+        public async Task<IActionResult> AddToCollection(long gameId, int regionId)
         {
             if (!this.User.Identity.IsAuthenticated)
             {
@@ -107,21 +113,21 @@
 
             if (userGameCount < 10 )
             {
-                this.gamesService.AddGameToCollection(gameId);
+                await this.gamesService.AddGameToCollection(gameId, regionId);
                 this.gamesService.AddGameToUser(userId);
             }
 
             return this.Redirect("/LOL/Collection");
         }
 
-        public IActionResult CollectionDetails(long gameId)
+        public async Task<IActionResult> CollectionDetails(long gameId, int regionId)
         {
             if (!this.User.Identity.IsAuthenticated)
             {
                 return this.Redirect("/Identity/Account/Login");
             }
 
-            var viewModel = this.gamesService.GetModelByGameId(gameId).GetAwaiter().GetResult();
+            var viewModel = await this.gamesService.GetModelByGameId(gameId, regionId);
 
             return this.View(viewModel);
         }

@@ -13,15 +13,15 @@
 
         ICollection<CollectionPageGameViewModel> GetCollectionGames(string userId);
 
-        Task<Match> GetGameAsync(long gameId);
+        Task<Match> GetGameAsync(long gameId, RiotSharp.Misc.Region region);
 
-        Task<Summoner> GetBasicSummonerDataAsync(string summonerName);
+        Task<Summoner> GetBasicSummonerDataAsync(string summonerName, RiotSharp.Misc.Region region);
 
-        IEnumerable<HomePageGameViewModel> GetModelByMatches(ICollection<Match> games);
+        IEnumerable<HomePageGameViewModel> GetModelByMatches(ICollection<Match> games, int regionId);
 
-        Task<HomePageGameViewModel> GetModelByGameId(long gameId);
+        Task<HomePageGameViewModel> GetModelByGameId(long gameId, int regionId);
 
-        void AddGameToCollection(long gameId);
+        Task AddGameToCollection(long gameId, int regionId);
 
         void AddGameToUser(string userId);
 

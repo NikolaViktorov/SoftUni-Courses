@@ -27,7 +27,7 @@
 
 .newsImage {
     overflow: hidden;
-    width: 1000px;
+    width: 100%;
     height: 550px;
     vertical-align: middle;
 }

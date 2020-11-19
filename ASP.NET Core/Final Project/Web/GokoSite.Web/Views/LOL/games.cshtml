@@ -1,9 +1,11 @@
-﻿<main class="mt-3">
+﻿@using GokoSite.Web.ViewModels.Games;
+
+<main class="mt-3">
     <h1 class="text-center suls-text-color">GOKO.GG</h1>
     <div class="button-holder">
         <a href="/LOL/lolapp" class="btn btn-info text-uppercase">Back</a>
     </div>
-    @foreach (var game in Model)
+    @foreach (HomePageGameViewModel game in Model)
     {
         <div class="game-table">
             <table>
@@ -59,7 +61,7 @@
                     <td>
                         <div id="wrapper">
                             <div id="second">
-                                <a href="/LOL/AddToCollection?gameId=@game.GameId" class="btn btn-info text-uppercase">Add To Collection</a>
+                                <a href="/LOL/AddToCollection?gameId=@game.GameId&regionId=@game.RegionId" class="btn btn-info text-uppercase">Add To Collection</a>
                             </div>
                         </div>
                     </td>

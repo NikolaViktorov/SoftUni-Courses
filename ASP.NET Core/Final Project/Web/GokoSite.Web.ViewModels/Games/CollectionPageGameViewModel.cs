@@ -6,6 +6,8 @@
     {
         public long GameId { get; set; }
 
+        public int RegionId { get; set; }
+
         public TeamDTO BlueTeam { get; set; }
 
         public TeamDTO RedTeam { get; set; }

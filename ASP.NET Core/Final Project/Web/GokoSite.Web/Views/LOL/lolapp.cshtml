@@ -1,5 +1,4 @@
 ﻿@using GokoSite.Web.ViewModels.Games;
-@using Microsoft.AspNetCore.Mvc;
 
 @model GetGamesInputModel
 
@@ -23,15 +22,15 @@
 
             <div class="form-group">
                 <label class="suls-text-color">Region</label>
-                <select class="form-control">
-                    <option value="1">
-                        EUNE
-                    </option>
-                    <option value="2">
-                        EUW
-                    </option>
+                <select asp-for="RegionId" class="form-control">
+                    @foreach (var region in ViewBag.Regions)
+                    {
+                        <option value="@region.Id">
+                            @region.Name
+                        </option>
+                    }
                 </select>
-                <span asp-validation-for="Count" class="text-danger"></span>
+                <span asp-validation-for="RegionId" class="text-danger"></span>
             </div>
 
             @foreach (var modelState in ViewData.ModelState.Values)

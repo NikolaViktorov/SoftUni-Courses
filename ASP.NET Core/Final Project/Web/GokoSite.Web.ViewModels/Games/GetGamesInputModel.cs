@@ -11,5 +11,8 @@
         [Required]
         [Range(1, 10)]
         public int Count { get; set; }
+
+        [Required]
+        public int RegionId { get; set; }
     }
 }
