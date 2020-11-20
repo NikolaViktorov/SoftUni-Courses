@@ -19,13 +19,17 @@
     {
         private readonly ApplicationDbContext db;
         private readonly IPlayersService playersService;
+        private readonly ITeamsService teamsService;
 
         public RiotApi Api { get; set; }
 
-        public GamesService(ApplicationDbContext db, IPlayersService playersService)
+        public GamesService(ApplicationDbContext db,
+            IPlayersService playersService,
+            ITeamsService teamsService)
         {
             this.db = db;
             this.playersService = playersService;
+            this.teamsService = teamsService;
             this.Api = RiotApi.GetDevelopmentInstance(PublicData.apiKey);
         }
 
@@ -75,7 +79,7 @@
             return games;
         }
 
-        public IEnumerable<HomePageGameViewModel> GetModelByMatches(ICollection<Match> games, int regionId)
+        public async Task<IEnumerable<HomePageGameViewModel>> GetModelByMatches(ICollection<Match> games, int regionId)
         {
             var viewModel = new List<HomePageGameViewModel>();
 
@@ -87,12 +91,12 @@
                     RegionId = regionId,
                     BlueTeam = new TeamDTO
                     {
-                        Players = this.playersService.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 100),
+                        Players = await this.playersService.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 100),
                         State = game.Teams[0].Win,
                     },
                     RedTeam = new TeamDTO
                     {
-                        Players = this.playersService.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 200),
+                        Players = await this.playersService.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 200),
                         State = game.Teams[1].Win,
                     },
                 });
@@ -105,20 +109,28 @@
         {
             var region = (RiotSharp.Misc.Region)regionId;
             var game = await this.Api.Match.GetMatchAsync(region, gameId);
-            
+
             var viewModel = new HomePageGameViewModel
             {
                 GameId = game.GameId,
                 RegionId = regionId,
                 BlueTeam = new TeamDTO
                 {
-                    Players = this.playersService.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 100),
+                    Players = await this.playersService.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 100),
                     State = game.Teams[0].Win,
+                    DragonsSlain = game.Teams[0].DragonKills,
+                    BaronsSlain = game.Teams[0].BaronKills,
+                    TurretsDestroyed = game.Teams[0].TowerKills,
+                    TotalGold = this.teamsService.GetTotalGoldByPlayers(game.ParticipantIdentities, game.Participants, 100),
                 },
                 RedTeam = new TeamDTO
                 {
-                    Players = this.playersService.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 200),
+                    Players = await this.playersService.GetPlayersByParticipantsDto(game.ParticipantIdentities, game.Participants, 200),
                     State = game.Teams[1].Win,
+                    DragonsSlain = game.Teams[1].DragonKills,
+                    BaronsSlain = game.Teams[1].BaronKills,
+                    TurretsDestroyed = game.Teams[1].TowerKills,
+                    TotalGold = this.teamsService.GetTotalGoldByPlayers(game.ParticipantIdentities, game.Participants, 200),
                 },
             };
 

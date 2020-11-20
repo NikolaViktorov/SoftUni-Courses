@@ -17,7 +17,7 @@
 
         Task<Summoner> GetBasicSummonerDataAsync(string summonerName, RiotSharp.Misc.Region region);
 
-        IEnumerable<HomePageGameViewModel> GetModelByMatches(ICollection<Match> games, int regionId);
+        Task<IEnumerable<HomePageGameViewModel>> GetModelByMatches(ICollection<Match> games, int regionId);
 
         Task<HomePageGameViewModel> GetModelByGameId(long gameId, int regionId);
 

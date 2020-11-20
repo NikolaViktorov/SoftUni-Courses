@@ -71,13 +71,14 @@
             services.AddTransient<IEmailSender, NullMessageSender>();
             services.AddTransient<ISettingsService, SettingsService>();
             services.AddTransient<IChampionsService, ChampionsService>();
+            services.AddTransient<ITeamsService, TeamsService>();
             services.AddTransient<IPlayersService, PlayersService>();
             services.AddTransient<IRegionsService, RegionsService>();
             services.AddTransient<IForumsService, ForumsService>();
             services.AddTransient<IRPServerService, RPServerService>();
             services.AddTransient<IGamesService, GamesService>();
             services.AddTransient<IAuthorizationsService, AuthorizationsService>();
-            services.AddTransient<INewsService, NewsService>();
+            services.AddTransient<INewsService, NewsService>(); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

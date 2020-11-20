@@ -63,7 +63,7 @@
             try
             {
                 var games = await this.gamesService.GetGamesAsync(input);
-                viewModel = this.gamesService.GetModelByMatches(games, input.RegionId);
+                viewModel = await this.gamesService.GetModelByMatches(games, input.RegionId);
             }
             catch (System.Exception e)
             {

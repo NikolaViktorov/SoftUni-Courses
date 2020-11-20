@@ -6,12 +6,132 @@
     border-radius: 8px;
 }
 
+td {
+    color: black;
+    font-size: 18px;
+}
+
 .Win {
     background-color: rgb(21, 170, 21);
 }
 
 .Fail {
     background-color: rgb(233, 39, 39);
+}
+.Team {
+    display: table-cell;
+    height: 30px;
+    vertical-align: middle;
+    padding-right: 10px;
+    text-align: right;
+    line-height: 30px;
+}
+.summary-graph {
+    flex: 0 1 40%;
+}
+
+.redTeam {
+    background-color: rgb(254, 119, 121);
+}
+
+.blueTeam {
+    background-color: #4aa1d2;
+}
+
+.blueTeamNames {
+    background-color: rgb(54, 122, 207);
+}
+
+.redTeamNames {
+    background-color: rgb(213, 63, 63);
+}
+
+td, th {
+    border: 1px solid rgb(43, 43, 43);
+    text-align: left;
+    padding: 16px;
+    color: black;
+}
+
+.ObjectScore {
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    margin-right: 10px;
+}
+
+.summary-graph > .total--container:first-child {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.summary-graph > .total--container {
+    display: flex;
+    justify-content: center;
+    padding: 0 8px;
+}
+
+.summary-graph>.total--container>.graph--title {
+    text-align: left;
+    width: 75px;
+}
+
+.summary-graph>.total--container>.text {
+    font-size: 10px;
+    color: #222222;
+}
+
+.summary-graph>.total--container>.graph--data__left {
+    text-align: right;
+}
+
+.summary-graph>.total--container>.graph--data {
+    width: 40px;
+}
+
+.summary-graph>.total--container>.textL {
+    font-size: 12px;
+    color: white;
+}
+
+.summary-graph>.total--container>.graph--container>.lose--team {
+    background-color: #d05a53;
+    margin-right: 4px;
+}
+
+.summary-graph>.total--container>.graph--container>.graph {
+    flex: 1;
+    height: 13px;
+}
+
+.summary-graph>.total--container>.graph--container>.win--team {
+    background-color: #548dca;
+    margin-left: 4px;
+}
+
+.summary-graph>.total--container>.graph--data__right {
+    text-align: left;
+}
+
+.summary-graph>.total--container>.graph--container {
+    flex: 0 1 290px;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    margin: 0 3px;
+}
+
+.ObjectScore img {
+    height: 24px;
+}
+
+.Summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 79.5%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .error-message-lol {
