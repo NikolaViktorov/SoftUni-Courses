@@ -419,3 +419,113 @@ td, th {
     text-align: left;
     white-space: pre-line
 }
+
+.gototop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+    .gototop.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .gototop a {
+        width: 50px;
+        height: 50px;
+        display: table;
+        background: rgba(255, 255, 255, 0.5);
+        color: black;
+        text-align: center;
+    }
+
+        .gototop a i {
+            height: 50px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .gototop a:hover, .gototop a:active, .gototop a:focus {
+            text-decoration: none;
+            outline: none;
+        }
+
+.icon-arrow-up:before {
+    content: "\e096";
+}
+
+.SummonerSpell {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.Spell {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+}
+    .Spell > .Image {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #000;
+    }
+
+.tdContent {
+    display: inline;
+}
+
+.ChampionImage {
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    vertical-align: middle;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.Username {
+    display: inline-block;
+    margin-top: 2px;
+    padding-left: 20px;
+}
+
+.Cell {
+    padding: 1px 0;
+    vertical-align: middle;
+}
+    .Cell.ChampionImage {
+        padding-right: 4px;
+    }
+        .Cell.ChampionImage > div {
+            position: relative;
+            display: block;
+        }
+        .Cell.ChampionImage > div > .Image {
+            display: block;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+            .Cell.ChampionImage > div > .Level {
+                position: absolute;
+                bottom: -10px;
+                right: 23px;
+                width: 15px;
+                height: 15px;
+                background: url("https://opgg-static.akamaized.net/images/site/summoner/levelholder.png");
+                color: #ddd;
+                font-size: 10px;
+                font-family: "Tahoma";
+                text-align: center;
+                line-height: 15px;
+            }

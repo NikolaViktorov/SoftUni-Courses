@@ -5,19 +5,20 @@
 
     using GokoSite.Services.Data.StaticData;
     using GokoSite.Web.ViewModels.Games.DTOs;
-    using RiotSharp;
     using RiotSharp.Endpoints.MatchEndpoint;
-    using RiotSharp.Misc;
 
     public class PlayersService : IPlayersService
     {
         private readonly string ddVersion;
         private readonly IChampionsService championsService;
+        private readonly ISpellsService spellsService;
 
-        public PlayersService(IChampionsService championsService)
+        public PlayersService(IChampionsService championsService
+            , ISpellsService spellsService)
         {
             this.ddVersion = PublicData.ddVerision;
             this.championsService = championsService;
+            this.spellsService = spellsService;
         }
 
         public ICollection<GokoSite.Data.Models.LoL.Player> GetPlayersByParticipants(List<ParticipantIdentity> participantIdentities, List<Participant> participants, int teamId)
@@ -31,7 +32,7 @@
                     players.Add(new GokoSite.Data.Models.LoL.Player
                     {
                         Username = participantIdentities[i].Player.SummonerName,
-                        ProfileIconUrl = $"http://ddragon.leagueoflegends.com/cdn/{this.ddVersion}/img/profileicon/{participantIdentities[i].Player.ProfileIcon}.png",
+                        ProfileIconUrl = $"http://ddragon.leagueoflegends.com/cdn/{this.ddVersion}/img/profileicon/{participantIdentities[i].Player.ProfileIcon}.png",                      
                     });
                 }
             }
@@ -55,6 +56,9 @@
                         KDA = $"{participants[i].Stats.Kills}/{participants[i].Stats.Deaths}/{participants[i].Stats.Assists}",
                         Damage = participants[i].Stats.TotalDamageDealtToChampions,
                         CS = $"{participants[i].Stats.NeutralMinionsKilled + participants[i].Stats.TotalMinionsKilled}",
+                        FirstSumSpellUrl = await this.spellsService.GetSpellUrlById(participants[i].Spell1Id),
+                        SecondSumSpellUrl = await this.spellsService.GetSpellUrlById(participants[i].Spell2Id),
+                        Level = (int)participants[i].Stats.ChampLevel,
                     });
                 }
             }

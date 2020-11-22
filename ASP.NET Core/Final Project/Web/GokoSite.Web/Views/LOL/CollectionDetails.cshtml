@@ -38,8 +38,23 @@
             {
             <tr>
                 <td class="blueTeam">
-                    <img src="@Model.BlueTeam.Players[i].Champion.ChampionIconUrl" class="playerIcon">
-                    @Model.BlueTeam.Players[i].Username
+                    <div class="ChampionImage Cell">
+                        <div>
+                            <div class="Image">
+                                <img src="@Model.BlueTeam.Players[i].Champion.ChampionIconUrl" class="ChampionImage">
+                            </div>
+                            <div class="Level">@Model.BlueTeam.Players[i].Level</div>
+                        </div>
+                    </div>
+                    <div class="SummonerSpell">
+                        <div class="Spell">
+                            <img class="Image" src="@Model.BlueTeam.Players[i].FirstSumSpellUrl" />
+                        </div>
+                        <div class="Spell">
+                            <img class="Image" src="@Model.BlueTeam.Players[i].SecondSumSpellUrl" />
+                        </div>
+                    </div>
+                    <div class="Username">@Model.BlueTeam.Players[i].Username</div>
                 </td>
                 <td class="blueTeam">
                     @Model.BlueTeam.Players[i].KDA
@@ -137,8 +152,23 @@
             {
                 <tr>
                     <td class="redTeam">
-                        <img src="@Model.RedTeam.Players[i].Champion.ChampionIconUrl" class="playerIcon">
-                        @Model.RedTeam.Players[i].Username
+                        <div class="ChampionImage Cell">
+                            <div>
+                                <div class="Image __sprite __spc32 __spc32-46 tip">
+                                    <img src="@Model.RedTeam.Players[i].Champion.ChampionIconUrl" class="ChampionImage">
+                                </div>
+                                <div class="Level">@Model.RedTeam.Players[i].Level</div>
+                            </div>
+                        </div>
+                        <div class="SummonerSpell">
+                            <div class="Spell">
+                                <img class="Image" src="@Model.RedTeam.Players[i].FirstSumSpellUrl" />
+                            </div>
+                            <div class="Spell">
+                                <img class="Image" src="@Model.RedTeam.Players[i].SecondSumSpellUrl" />
+                            </div>
+                        </div>
+                        <div class="Username">@Model.RedTeam.Players[i].Username</div>
                     </td>
                     <td class="redTeam">
                         @Model.RedTeam.Players[i].KDA

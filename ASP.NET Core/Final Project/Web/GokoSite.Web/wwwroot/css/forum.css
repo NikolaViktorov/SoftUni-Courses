@@ -18,6 +18,17 @@
     position: relative
 }
 
+.notliked {
+    color: white;
+}
+
+.notliked:hover {
+    color: palevioletred;
+}
+
+.liked {
+    color: red;
+}
 .players-table-td {
     color: white;
     font-style: oblique;
@@ -44,6 +55,15 @@
 
 .rp-home-page-img-box {
     position: relative;
+}
+
+.rp-apps-page-img {
+    display: block;
+    width: 100%;
+    height: 70%;
+    margin-left: auto;
+    border: 2px groove orange;
+    margin-right: auto;
 }
 
 .rp-home-page-img {
@@ -78,6 +98,12 @@ btn-primaryrp {
     color: #1B1B1B;
     background-color: transparent;
     border-color: #FA0;
+}
+
+.whitelist-row {
+    margin-left: 16%;
+    margin-right: 16%;
+    width: 90%;
 }
 
 .btn-lg {
@@ -225,11 +251,9 @@ btn-primaryrp:hover {
         }
 
     .search-media:hover .search-actions {
-        background-color: #F0F4F7
     }
 
     .search-media.disabled:hover .search-actions {
-        background-color: #F6F6F6
     }
 
     .search-media:not(.disabled):hover .search-actions::before {

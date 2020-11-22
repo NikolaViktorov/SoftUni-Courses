@@ -12,6 +12,12 @@
 
         public string CS { get; set; }
 
+        public int Level { get; set; }
+
+        public string FirstSumSpellUrl { get; set; }
+
+        public string SecondSumSpellUrl { get; set; }
+
         public ChampionDTO Champion { get; set; }
     }
 }
