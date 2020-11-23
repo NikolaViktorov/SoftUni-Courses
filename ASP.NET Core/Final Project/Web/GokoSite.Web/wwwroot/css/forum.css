@@ -385,12 +385,11 @@ fieldset[disabled] .btn-grey:active, fieldset[disabled] .btn-grey:focus, fieldse
 #video-background {
     /* making the video fullscreen */
     position: absolute;
-    top: 60%;
-    left: 64%;
-    margin: -180px 0 0 -240px;
+    display: block;
+    margin: 2% 0 0 54%;
     border: 3px solid #ECECEC;
     box-sizing: border-box;
-    width: 800px;
+    width: 40%;
 }
 
 #video-background:active {

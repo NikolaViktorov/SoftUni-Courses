@@ -22,7 +22,7 @@
             <a class="navbar-brand" href="/">
                 <img class="logo-image" src="~/images/small-logo.png" />
             </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collaps navbar-collapse" id="navbarSupportedContent">
                 @if (this.SignInManager.IsSignedIn(this.User))
                 {
                     <ul class="navbar-nav ml-auto">
@@ -33,7 +33,16 @@
                             </li>
                         }
                         <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <div class="dropdown">
+                                <a class="nav-link" asp-controller="Home" asp-action="Index">
+                                    Home
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                                <div class="dropdown-content">
+                                    <a asp-controller="Home" asp-action="Contact">Contact</a>
+                                    <a href="/Identity/Account/Manage">Profile</a>
+                                </div>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <div class="dropdown">
@@ -42,10 +51,10 @@
                                     <i class="fa fa-caret-down"></i>
                                 </a>
                                 <div class="dropdown-content">
-                                    <a asp-controller="RP" asp-action="Rules">Server rules</a>
-                                    <a asp-controller="RP" asp-action="Forum">Forum</a>
-                                    <a asp-controller="RP" asp-action="Players">Online players</a>
-                                    <a asp-controller="RP" asp-action="WhitelistApps">Applications</a>
+                                    <a href="/RP/Rules">Server rules</a>
+                                    <a href="/RP/Forum">Forum</a>
+                                    <a href="/RP/Players">Online players</a>
+                                    <a href="/RP/WhitelistApps">Applications</a>
                                 </div>
                             </div>
                         </li>
@@ -56,8 +65,8 @@
                                     <i class="fa fa-caret-down"></i>
                                 </a>
                                 <div class="dropdown-content">
-                                    <a asp-controller="LOL" asp-action="lolapp">Match history</a>
-                                    <a asp-controller="LOL" asp-action="Collection">Collection</a>
+                                    <a href="/LOL/lolapp">Match history</a>
+                                    <a href="/LOL/Collection">Collection</a>
                                 </div>
                             </div>
                         </li>

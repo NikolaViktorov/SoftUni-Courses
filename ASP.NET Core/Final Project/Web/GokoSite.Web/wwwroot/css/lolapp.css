@@ -529,3 +529,10 @@ td, th {
                 text-align: center;
                 line-height: 15px;
             }
+.details-error-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 45%;
+}

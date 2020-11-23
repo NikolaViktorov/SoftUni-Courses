@@ -9,6 +9,7 @@
     using GokoSite.Data.Repositories;
     using GokoSite.Data.Seeding;
     using GokoSite.Services.Data;
+    using GokoSite.Services.Data.Contracts;
     using GokoSite.Services.Mapping;
     using GokoSite.Services.Messaging;
     using GokoSite.Web.ViewModels;
@@ -68,7 +69,7 @@
             services.AddScoped<IDbQueryRunner, DbQueryRunner>();
 
             // Application services
-            services.AddTransient<IEmailSender, NullMessageSender>();
+            services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<ISettingsService, SettingsService>();
             services.AddTransient<IChampionsService, ChampionsService>();
             services.AddTransient<ITeamsService, TeamsService>();
@@ -78,8 +79,9 @@
             services.AddTransient<IRPServerService, RPServerService>();
             services.AddTransient<ISpellsService, SpellsService>();
             services.AddTransient<IGamesService, GamesService>();
+            services.AddTransient<IUsersService, UsersService>();
             services.AddTransient<IAuthorizationsService, AuthorizationsService>();
-            services.AddTransient<INewsService, NewsService>();
+            services.AddTransient<INewsService, NewsService>(); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

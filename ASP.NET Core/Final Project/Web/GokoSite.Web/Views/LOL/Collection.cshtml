@@ -15,6 +15,14 @@
         <a href="/LOL/lolapp" class="btn btn-info text-uppercase">Back</a>
     }
 
+    @foreach (var modelState in ViewData.ModelState.Values)
+    {
+        foreach (var error in modelState.Errors)
+        {
+            <p class="error-message-lol">@error.ErrorMessage</p>
+        }
+    }
+
     @foreach (CollectionPageGameViewModel game in Model)
     {
         <table>
