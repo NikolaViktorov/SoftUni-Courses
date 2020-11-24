@@ -20,6 +20,16 @@
 
         public async Task AddNew(NewAddInputModel input, string userId)
         {
+            if (input == null)
+            {
+                throw new ArgumentNullException("input", $"The given input was null!");
+            }
+
+            if (!this.db.Users.Any(u => u.Id == userId))
+            {
+                throw new ArgumentNullException("userId", $"There is no user with the given user Id!");
+            }
+
             var newDb = new New()
             {
                 Title = input.Title,
@@ -29,13 +39,18 @@
                 UploadedOn = DateTime.UtcNow,
             };
 
-            this.db.News.Add(newDb);
+            await this.db.News.AddAsync(newDb);
 
             await this.db.SaveChangesAsync();
         }
 
-        public async Task EditNew(NewAddInputModel input, string newId)
+        public async Task<bool> EditNew(NewAddInputModel input, string newId)
         {
+            if (input == null)
+            {
+                throw new ArgumentNullException("input", $"The given input was null!");
+            }
+
             var newDb = this.db.News.FirstOrDefault(n => n.NewId == newId);
 
             if (newDb != null)
@@ -45,6 +60,12 @@
                 newDb.Image = input.Image;
 
                 await this.db.SaveChangesAsync();
+
+                return true;
+            }
+            else
+            {
+                throw new ArgumentNullException("newId", $"There is no new with the given new Id ({newId})");
             }
         }
 
@@ -71,15 +92,27 @@
 
                 return true;
             }
-
-            return false;
+            else
+            {
+                throw new ArgumentNullException("newId", $"There is no new with the given new Id ({newId})");
+            }
         }
 
         public NewDetailsPageViewModel GetNew(string newId)
         {
             var newDb = this.db.News.FirstOrDefault(n => n.NewId == newId);
 
+            if (newDb == null)
+            {
+                throw new ArgumentNullException("newId", $"There is no new with the given new Id ({newId})");
+            }
+
             var user = this.db.Users.FirstOrDefault(u => u.Id == newDb.UserId);
+
+            if (user == null)
+            {
+                throw new ArgumentNullException("user", $"This new does not belong to any user!");
+            }
 
             var newModel = new NewDetailsPageViewModel()
             {

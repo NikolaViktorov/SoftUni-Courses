@@ -14,7 +14,6 @@
 
         public RiotApi api { get; set; }
 
-
         private readonly ApplicationDbContext db;
 
         public ChampionsService(ApplicationDbContext db)

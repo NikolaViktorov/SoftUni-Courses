@@ -112,7 +112,7 @@
 
             var userGameCount = this.gamesService.GetGameCount(userId);
 
-            if (userGameCount < 10 )
+            if (userGameCount < 10)
             {
                 await this.gamesService.AddGameToCollection(gameId, regionId);
                 this.gamesService.AddGameToUser(userId);
@@ -129,10 +129,11 @@
             }
 
             HomePageGameViewModel viewModel = new HomePageGameViewModel();
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             try
             {
-                 viewModel = await this.gamesService.GetModelByGameId(gameId, regionId);
+                 viewModel = await this.gamesService.GetModelByGameId(gameId, regionId, userId);
             }
             catch (System.Exception e)
             {

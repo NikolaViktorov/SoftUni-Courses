@@ -1,5 +1,6 @@
 ﻿namespace GokoSite.Services.Data
 {
+    using System;
     using System.Linq;
     using System.Threading.Tasks;
 
@@ -16,29 +17,32 @@
 
         public async Task AddAdministrator(string email)
         {
+            if (string.IsNullOrEmpty(email))
+            {
+                throw new ArgumentNullException("email", "The given email is invalid!");
+            }
+
             var user = this.db.Users.FirstOrDefault(u => u.Email == email);
+
+            if (user == null)
+            {
+                throw new ArgumentNullException("email", "There is no user with the given email!");
+            }
+
             var administratorRole = this.db.Roles.FirstOrDefault(r => r.Name == "Administrator");
 
-            if (user != null && administratorRole != null)
+            if (administratorRole == null)
             {
-                this.db.UserRoles.Add(new Microsoft.AspNetCore.Identity.IdentityUserRole<string>()
-                {
-                    RoleId = administratorRole.Id,
-                    UserId = user.Id,
-                });
-
-                await this.db.SaveChangesAsync();
+                throw new InvalidOperationException($"There is no role with the name \"{"Administrator"}\"!");
             }
-        }
 
-        public bool IsUserAdministrator(string userId)
-        {
-            var adminRole = this.db.Roles.FirstOrDefault(r => r.Name == "Administrator");
-            var user = this.db.Users.FirstOrDefault(u => u.Id == userId);
+            this.db.UserRoles.Add(new Microsoft.AspNetCore.Identity.IdentityUserRole<string>()
+            {
+                RoleId = administratorRole.Id,
+                UserId = user.Id,
+            });
 
-            var isAdministrator = this.db.UserRoles.Any(ur => ur.UserId == userId && ur.RoleId == adminRole.Id);
-
-            return isAdministrator;
+            await this.db.SaveChangesAsync();
         }
     }
 }

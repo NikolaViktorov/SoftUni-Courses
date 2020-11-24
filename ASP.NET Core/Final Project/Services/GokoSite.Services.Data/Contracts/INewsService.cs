@@ -15,6 +15,6 @@
 
         public Task<bool> RemoveNew(string newId);
 
-        public Task EditNew(NewAddInputModel input, string newId);
+        public Task<bool> EditNew(NewAddInputModel input, string newId);
     }
 }

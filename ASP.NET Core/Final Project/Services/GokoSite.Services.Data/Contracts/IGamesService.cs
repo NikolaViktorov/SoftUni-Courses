@@ -19,7 +19,7 @@
 
         Task<IEnumerable<HomePageGameViewModel>> GetModelByMatches(ICollection<Match> games, int regionId);
 
-        Task<HomePageGameViewModel> GetModelByGameId(long gameId, int regionId);
+        Task<HomePageGameViewModel> GetModelByGameId(long gameId, int regionId, string userId);
 
         Task AddGameToCollection(long gameId, int regionId);
 

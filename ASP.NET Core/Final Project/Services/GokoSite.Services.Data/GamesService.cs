@@ -13,7 +13,6 @@
     using RiotSharp;
     using RiotSharp.Endpoints.MatchEndpoint;
     using RiotSharp.Endpoints.SummonerEndpoint;
-    using RiotSharp.Misc;
 
     public class GamesService : IGamesService
     {
@@ -23,7 +22,8 @@
 
         public RiotApi Api { get; set; }
 
-        public GamesService(ApplicationDbContext db,
+        public GamesService(
+            ApplicationDbContext db,
             IPlayersService playersService,
             ITeamsService teamsService)
         {
@@ -105,10 +105,24 @@
             return viewModel.ToList();
         }
 
-        public async Task<HomePageGameViewModel> GetModelByGameId(long gameId, int regionId) // More eficient..
+        public async Task<HomePageGameViewModel> GetModelByGameId(long gameId, int regionId, string userId) // More eficient..
         {
             var region = (RiotSharp.Misc.Region)regionId;
             var game = await this.Api.Match.GetMatchAsync(region, gameId);
+
+            var dbGame = this.db.Games.FirstOrDefault(g => g.RiotGameId == game.GameId);
+
+            if (dbGame == null)
+            {
+                throw new ArgumentNullException("gameId", "Game with that Game Id does not exist in the database!");
+            }
+
+            var isInUserCollection = this.db.UserGames.Any(ug => ug.UserId == userId && ug.GameId == dbGame.GameId);
+
+            if (isInUserCollection == false)
+            {
+                throw new InvalidOperationException($"This user ({userId}) does not contain a game with id({gameId}) in his collection!");
+            }
 
             var viewModel = new HomePageGameViewModel
             {
@@ -165,31 +179,21 @@
             game.Teams.Add(secondTeam);
 
             this.db.Games.Add(game);
-            this.db.SaveChanges();
-
-            var dbGame = this.db.Games.OrderByDescending(g => g.GameId).FirstOrDefault();
-
-            var firstTeamId = dbGame.Teams[0].TeamId;
-            var secondTeamId = dbGame.Teams[1].TeamId;
+            await this.db.SaveChangesAsync();
 
             var firstTeamPlayers = this.playersService.GetPlayersByParticipants(curGame.ParticipantIdentities, curGame.Participants, 100).ToList();
             // 100 first team / 200 second team
             var secondTeamPlayers = this.playersService.GetPlayersByParticipants(curGame.ParticipantIdentities, curGame.Participants, 200).ToList();
 
-            firstTeamPlayers.ForEach(p => p.TeamId = firstTeamId);
-            secondTeamPlayers.ForEach(p => p.TeamId = secondTeamId);
+            firstTeamPlayers.ForEach(p => game.Teams[0].Players.Add(p));
+            secondTeamPlayers.ForEach(p => game.Teams[1].Players.Add(p));
 
-            foreach (var player in firstTeamPlayers)
-            {
-                this.db.Players.Add(player);
-            }
+            await this.db.SaveChangesAsync();
 
-            foreach (var player in secondTeamPlayers)
-            {
-                this.db.Players.Add(player);
-            }
+            var dbGame = this.db.Games.OrderByDescending(g => g.GameId).FirstOrDefault();
 
-            this.db.SaveChanges();
+            var firstTeamId = dbGame.Teams[0].TeamId;
+            var secondTeamId = dbGame.Teams[1].TeamId;
 
             var players = this.db.Players.Where(p => p.TeamId == firstTeamId || p.TeamId == secondTeamId).Select(p => p).ToList();
             var champions = this.db.ChampionsStatic.ToList();
@@ -208,7 +212,7 @@
                 });
             }
 
-            this.db.SaveChanges();
+            await this.db.SaveChangesAsync();
         }
 
         public void AddGameToUser(string userId)

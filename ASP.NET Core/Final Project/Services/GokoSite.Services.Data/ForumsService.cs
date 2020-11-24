@@ -59,6 +59,10 @@
                 this.db.Remove(post);
                 await this.db.SaveChangesAsync();
             }
+            else
+            {
+                throw new InvalidOperationException("No post found with this id!");
+            }
         }
 
         public async Task EditPost(EditForumInputModel input)
@@ -71,6 +75,10 @@
                 post.ForumTopic = input.Topic;
 
                 await this.db.SaveChangesAsync();
+            }
+            else
+            {
+                throw new InvalidOperationException("No post found with this id!");
             }
         }
 
@@ -94,14 +102,14 @@
 
         public ICollection<PersonalForumViewModel> GetPersonalPosts(string userId)
         {
-            var forums = new List<PersonalForumViewModel>();
+            var personalForums = new List<PersonalForumViewModel>();
 
             var userForums = this.db.UserForums.Where(uf => uf.UserId == userId).ToList();
             var forumIds = userForums.Select(uf => uf.ForumId).ToArray();
 
             foreach (var forum in this.db.Forums.Where(f => forumIds.Contains(f.ForumId)))
             {
-                forums.Add(new PersonalForumViewModel()
+                personalForums.Add(new PersonalForumViewModel()
                 {
                     ForumId = forum.ForumId,
                     ForumText = forum.ForumText,
@@ -110,7 +118,7 @@
                 });
             }
 
-            return forums;
+            return personalForums;
         }
 
         public EditForumViewModel GetPost(string postId)
@@ -119,7 +127,7 @@
 
             if (postDb == null)
             {
-                return null;
+                throw new InvalidOperationException("No post found with this id!");
             }
 
             return new EditForumViewModel()
@@ -134,6 +142,11 @@
         public async Task Like(string postId, string userId)
         {
             var forum = this.db.Forums.FirstOrDefault(f => f.ForumId == postId);
+
+            if (forum == null)
+            {
+                throw new InvalidOperationException("No post found with this id!");
+            }
 
             var isLiked = this.IsForumLiked(postId, userId);
             var userLike = this.db.UserLikes.FirstOrDefault(f => f.ForumId == postId && f.UserId == userId);

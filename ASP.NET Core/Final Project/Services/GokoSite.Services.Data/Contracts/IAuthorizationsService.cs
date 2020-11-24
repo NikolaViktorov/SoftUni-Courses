@@ -5,7 +5,5 @@
     public interface IAuthorizationsService
     {
         public Task AddAdministrator(string email);
-
-        public bool IsUserAdministrator(string userId);
     }
 }
