@@ -8,7 +8,7 @@
     // TODO
     public interface IForumsService
     {
-        public ICollection<ForumViewModel> GetAll(string userId);
+        public Task<ICollection<ForumViewModel>> GetAll(string userId);
 
         public ICollection<PersonalForumViewModel> GetPersonalPosts(string userId);
 

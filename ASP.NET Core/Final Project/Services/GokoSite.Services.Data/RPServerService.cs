@@ -9,7 +9,7 @@
 
     public class RPServerService : IRPServerService
     {
-        private const string ip = "93.123.16.62";
+        private const string ip = "93.123.18.103";
         private const string port = "30120";
 
         private string Host(string endpoint)

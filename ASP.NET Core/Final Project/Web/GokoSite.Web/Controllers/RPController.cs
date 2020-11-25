@@ -81,7 +81,7 @@
         }
 
         // Forum Routes
-        public IActionResult Forum()
+        public async Task<IActionResult> Forum()
         {
             if (!this.User.Identity.IsAuthenticated)
             {
@@ -90,7 +90,7 @@
 
             var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            var viewModel = this.forumsService.GetAll(userId);
+            var viewModel = await this.forumsService.GetAll(userId);
 
             return this.View(viewModel);
         }

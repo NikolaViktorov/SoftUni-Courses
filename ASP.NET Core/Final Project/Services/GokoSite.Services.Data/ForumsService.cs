@@ -8,6 +8,7 @@
     using GokoSite.Data;
     using GokoSite.Data.Models.RP;
     using GokoSite.Web.ViewModels.Forums;
+    using Microsoft.EntityFrameworkCore;
 
     public class ForumsService : IForumsService
     {
@@ -20,6 +21,11 @@
 
         public async Task<string> AddPost(AddForumModel input)
         {
+            if (input == null)
+            {
+                throw new ArgumentNullException("input", "The given input is null!");
+            }
+
             var post = new Forum()
             {
                 ForumText = input.Text,
@@ -36,53 +42,61 @@
 
         public async Task AddPostToUser(string userId, string forumId)
         {
-            var post = this.db.Forums.FirstOrDefault(f => f.ForumId == forumId);
-
-            if (post != null)
+            if (string.IsNullOrEmpty(forumId))
             {
-                this.db.UserForums.Add(new UserForums()
-                {
-                    UserId = userId,
-                    ForumId = post.ForumId,
-                });
-
-                await this.db.SaveChangesAsync();
+                throw new ArgumentNullException("forumId", "The given forum Id is null or emtpy string!");
             }
+
+            var post = await this.db.Forums.FirstOrDefaultAsync(f => f.ForumId == forumId);
+
+            if (post == null)
+            {
+                throw new ArgumentNullException("forumId", "The given forum Id not valid!");
+            }
+
+            await this.db.UserForums.AddAsync(new UserForums()
+            {
+                UserId = userId,
+                ForumId = post.ForumId,
+            });
+
+            await this.db.SaveChangesAsync();
         }
 
         public async Task DeletePost(string postId)
         {
-            var post = this.db.Forums.FirstOrDefault(f => f.ForumId == postId);
+            var post = await this.db.Forums.FirstOrDefaultAsync(f => f.ForumId == postId);
 
-            if (post != null)
+            if (post == null)
             {
-                this.db.Remove(post);
-                await this.db.SaveChangesAsync();
+                throw new InvalidOperationException("No post found with the given post Id!");
             }
-            else
-            {
-                throw new InvalidOperationException("No post found with this id!");
-            }
+
+            this.db.Remove(post);
+            await this.db.SaveChangesAsync();
         }
 
         public async Task EditPost(EditForumInputModel input)
         {
-            var post = this.db.Forums.FirstOrDefault(f => f.ForumId == input.ForumId);
-
-            if (post != null)
+            if (input == null)
             {
-                post.ForumText = input.Text;
-                post.ForumTopic = input.Topic;
-
-                await this.db.SaveChangesAsync();
+                throw new ArgumentNullException("input", "The given input is null!");
             }
-            else
+
+            var post = await this.db.Forums.FirstOrDefaultAsync(f => f.ForumId == input.ForumId);
+
+            if (post == null)
             {
                 throw new InvalidOperationException("No post found with this id!");
             }
+
+            post.ForumText = input.Text;
+            post.ForumTopic = input.Topic;
+
+            await this.db.SaveChangesAsync();
         }
 
-        public ICollection<ForumViewModel> GetAll(string userId)
+        public async Task<ICollection<ForumViewModel>> GetAll(string userId)
         {
             var forums = new List<ForumViewModel>();
             foreach (var forum in this.db.Forums.ToList())
@@ -93,7 +107,7 @@
                     ForumText = forum.ForumText,
                     ForumTopic = forum.ForumTopic,
                     Likes = forum.Likes,
-                    Liked = this.IsForumLiked(forum.ForumId, userId),
+                    Liked = await this.IsForumLiked(forum.ForumId, userId),
                 });
             }
 
@@ -127,7 +141,7 @@
 
             if (postDb == null)
             {
-                throw new InvalidOperationException("No post found with this id!");
+                throw new ArgumentNullException("No post found with this id!");
             }
 
             return new EditForumViewModel()
@@ -141,15 +155,15 @@
 
         public async Task Like(string postId, string userId)
         {
-            var forum = this.db.Forums.FirstOrDefault(f => f.ForumId == postId);
+            var forum = await this.db.Forums.FirstOrDefaultAsync(f => f.ForumId == postId);
 
             if (forum == null)
             {
-                throw new InvalidOperationException("No post found with this id!");
+                throw new ArgumentNullException("postId", "No post found with this id!");
             }
 
-            var isLiked = this.IsForumLiked(postId, userId);
-            var userLike = this.db.UserLikes.FirstOrDefault(f => f.ForumId == postId && f.UserId == userId);
+            var isLiked = await this.IsForumLiked(postId, userId);
+            var userLike = await this.db.UserLikes.FirstOrDefaultAsync(f => f.ForumId == postId && f.UserId == userId);
 
             if (isLiked)
             {
@@ -165,9 +179,9 @@
             await this.db.SaveChangesAsync();
         }
 
-        private bool IsForumLiked(string postId, string userId)
+        private async Task<bool> IsForumLiked(string postId, string userId)
         {
-            var userLike = this.db.UserLikes.FirstOrDefault(f => f.ForumId == postId && f.UserId == userId);
+            var userLike = await this.db.UserLikes.FirstOrDefaultAsync(f => f.ForumId == postId && f.UserId == userId);
 
             if (userLike == null)
             {
@@ -178,7 +192,7 @@
                     Liked = false,
                 });
 
-                this.db.SaveChanges();
+                await this.db.SaveChangesAsync();
 
                 return false;
             }
