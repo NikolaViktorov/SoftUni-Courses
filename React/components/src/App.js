@@ -3,11 +3,12 @@ import Heading from './components/Heading';
 import Body from './components/Body';
 import BookList from './components/BookList'
 import Counter from './components/Counter';
+import Footer from './components/Footer';
 
 const books = [
-  {title: 'The Lord of the Rings', description: 'The best film!'},
-  {title: 'The Hobbit', description: 'Hobbits are small!'},
-  {title: 'Robin Hood', description: 'Arrow man!'},
+  {_id: 1, title: 'The Lord of the Rings', description: 'The best film!'},
+  {_id: 2, title: 'The Hobbit', description: 'Hobbits are small!'},
+  {_id: 3, title: 'Robin Hood', description: 'Arrow man!'},
 ];
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
       <Counter />
 
       <BookList books={books} />
+
+      <Footer />
     </div>
   );
 }

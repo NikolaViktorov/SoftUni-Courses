@@ -12,7 +12,11 @@ class BookList extends Component {
                 <h2>Book Collection:</h2>
                 {
                     this.props.books.map(x => {
-                        return <Book title={x.title} description={x.description} />;
+                        return <Book
+                            key={x._id} 
+                            title={x.title}
+                            description={x.description} 
+                         />;
                     })
                 }
             </div>
