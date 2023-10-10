@@ -1,0 +1,14 @@
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\0. Hot Potato\bin\Debug\net6.0\0. Hot Potato.exe
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\0. Hot Potato\bin\Debug\net6.0\0. Hot Potato.deps.json
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\0. Hot Potato\bin\Debug\net6.0\0. Hot Potato.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\0. Hot Potato\bin\Debug\net6.0\0. Hot Potato.dll
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\0. Hot Potato\bin\Debug\net6.0\0. Hot Potato.pdb
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\0. Hot Potato\obj\Debug\net6.0\0. Hot Potato.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\0. Hot Potato\obj\Debug\net6.0\0. Hot Potato.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\0. Hot Potato\obj\Debug\net6.0\0. Hot Potato.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\0. Hot Potato\obj\Debug\net6.0\0. Hot Potato.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\0. Hot Potato\obj\Debug\net6.0\0. Hot Potato.dll
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\0. Hot Potato\obj\Debug\net6.0\refint\0. Hot Potato.dll
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\0. Hot Potato\obj\Debug\net6.0\0. Hot Potato.pdb
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\0. Hot Potato\obj\Debug\net6.0\0. Hot Potato.genruntimeconfig.cache
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\0. Hot Potato\obj\Debug\net6.0\ref\0. Hot Potato.dll

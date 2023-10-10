@@ -1,0 +1,14 @@
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\08. Traffic Jam\bin\Debug\net6.0\08. Traffic Jam.exe
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\08. Traffic Jam\bin\Debug\net6.0\08. Traffic Jam.deps.json
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\08. Traffic Jam\bin\Debug\net6.0\08. Traffic Jam.runtimeconfig.json
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\08. Traffic Jam\bin\Debug\net6.0\08. Traffic Jam.dll
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\08. Traffic Jam\bin\Debug\net6.0\08. Traffic Jam.pdb
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\08. Traffic Jam\obj\Debug\net6.0\08. Traffic Jam.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\08. Traffic Jam\obj\Debug\net6.0\08. Traffic Jam.AssemblyInfoInputs.cache
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\08. Traffic Jam\obj\Debug\net6.0\08. Traffic Jam.AssemblyInfo.cs
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\08. Traffic Jam\obj\Debug\net6.0\08. Traffic Jam.csproj.CoreCompileInputs.cache
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\08. Traffic Jam\obj\Debug\net6.0\08. Traffic Jam.dll
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\08. Traffic Jam\obj\Debug\net6.0\refint\08. Traffic Jam.dll
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\08. Traffic Jam\obj\Debug\net6.0\08. Traffic Jam.pdb
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\08. Traffic Jam\obj\Debug\net6.0\08. Traffic Jam.genruntimeconfig.cache
+D:\Programming\SoftUni\C# Advanced\01 Stacks and Queues\01. Reverse a String\08. Traffic Jam\obj\Debug\net6.0\ref\08. Traffic Jam.dll
