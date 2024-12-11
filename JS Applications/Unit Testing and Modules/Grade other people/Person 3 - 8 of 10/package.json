@@ -7,13 +7,13 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "mocha": "^8.0.1",
+    "mocha": "^8.4.0",
     "chai": "*" 
   },
   "author": "Tsvetislav Todorov",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.0.1"
+    "mocha": "^8.4.0"
   }
 }
